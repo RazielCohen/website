@@ -1,0 +1,132 @@
+{
+  "version": "0.4",
+  "title": "Tactical Rabbi — Courses",
+  "type": "page",
+  "content": [
+    {
+      "id": "tr-courses-header",
+      "elType": "section",
+      "settings": {"padding": {"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false}},
+      "elements": [
+        {
+          "id": "tr-courses-header-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-courses-header-w",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-header\"><a class=\"tr-logo\" href=\"/\">THE TACTICAL RABBI<\/a><nav class=\"tr-nav\"><ul><li><a href=\"/about\">About<\/a><\/li><li><a href=\"/courses\" class=\"active\">Courses<\/a><\/li><li><a href=\"/merch\">Merch<\/a><\/li><li><a href=\"/contact\">Contact<\/a><\/li><\/ul><\/nav><a class=\"tr-btn\" href=\"/contact\">Book Training<\/a><\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-courses-hero",
+      "elType": "section",
+      "settings": {
+        "border_bottom_width": {"unit":"px","size":1},
+        "border_color": "#ece7d9",
+        "padding": {"unit":"px","top":"56","right":"48","bottom":"40","left":"48","isLinked":false}
+      },
+      "elements": [
+        {
+          "id": "tr-courses-hero-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-courses-hero-w",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-page-hero\" style=\"text-align:left;padding:0\"><span class=\"tr-label\">Training Catalog<\/span><h1>Courses<\/h1><p style=\"color:var(--muted);font-size:17px;max-width:600px;margin-top:12px\">From first-time shooters to advanced operators — find the course that matches where you are and where you want to be.<\/p><\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-filter",
+      "elType": "section",
+      "settings": {
+        "border_bottom_width": {"unit":"px","size":1},
+        "border_color": "#ece7d9",
+        "padding": {"unit":"px","top":"24","right":"48","bottom":"24","left":"48","isLinked":false}
+      },
+      "elements": [
+        {
+          "id": "tr-filter-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-filter-w",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-filter-bar\"><div class=\"tr-filter-chip active\" onclick=\"filterCourses('all',this)\">All Courses<\/div><div class=\"tr-filter-chip\" onclick=\"filterCourses('pistol',this)\">Pistol<\/div><div class=\"tr-filter-chip\" onclick=\"filterCourses('rifle',this)\">Rifle<\/div><div class=\"tr-filter-chip\" onclick=\"filterCourses('response',this)\">Tactical Response<\/div><div class=\"tr-filter-chip\" onclick=\"filterCourses('private',this)\">Private \/ 1:1<\/div><div class=\"tr-filter-chip\" onclick=\"filterCourses('beginner',this)\">Beginner<\/div><\/div><script>function filterCourses(cat,el){document.querySelectorAll('.tr-filter-chip').forEach(c=>c.classList.remove('active'));el.classList.add('active');document.querySelectorAll('.tr-course-card[data-cat]').forEach(function(card){card.style.display=(cat==='all'||card.dataset.cat===cat)?'':'none';})}<\/script>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-all-courses",
+      "elType": "section",
+      "settings": {
+        "padding": {"unit":"px","top":"48","right":"48","bottom":"80","left":"48","isLinked":false}
+      },
+      "elements": [
+        {
+          "id": "tr-all-courses-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-all-courses-w",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-course-grid\"><div class=\"tr-course-card\" data-cat=\"pistol\"><img src=\"/wp-content/uploads/course-tactical-pistol.jpg\" alt=\"Tactical Pistol\"><div class=\"body\"><span class=\"tag-mini\">Pistol<\/span><h3>Tactical Pistol<\/h3><div class=\"meta\"><span>4 hrs<\/span><span>Beginner<\/span><span>Henryville, PA<\/span><\/div><div class=\"price\">$275<\/div><a class=\"view-btn\" href=\"/courses/tactical-pistol\">View Course →<\/a><\/div><\/div><div class=\"tr-course-card\" data-cat=\"pistol\"><img src=\"/wp-content/uploads/course-advanced-pistol.jpg\" alt=\"Advanced Tactical Pistol\"><div class=\"body\"><span class=\"tag-mini\">Pistol<\/span><h3>Advanced Tactical Pistol<\/h3><div class=\"meta\"><span>4 hrs<\/span><span>Advanced<\/span><span>Henryville, PA<\/span><\/div><div class=\"price\">$275<\/div><a class=\"view-btn\" href=\"/courses/advanced-tactical-pistol\">View Course →<\/a><\/div><\/div><div class=\"tr-course-card\" data-cat=\"rifle\"><img src=\"/wp-content/uploads/course-tactical-rifle.jpg\" alt=\"Tactical Rifle\"><div class=\"body\"><span class=\"tag-mini\">Rifle<\/span><h3>Tactical Rifle<\/h3><div class=\"meta\"><span>4 hrs<\/span><span>Beginner<\/span><span>Henryville, PA<\/span><\/div><div class=\"price\">$275<\/div><a class=\"view-btn\" href=\"/courses/tactical-rifle\">View Course →<\/a><\/div><\/div><div class=\"tr-course-card\" data-cat=\"rifle\"><img src=\"/wp-content/uploads/course-advanced-rifle.jpg\" alt=\"Advanced Tactical Rifle\"><div class=\"body\"><span class=\"tag-mini\">Rifle<\/span><h3>Advanced Tactical Rifle<\/h3><div class=\"meta\"><span>4 hrs<\/span><span>Advanced<\/span><span>Henryville, PA<\/span><\/div><div class=\"price\">$275<\/div><a class=\"view-btn\" href=\"/courses/advanced-tactical-rifle\">View Course →<\/a><\/div><\/div><div class=\"tr-course-card\" data-cat=\"response\"><img src=\"/wp-content/uploads/course-active-shooter.jpg\" alt=\"Active Shooter Response\"><div class=\"body\"><span class=\"tag-mini\">Response<\/span><h3>Active Shooter Response<\/h3><div class=\"meta\"><span>4 hrs<\/span><span>All Levels<\/span><span>Henryville, PA<\/span><\/div><div class=\"price\">$275<\/div><a class=\"view-btn\" href=\"/courses/active-shooter-response\">View Course →<\/a><\/div><\/div><div class=\"tr-course-card\" data-cat=\"response\"><img src=\"/wp-content/uploads/course-stress-box.jpg\" alt=\"Stress Box\"><div class=\"body\"><span class=\"tag-mini\">Shoot House<\/span><h3>Stress Box<\/h3><div class=\"meta\"><span>4 hrs<\/span><span>Advanced<\/span><span>Randolph, NJ<\/span><\/div><div class=\"price\">$350<\/div><a class=\"view-btn\" href=\"/courses/stress-box\">View Course →<\/a><\/div><\/div><div class=\"tr-course-card\" data-cat=\"private\"><div class=\"img-missing\">Add course image in Media Library<\/div><div class=\"body\"><span class=\"tag-mini\">1:1<\/span><h3>Private Lesson<\/h3><div class=\"meta\"><span>Flexible<\/span><span>All Levels<\/span><span>By appointment<\/span><\/div><div class=\"price\">From $150<\/div><a class=\"view-btn\" href=\"/courses/private-lesson\">View Course →<\/a><\/div><\/div><\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-courses-footer",
+      "elType": "section",
+      "settings": {
+        "border_top_width": {"unit":"px","size":1},
+        "border_color": "#ece7d9",
+        "padding": {"unit":"px","top":"50","right":"48","bottom":"30","left":"48","isLinked":false}
+      },
+      "elements": [
+        {
+          "id": "tr-courses-footer-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-courses-footer-w",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-footer\"><div>© 2026 The Tactical Rabbi. All rights reserved.<\/div><div><a href=\"https://youtube.com\">YouTube<\/a><a href=\"https://instagram.com\">Instagram<\/a><a href=\"https://facebook.com\">Facebook<\/a><\/div><\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {"hide_title": true}
+}

@@ -1,0 +1,290 @@
+{
+  "version": "0.4",
+  "title": "Tactical Rabbi — Homepage",
+  "type": "page",
+  "content": [
+    {
+      "id": "tr-header",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "border_bottom_width": {"unit":"px","size":1},
+        "border_color": "#ece7d9",
+        "position": "fixed",
+        "z_index": 100,
+        "padding": {"unit":"px","top":"18","right":"48","bottom":"18","left":"48","isLinked":false}
+      },
+      "elements": [
+        {
+          "id": "tr-header-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-header-inner",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-header\"><a class=\"tr-logo\" href=\"/\">THE TACTICAL RABBI<\/a><nav class=\"tr-nav\"><ul><li><a href=\"/about\">About<\/a><\/li><li><a href=\"/courses\">Courses<\/a><\/li><li><a href=\"/merch\">Merch<\/a><\/li><li><a href=\"/contact\">Contact<\/a><\/li><\/ul><\/nav><a class=\"tr-btn\" href=\"/contact\">Book Training<\/a><\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-hero",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1d1d16",
+        "min_height": {"unit":"px","size":640},
+        "padding": {"unit":"px","top":"0","right":"48","bottom":"0","left":"48","isLinked":false}
+      },
+      "elements": [
+        {
+          "id": "tr-hero-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-hero-widget",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-hero\" style=\"background:url('/wp-content/uploads/hero-bg.jpg') center/cover no-repeat;\"><div class=\"tr-hero-wash\"><\/div><div class=\"tr-hero-content\"><div class=\"tr-hero-tag\"><span class=\"dot\"><\/span><span>Tactical Training · Faith-Driven · Real-World Ready<\/span><\/div><h1>Train With <span class=\"accent\">Purpose.<\/span><\/h1><p class=\"sub\">Israel-trained. Combat-experienced. Teaching civilians to survive what they hope never happens.<\/p><div class=\"actions\"><a class=\"tr-btn coyote lg\" href=\"/courses\">Browse Courses<\/a><a class=\"tr-btn ghost lg\" href=\"/about\" style=\"color:#fff;border-color:#fff\">Meet the Rabbi<\/a><\/div><div class=\"tr-stat-row\"><div class=\"tr-stat\"><div class=\"num\">30M+<\/div><div class=\"stat-label\">Views<\/div><\/div><div class=\"tr-stat\"><div class=\"num\">2,000+<\/div><div class=\"stat-label\">Students Trained<\/div><\/div><div class=\"tr-stat\"><div class=\"num\">15+<\/div><div class=\"stat-label\">Years Experience<\/div><\/div><\/div><\/div><\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-courses-section",
+      "elType": "section",
+      "settings": {
+        "padding": {"unit":"px","top":"80","right":"48","bottom":"80","left":"48","isLinked":false}
+      },
+      "elements": [
+        {
+          "id": "tr-courses-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-courses-head",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-section-head\"><div><span class=\"tr-label\">What we teach<\/span><h2>Training Courses<\/h2><\/div><a class=\"tr-btn\" href=\"/courses\">View All Courses<\/a><\/div>"
+              }
+            },
+            {
+              "id": "tr-courses-grid",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-course-grid\"><div class=\"tr-course-card\"><img src=\"/wp-content/uploads/course-tactical-pistol.jpg\" alt=\"Tactical Pistol\"><div class=\"body\"><span class=\"tag-mini\">Pistol<\/span><h3>Tactical Pistol<\/h3><div class=\"meta\"><span>4 hrs<\/span><span>Beginner<\/span><\/div><div class=\"price\">$275<\/div><a class=\"view-btn\" href=\"/courses/tactical-pistol\">View Course →<\/a><\/div><\/div><div class=\"tr-course-card\"><img src=\"/wp-content/uploads/course-tactical-rifle.jpg\" alt=\"Tactical Rifle\"><div class=\"body\"><span class=\"tag-mini\">Rifle<\/span><h3>Tactical Rifle<\/h3><div class=\"meta\"><span>4 hrs<\/span><span>Beginner<\/span><\/div><div class=\"price\">$275<\/div><a class=\"view-btn\" href=\"/courses/tactical-rifle\">View Course →<\/a><\/div><\/div><div class=\"tr-course-card\"><img src=\"/wp-content/uploads/course-active-shooter.jpg\" alt=\"Active Shooter Response\"><div class=\"body\"><span class=\"tag-mini\">Response<\/span><h3>Active Shooter Response<\/h3><div class=\"meta\"><span>4 hrs<\/span><span>All Levels<\/span><\/div><div class=\"price\">$275<\/div><a class=\"view-btn\" href=\"/courses/active-shooter-response\">View Course →<\/a><\/div><\/div><div class=\"tr-course-card\"><img src=\"/wp-content/uploads/course-stress-box.jpg\" alt=\"Stress Box\"><div class=\"body\"><span class=\"tag-mini\">Shoot House<\/span><h3>Stress Box<\/h3><div class=\"meta\"><span>4 hrs<\/span><span>Advanced<\/span><\/div><div class=\"price\">$350<\/div><a class=\"view-btn\" href=\"/courses/stress-box\">View Course →<\/a><\/div><\/div><\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-about-split",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "border_top_width": {"unit":"px","size":1},
+        "border_bottom_width": {"unit":"px","size":1},
+        "border_color": "#ece7d9",
+        "padding": {"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false}
+      },
+      "elements": [
+        {
+          "id": "tr-about-img-col",
+          "elType": "column",
+          "settings": {"_column_size":40},
+          "elements": [
+            {
+              "id": "tr-about-img",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "/wp-content/uploads/rabbi-about.jpg"},
+                "image_size": "full",
+                "_css_classes": "tr-about-img-fill"
+              }
+            }
+          ]
+        },
+        {
+          "id": "tr-about-copy-col",
+          "elType": "column",
+          "settings": {"_column_size":60},
+          "elements": [
+            {
+              "id": "tr-about-copy",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"about-copy\" style=\"padding:48px 48px 48px 0\"><span class=\"tr-label\">About the instructor<\/span><h2>Former IDF. Ordained Rabbi. Firearms Instructor.<\/h2><p style=\"color:var(--muted);font-size:16px;line-height:1.7;margin-bottom:16px;max-width:520px\">Rabbi Raziel Cohen brings a unique combination of military discipline, theological grounding, and real-world training experience to every course he teaches.<\/p><p style=\"color:var(--muted);font-size:16px;line-height:1.7;margin-bottom:24px;max-width:520px\">His mission: equip the Jewish community — and all people of faith — with the skills to protect themselves and their families.<\/p><a class=\"tr-btn\" href=\"/about\">Full Bio →<\/a><\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-press",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "border_top_width": {"unit":"px","size":1},
+        "border_bottom_width": {"unit":"px","size":1},
+        "border_color": "#ece7d9",
+        "padding": {"unit":"px","top":"36","right":"0","bottom":"36","left":"0","isLinked":false}
+      },
+      "elements": [
+        {
+          "id": "tr-press-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-press-widget",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<span class=\"tr-label\" style=\"display:block;text-align:center;margin-bottom:20px\">As seen in<\/span><div class=\"tr-press-marquee\"><div class=\"tr-press-track\"><a class=\"tr-press-chip\" href=\"#\"><span>Fox News<\/span><\/a><a class=\"tr-press-chip\" href=\"#\"><span>The Jerusalem Post<\/span><\/a><a class=\"tr-press-chip\" href=\"#\"><span>Newsweek<\/span><\/a><a class=\"tr-press-chip\" href=\"#\"><span>The Daily Wire<\/span><\/a><a class=\"tr-press-chip\" href=\"#\"><span>Breitbart<\/span><\/a><a class=\"tr-press-chip\" href=\"#\"><span>NY Post<\/span><\/a><a class=\"tr-press-chip\" href=\"#\"><span>Fox News<\/span><\/a><a class=\"tr-press-chip\" href=\"#\"><span>The Jerusalem Post<\/span><\/a><a class=\"tr-press-chip\" href=\"#\"><span>Newsweek<\/span><\/a><a class=\"tr-press-chip\" href=\"#\"><span>The Daily Wire<\/span><\/a><a class=\"tr-press-chip\" href=\"#\"><span>Breitbart<\/span><\/a><a class=\"tr-press-chip\" href=\"#\"><span>NY Post<\/span><\/a><\/div><\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-testimonials-section",
+      "elType": "section",
+      "settings": {
+        "padding": {"unit":"px","top":"80","right":"48","bottom":"80","left":"48","isLinked":false}
+      },
+      "elements": [
+        {
+          "id": "tr-testimonials-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-testimonials-head",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"margin-bottom:38px\"><span class=\"tr-label\">Student reviews<\/span><h2 style=\"font-size:34px;margin-top:8px\">What our students say<\/h2><\/div>"
+              }
+            },
+            {
+              "id": "tr-testimonials-widget",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-testimonials\"><div class=\"tr-t-card\"><div class=\"stars\">★★★★★<\/div><p>\"This course changed how I think about personal protection. The Rabbi's approach is methodical, calm, and incredibly effective. I left feeling genuinely prepared.\"<\/p><div class=\"who\">Sarah M.<span>Tactical Pistol — Henryville, PA<\/span><\/div><\/div><div class=\"tr-t-card\"><div class=\"stars\">★★★★★<\/div><p>\"Best firearms training I've ever received. Military background with real teaching ability. The Active Shooter Response course should be mandatory for everyone.\"<\/p><div class=\"who\">David K.<span>Active Shooter Response<\/span><\/div><\/div><div class=\"tr-t-card\"><div class=\"stars\">★★★★★<\/div><p>\"As a synagogue security coordinator, this training gave our team a completely new level of readiness. Professional, respectful, and deeply impactful.\"<\/p><div class=\"who\">Rabbi A. Goldstein<span>Private Security Assessment<\/span><\/div><\/div><\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-video-section",
+      "elType": "section",
+      "settings": {
+        "padding": {"unit":"px","top":"0","right":"48","bottom":"80","left":"48","isLinked":false}
+      },
+      "elements": [
+        {
+          "id": "tr-video-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-video-head",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"text-align:center;margin-bottom:32px\"><span class=\"tr-label\">See it in action<\/span><h2 style=\"font-size:30px;margin-top:8px\">Watch a real training session<\/h2><\/div>"
+              }
+            },
+            {
+              "id": "tr-video-widget",
+              "elType": "widget",
+              "widgetType": "video",
+              "settings": {
+                "youtube_url": "https://www.youtube.com/watch?v=REPLACE_WITH_VIDEO_ID",
+                "aspect_ratio": "169",
+                "video_type": "youtube"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-signal",
+      "elType": "section",
+      "settings": {
+        "padding": {"unit":"px","top":"0","right":"48","bottom":"80","left":"48","isLinked":false}
+      },
+      "elements": [
+        {
+          "id": "tr-signal-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-signal-widget",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-signal\"><div><span class=\"tr-label\">Stay in the loop<\/span><h2>Get training updates, new courses & free resources<\/h2><\/div><div class=\"tr-signal-form\"><input type=\"email\" placeholder=\"your@email.com\"><button class=\"tr-btn coyote\">Subscribe<\/button><\/div><\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-footer",
+      "elType": "section",
+      "settings": {
+        "border_top_width": {"unit":"px","size":1},
+        "border_color": "#ece7d9",
+        "padding": {"unit":"px","top":"50","right":"48","bottom":"30","left":"48","isLinked":false}
+      },
+      "elements": [
+        {
+          "id": "tr-footer-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-footer-widget",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-footer\"><div>© 2026 The Tactical Rabbi. All rights reserved.<\/div><div><a href=\"https://youtube.com\">YouTube<\/a><a href=\"https://instagram.com\">Instagram<\/a><a href=\"https://facebook.com\">Facebook<\/a><\/div><\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {
+    "hide_title": true
+  }
+}

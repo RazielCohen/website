@@ -1,0 +1,149 @@
+{
+  "version": "0.4",
+  "title": "Tactical Rabbi — Contact",
+  "type": "page",
+  "content": [
+    {
+      "id": "tr-contact-header",
+      "elType": "section",
+      "settings": {"padding": {"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false}},
+      "elements": [
+        {
+          "id": "tr-contact-header-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-contact-header-w",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-header\"><a class=\"tr-logo\" href=\"/\">THE TACTICAL RABBI<\/a><nav class=\"tr-nav\"><ul><li><a href=\"/about\">About<\/a><\/li><li><a href=\"/courses\">Courses<\/a><\/li><li><a href=\"/merch\">Merch<\/a><\/li><li><a href=\"/contact\" class=\"active\">Contact<\/a><\/li><\/ul><\/nav><a class=\"tr-btn\" href=\"/contact\">Book Training<\/a><\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-contact-hero",
+      "elType": "section",
+      "settings": {
+        "border_bottom_width": {"unit":"px","size":1},
+        "border_color": "#ece7d9",
+        "padding": {"unit":"px","top":"64","right":"48","bottom":"44","left":"48","isLinked":false}
+      },
+      "elements": [
+        {
+          "id": "tr-contact-hero-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-contact-hero-w",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-page-hero\"><span class=\"tr-label\">Get in touch<\/span><h1>Contact Us To Get Better Information<\/h1><p>If you have a question about us or our training courses, please send us a message using the form below. We usually respond to email requests within 48 hours.<\/p><\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-contact-body",
+      "elType": "section",
+      "settings": {
+        "padding": {"unit":"px","top":"64","right":"48","bottom":"64","left":"48","isLinked":false}
+      },
+      "elements": [
+        {
+          "id": "tr-contact-form-col",
+          "elType": "column",
+          "settings": {"_column_size":55},
+          "elements": [
+            {
+              "id": "tr-contact-form-w",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-form-panel\"><h2>Send a message<\/h2><p style=\"color:var(--muted);font-size:14px;margin-bottom:28px\">Fields marked with * are required.<\/p><form method=\"post\" action=\"#\"><div class=\"tr-form-row\"><div class=\"tr-field\"><label>First Name *<\/label><input type=\"text\" name=\"first_name\" placeholder=\"John\" required><\/div><div class=\"tr-field\"><label>Last Name *<\/label><input type=\"text\" name=\"last_name\" placeholder=\"Smith\" required><\/div><\/div><div class=\"tr-form-row\"><div class=\"tr-field\"><label>Email *<\/label><input type=\"email\" name=\"email\" placeholder=\"john@example.com\" required><\/div><div class=\"tr-field\"><label>Phone<\/label><input type=\"tel\" name=\"phone\" placeholder=\"(555) 123-4567\"><\/div><\/div><div class=\"tr-field\"><label>I'm interested in *<\/label><select name=\"interest\"><option>General Inquiry<\/option><option>Tactical Pistol<\/option><option>Advanced Tactical Pistol<\/option><option>Tactical Rifle<\/option><option>Advanced Tactical Rifle<\/option><option>Active Shooter Response<\/option><option>Private Lesson<\/option><option>Security Assessment (Schools \/ Synagogues)<\/option><option>Speaking Engagement<\/option><option>Press \/ Media<\/option><\/select><\/div><div class=\"tr-field\"><label>Message *<\/label><textarea name=\"message\" placeholder=\"Tell us a bit about what you're looking for...\" required><\/textarea><\/div><button type=\"submit\" class=\"tr-btn coyote\" style=\"width:100%;padding:14px;font-size:15px;border-radius:8px;font-family:'Space Grotesk';font-weight:700\">Send Message<\/button><p style=\"font-size:12.5px;color:var(--muted);margin-top:14px;text-align:center\">We typically respond within 48 hours. For urgent scheduling, call us directly.<\/p><\/form><\/div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "tr-contact-sidebar-col",
+          "elType": "column",
+          "settings": {"_column_size":45},
+          "elements": [
+            {
+              "id": "tr-contact-sidebar-w",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"display:flex;flex-direction:column;gap:18px\"><div class=\"tr-info-card\"><div style=\"display:flex;align-items:flex-start;gap:14px;margin-bottom:18px\"><div class=\"tr-icon-badge\">☎<\/div><div><h4 style=\"font-size:14px;margin-bottom:3px\">Call Us<\/h4><a href=\"tel:+17608333711\" style=\"font-size:13.5px;color:var(--muted);text-decoration:none\">(760) 833-3711<\/a><\/div><\/div><div style=\"display:flex;align-items:flex-start;gap:14px\"><div class=\"tr-icon-badge\">✉<\/div><div><h4 style=\"font-size:14px;margin-bottom:3px\">Email Response Time<\/h4><p style=\"font-size:13.5px;color:var(--muted)\">We usually respond within 48 hours.<\/p><\/div><\/div><\/div><div class=\"tr-info-card dark\"><h3 style=\"font-size:17px;margin-bottom:10px\">Follow Along<\/h3><p style=\"font-size:13.5px;line-height:1.6;margin-bottom:16px\">30M+ views of real training, drills, and preparedness content — see what a session actually looks like before you book.<\/p><div style=\"display:flex;gap:10px\"><a class=\"tr-social-chip\" href=\"https://youtube.com\" target=\"_blank\">YouTube<\/a><a class=\"tr-social-chip\" href=\"https://instagram.com\" target=\"_blank\">Instagram<\/a><a class=\"tr-social-chip\" href=\"https://facebook.com\" target=\"_blank\">Facebook<\/a><\/div><\/div><\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-faq-strip",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "border_top_width": {"unit":"px","size":1},
+        "border_color": "#ece7d9",
+        "padding": {"unit":"px","top":"60","right":"48","bottom":"60","left":"48","isLinked":false}
+      },
+      "elements": [
+        {
+          "id": "tr-faq-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-faq-w",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"text-align:center\"><span class=\"tr-label\">Before you reach out<\/span><h2 style=\"font-size:24px;margin:10px 0\">Looking for course details instead?<\/h2><p style=\"color:var(--muted);font-size:15px;max-width:480px;margin:0 auto 24px\">Pricing, prerequisites, and what to bring are listed on each individual course page — might save you a step.<\/p><a class=\"tr-btn coyote\" href=\"/courses\">Browse Courses →<\/a><\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-contact-footer",
+      "elType": "section",
+      "settings": {
+        "border_top_width": {"unit":"px","size":1},
+        "border_color": "#ece7d9",
+        "padding": {"unit":"px","top":"50","right":"48","bottom":"30","left":"48","isLinked":false}
+      },
+      "elements": [
+        {
+          "id": "tr-contact-footer-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-contact-footer-w",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-footer\"><div>© 2026 The Tactical Rabbi. All rights reserved.<\/div><div><a href=\"https://youtube.com\">YouTube<\/a><a href=\"https://instagram.com\">Instagram<\/a><a href=\"https://facebook.com\">Facebook<\/a><\/div><\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {"hide_title": true}
+}

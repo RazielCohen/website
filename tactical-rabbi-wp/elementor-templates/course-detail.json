@@ -1,0 +1,202 @@
+{
+  "version": "0.4",
+  "title": "Tactical Rabbi — Course Detail (shared template)",
+  "type": "page",
+  "content": [
+    {
+      "id": "tr-cd-header",
+      "elType": "section",
+      "settings": {"padding": {"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false}},
+      "elements": [
+        {
+          "id": "tr-cd-header-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-cd-header-w",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-header\"><a class=\"tr-logo\" href=\"/\">THE TACTICAL RABBI<\/a><nav class=\"tr-nav\"><ul><li><a href=\"/about\">About<\/a><\/li><li><a href=\"/courses\" class=\"active\">Courses<\/a><\/li><li><a href=\"/merch\">Merch<\/a><\/li><li><a href=\"/contact\">Contact<\/a><\/li><\/ul><\/nav><a class=\"tr-btn\" href=\"/contact\">Book Training<\/a><\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-cd-breadcrumb",
+      "elType": "section",
+      "settings": {
+        "padding": {"unit":"px","top":"18","right":"48","bottom":"0","left":"48","isLinked":false}
+      },
+      "elements": [
+        {
+          "id": "tr-cd-breadcrumb-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-cd-breadcrumb-w",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-breadcrumb\"><a href=\"/courses\">Courses<\/a> \/ [tr_meta key=\"tr_category\"] — [post_title]<\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-cd-hero",
+      "elType": "section",
+      "settings": {
+        "padding": {"unit":"px","top":"30","right":"48","bottom":"60","left":"48","isLinked":false}
+      },
+      "elements": [
+        {
+          "id": "tr-cd-img-col",
+          "elType": "column",
+          "settings": {"_column_size":55},
+          "elements": [
+            {
+              "id": "tr-cd-img-w",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "/wp-content/uploads/course-placeholder.jpg"},
+                "image_size": "full",
+                "_css_classes": "tr-course-hero-img"
+              }
+            }
+          ]
+        },
+        {
+          "id": "tr-cd-info-col",
+          "elType": "column",
+          "settings": {"_column_size":45},
+          "elements": [
+            {
+              "id": "tr-cd-info-w",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-course-info\"><span class=\"tag-mini\">[tr_meta key=\"tr_category\"]<\/span><h1 style=\"font-size:36px;margin:8px 0 12px\">[post_title]<\/h1><p class=\"desc\" style=\"color:var(--muted);font-size:16px;line-height:1.65;margin-bottom:24px\">[post_content_short]<\/p><div class=\"tr-meta-grid\"><div class=\"tr-meta-box\"><div class=\"k\">Duration<\/div><div class=\"v\">[tr_meta key=\"tr_duration\"]<\/div><\/div><div class=\"tr-meta-box\"><div class=\"k\">Location<\/div><div class=\"v\">[tr_meta key=\"tr_location\"]<\/div><\/div><div class=\"tr-meta-box\"><div class=\"k\">Skill Level<\/div><div class=\"v\">[tr_meta key=\"tr_skill_level\"]<\/div><\/div><div class=\"tr-meta-box\"><div class=\"k\">Group Size<\/div><div class=\"v\">[tr_meta key=\"tr_group_size\"]<\/div><\/div><\/div><div class=\"tr-price-cta\"><div class=\"tr-price\">[tr_meta key=\"tr_price\"] <span>[tr_meta key=\"tr_price_note\"]<\/span><\/div><a class=\"tr-btn coyote\" href=\"#register\" onclick=\"document.getElementById('register').scrollIntoView({behavior:'smooth'});return false\">Register Below ↓<\/a><\/div><\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-cd-gear",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "border_top_width": {"unit":"px","size":1},
+        "border_color": "#ece7d9",
+        "padding": {"unit":"px","top":"50","right":"48","bottom":"60","left":"48","isLinked":false}
+      },
+      "elements": [
+        {
+          "id": "tr-cd-gear-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-cd-gear-head",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-gear-head\"><span class=\"tr-label\">Before you arrive<\/span><h2>What it covers &amp; what to bring<\/h2><\/div>"
+              }
+            },
+            {
+              "id": "tr-cd-gear-grid",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-gear-grid\"><div class=\"tr-gear-col\"><h4>● What It Covers<\/h4><div style=\"color:var(--muted);font-size:14px;line-height:1.7\">[tr_meta key=\"tr_covers\"]<\/div><\/div><div class=\"tr-gear-col required\"><h4>● What You Need<\/h4><div style=\"color:var(--muted);font-size:14px;line-height:1.7\">[tr_meta key=\"tr_bring\"]<\/div><\/div><\/div><div class=\"tr-gear-note\">While this training course is scheduled for up to 4 hours, the actual duration may vary depending on class size and participation. Smaller groups often allow us to move more efficiently through the material. The full curriculum is delivered regardless of course length.<\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-cd-registration",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "border_top_width": {"unit":"px","size":1},
+        "border_color": "#ece7d9",
+        "padding": {"unit":"px","top":"70","right":"48","bottom":"70","left":"48","isLinked":false},
+        "css_id": "register"
+      },
+      "elements": [
+        {
+          "id": "tr-cd-reg-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-cd-reg-head",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-reg-head\"><span class=\"tr-label\">Step 1<\/span><h2>Register for this course<\/h2><p style=\"color:var(--muted);font-size:15px;margin-top:10px\">Complete the form below to reserve your spot. Registration is finalized after the waiver is signed in Step 2.<\/p><\/div>"
+              }
+            },
+            {
+              "id": "tr-cd-airtable",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-reg-wrap\"><span style=\"display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--coyote);margin-bottom:10px\">↳ Paste your Airtable embed code below this line<\/span><h3 style=\"font-family:'Space Grotesk';font-weight:700;font-size:19px;margin-bottom:6px\">Course Registration Form<\/h3><p style=\"font-size:13px;color:var(--muted);margin-bottom:20px\">Replace this block with your Airtable embedded form. Go to your Airtable base → Share → Embed this view, then paste the &lt;iframe&gt; code here.<\/p><div style=\"background:#f0e8d8;border-radius:10px;padding:20px;font-size:13px;color:var(--muted);text-align:center\">[AIRTABLE EMBED GOES HERE — paste &lt;iframe&gt; code from Airtable Share menu]<\/div><\/div>"
+              }
+            },
+            {
+              "id": "tr-cd-waiver",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-waiver\" style=\"margin-top:28px\"><div style=\"display:inline-flex;align-items:center;gap:8px;background:var(--coyote);color:#fff;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:5px 12px;border-radius:20px;margin-bottom:16px\">Step 2<\/div><h3 style=\"font-family:'Space Grotesk';font-weight:700;font-size:19px;margin-bottom:10px\">Sign the liability waiver<\/h3><p style=\"color:var(--muted);font-size:14.5px;line-height:1.6;margin-bottom:18px\">This waiver is required before registration is finalized. Please read the full agreement below, check the acknowledgment box, then sign digitally. The signature, full name, timestamp, IP address, and waiver version are stored as a permanent record tied to this registration.<\/p><div class=\"tr-terms-box\" id=\"termsBox\"><div style=\"font-family:'Space Grotesk';font-weight:700;font-size:15px;text-align:center;margin-bottom:14px;line-height:1.4\">RELEASE, WAIVER, INDEMNIFICATION, HOLD HARMLESS,<br>ASSUMPTION OF RISK, AND PARTICIPATION AGREEMENT<\/div><p>This Release, Waiver, Indemnification, Hold Harmless, Assumption of Risk, and Participation Agreement (\"Agreement\") is entered into by and between the undersigned participant (\"Participant\") and The Tactical Rabbi LLC, its officers, directors, employees, agents, instructors, volunteers, sponsors, and assigns (collectively, \"Released Parties\").<\/p><h4 style=\"margin:16px 0 6px\">Indemnification<\/h4><p>Participant agrees to indemnify, defend, and hold harmless the Released Parties from and against any and all claims, actions, suits, procedures, costs, expenses, damages, and liabilities, including attorney's fees, arising out of or related to Participant's participation in any activity, training session, course, or event hosted or facilitated by The Tactical Rabbi LLC.<\/p><h4 style=\"margin:16px 0 6px\">Waiver and Release<\/h4><p>Participant hereby waives, releases, and forever discharges the Released Parties from any and all liability, claims, demands, actions, and causes of action whatsoever arising out of or related to any loss, damage, or injury, including death, that may be sustained by Participant or to any property belonging to Participant, whether caused by the negligence of the Released Parties or otherwise, while participating in such activity, or while in, on, or upon the premises where the activity is being conducted.<\/p><h4 style=\"margin:16px 0 6px\">Assumption of Risk<\/h4><p>Participant acknowledges that firearms training involves inherent risks, including but not limited to accidental discharge, ricochets, physical contact with firearms, and other hazards. Participant voluntarily and knowingly assumes all such risks, both known and unknown, even if arising from the negligence of the Released Parties, and assumes full responsibility for Participant's participation.<\/p><h4 style=\"margin:16px 0 6px\">Firearm Safety Acknowledgment<\/h4><p>Participant agrees to follow all firearm safety rules as directed by the instructor at all times, including: (1) Treat every firearm as if it is loaded; (2) Never point a firearm at anything you are not willing to destroy; (3) Keep your finger off the trigger until your sights are on target and you have made the decision to shoot; (4) Know your target and what is beyond it.<\/p><h4 style=\"margin:16px 0 6px\">Governing Law and Venue<\/h4><p>This Agreement shall be governed by and construed in accordance with the laws of the State of New Jersey. Any disputes arising hereunder shall be resolved in the courts of New Jersey.<\/p><h4 style=\"margin:16px 0 6px\">Electronic Signature<\/h4><p>Participant agrees that an electronic signature is as legally binding as a handwritten signature.<\/p><\/div><div id=\"scrollHint\" style=\"font-size:11.5px;color:var(--muted);text-align:center;margin-top:-12px;margin-bottom:16px\">↓ scroll to read the full agreement ↓<\/div><div style=\"display:flex;align-items:flex-start;gap:10px;font-size:13.5px;color:var(--charcoal);margin-bottom:12px\"><input type=\"checkbox\" id=\"ackCheck\" style=\"margin-top:3px;accent-color:var(--coyote)\"><label for=\"ackCheck\">I have read and agree to the terms of the waiver and release above.<\/label><\/div><div style=\"display:flex;align-items:flex-start;gap:10px;font-size:13.5px;color:var(--charcoal);margin-bottom:16px\"><input type=\"checkbox\" id=\"ageCheck\" style=\"margin-top:3px;accent-color:var(--coyote)\"><label for=\"ageCheck\">I confirm that I am 18 years of age or older, or have parental\/guardian consent.<\/label><\/div><div style=\"margin-bottom:16px\"><label style=\"font-size:13px;font-weight:600;color:var(--charcoal);display:block;margin-bottom:6px\">Full Legal Name<\/label><input type=\"text\" id=\"sigName\" placeholder=\"Type your full legal name\" style=\"width:100%;border:1px solid var(--line);border-radius:8px;padding:12px 14px;font-family:'Inter';font-size:14px;background:#fdfcf9\"><\/div><div style=\"margin-bottom:16px\"><label style=\"font-size:13px;font-weight:600;color:var(--charcoal);display:block;margin-bottom:8px\">Digital Signature<\/label><canvas id=\"sigCanvas\" class=\"tr-sig-pad\" style=\"cursor:crosshair\" width=\"700\" height=\"120\"><\/canvas><div style=\"display:flex;justify-content:space-between;align-items:center;margin-top:6px\"><span id=\"sigStatus\" style=\"font-size:12.5px;color:var(--muted)\">Draw your signature above<\/span><button onclick=\"clearSig()\" type=\"button\" style=\"font-size:12px;background:none;border:1px solid var(--line);border-radius:6px;padding:5px 12px;cursor:pointer\">Clear<\/button><\/div><\/div><div style=\"font-size:12px;color:var(--muted);background:#f4f5ef;border:1px solid var(--line);border-radius:8px;padding:12px;margin-bottom:16px\">On submission, the backend stores: signature image, typed full name, timestamp, IP address, and this waiver's version ID — tied permanently to this registration record.<\/div><\/div><div class=\"tr-submit-bar\"><span id=\"gateNote\" style=\"font-size:12.5px;color:var(--muted)\">Complete the waiver above to enable registration<\/span><button id=\"submitBtn\" class=\"tr-btn coyote\" disabled style=\"padding:14px 32px;opacity:0.5\">Complete Registration →<\/button><\/div><script>!function(){var canvas=document.getElementById('sigCanvas');if(!canvas)return;var ctx=canvas.getContext('2d');var drawing=false;var hasSig=false;function pos(e){var r=canvas.getBoundingClientRect();if(e.touches)return{x:e.touches[0].clientX-r.left,y:e.touches[0].clientY-r.top};return{x:e.clientX-r.left,y:e.clientY-r.top};}canvas.addEventListener('mousedown',function(e){drawing=true;ctx.beginPath();var p=pos(e);ctx.moveTo(p.x,p.y);});canvas.addEventListener('mousemove',function(e){if(!drawing)return;var p=pos(e);ctx.lineTo(p.x,p.y);ctx.strokeStyle='#1d1d16';ctx.lineWidth=2;ctx.lineCap='round';ctx.stroke();hasSig=true;document.getElementById('sigStatus').textContent='Signature captured';document.getElementById('sigStatus').style.color='var(--olive)';checkReady();});canvas.addEventListener('mouseup',function(){drawing=false;});canvas.addEventListener('touchstart',function(e){e.preventDefault();drawing=true;ctx.beginPath();var p=pos(e);ctx.moveTo(p.x,p.y);},{passive:false});canvas.addEventListener('touchmove',function(e){e.preventDefault();if(!drawing)return;var p=pos(e);ctx.lineTo(p.x,p.y);ctx.strokeStyle='#1d1d16';ctx.lineWidth=2;ctx.lineCap='round';ctx.stroke();hasSig=true;checkReady();},{passive:false});canvas.addEventListener('touchend',function(){drawing=false;});window.clearSig=function(){ctx.clearRect(0,0,canvas.width,canvas.height);hasSig=false;document.getElementById('sigStatus').textContent='Draw your signature above';document.getElementById('sigStatus').style.color='var(--muted)';checkReady();};function checkReady(){var ack=document.getElementById('ackCheck').checked;var age=document.getElementById('ageCheck').checked;var name=document.getElementById('sigName').value.trim().length>2;var btn=document.getElementById('submitBtn');var note=document.getElementById('gateNote');if(ack&&age&&name&&hasSig){btn.disabled=false;btn.style.opacity='1';note.style.display='none';}else{btn.disabled=true;btn.style.opacity='0.5';note.style.display='';}}document.getElementById('ackCheck').addEventListener('change',checkReady);document.getElementById('ageCheck').addEventListener('change',checkReady);document.getElementById('sigName').addEventListener('input',checkReady);}();<\/script>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-cd-footer",
+      "elType": "section",
+      "settings": {
+        "border_top_width": {"unit":"px","size":1},
+        "border_color": "#ece7d9",
+        "padding": {"unit":"px","top":"50","right":"48","bottom":"30","left":"48","isLinked":false}
+      },
+      "elements": [
+        {
+          "id": "tr-cd-footer-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-cd-footer-w",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-footer\"><div>© 2026 The Tactical Rabbi. All rights reserved.<\/div><div><a href=\"https://youtube.com\">YouTube<\/a><a href=\"https://instagram.com\">Instagram<\/a><a href=\"https://facebook.com\">Facebook<\/a><\/div><\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {"hide_title": true}
+}

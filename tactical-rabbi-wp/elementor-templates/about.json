@@ -1,0 +1,251 @@
+{
+  "version": "0.4",
+  "title": "Tactical Rabbi — About",
+  "type": "page",
+  "content": [
+    {
+      "id": "tr-about-header",
+      "elType": "section",
+      "settings": {
+        "padding": {"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false}
+      },
+      "elements": [
+        {
+          "id": "tr-about-header-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-about-header-widget",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-header\"><a class=\"tr-logo\" href=\"/\">THE TACTICAL RABBI<\/a><nav class=\"tr-nav\"><ul><li><a href=\"/about\" class=\"active\">About<\/a><\/li><li><a href=\"/courses\">Courses<\/a><\/li><li><a href=\"/merch\">Merch<\/a><\/li><li><a href=\"/contact\">Contact<\/a><\/li><\/ul><\/nav><a class=\"tr-btn\" href=\"/contact\">Book Training<\/a><\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-about-hero-section",
+      "elType": "section",
+      "settings": {
+        "border_bottom_width": {"unit":"px","size":1},
+        "border_color": "#ece7d9",
+        "padding": {"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":false}
+      },
+      "elements": [
+        {
+          "id": "tr-about-hero-img",
+          "elType": "column",
+          "settings": {"_column_size":45},
+          "elements": [
+            {
+              "id": "tr-about-hero-img-w",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "/wp-content/uploads/rabbi-hero.jpg"},
+                "image_size": "full"
+              }
+            }
+          ]
+        },
+        {
+          "id": "tr-about-hero-copy",
+          "elType": "column",
+          "settings": {"_column_size":55},
+          "elements": [
+            {
+              "id": "tr-about-hero-copy-w",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-about-hero\" style=\"display:block\"><div class=\"copy-side\"><span class=\"tr-label\">Who we are<\/span><h1>The Rabbi Who <span class=\"accent\">Trains.<\/span><\/h1><p class=\"lede\">Former IDF combat soldier. Ordained rabbi. NRA-certified instructor. The Tactical Rabbi is where faith, discipline, and real-world preparedness meet.<\/p><div class=\"actions\"><a class=\"tr-btn coyote\" href=\"/courses\">Browse Courses<\/a><a class=\"tr-btn ghost\" href=\"/contact\">Book a Session<\/a><\/div><\/div><\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-bio-section",
+      "elType": "section",
+      "settings": {
+        "padding": {"unit":"px","top":"70","right":"48","bottom":"70","left":"48","isLinked":false}
+      },
+      "elements": [
+        {
+          "id": "tr-bio-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-bio-head",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-section-head\" style=\"display:block;margin-bottom:36px\"><span class=\"tr-label\">The story<\/span><h2>From the pulpit to the range<\/h2><\/div>"
+              }
+            },
+            {
+              "id": "tr-bio-body",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-bio-block\"><p>Rabbi Raziel Cohen served in the Israel Defense Forces, where he received advanced tactical and firearms training. After completing his service and ordination, he recognized a critical gap in the American Jewish community — a lack of practical self-defense education grounded in both skill and values.<\/p><p>He founded The Tactical Rabbi to bridge that gap. His courses combine <strong>Israeli combat methodology<\/strong> with <strong>NRA-certified instruction<\/strong> and a deep understanding of the responsibilities that come with being armed.<\/p><p>With over 30 million views across social media and coverage in outlets ranging from Fox News to The Jerusalem Post, Rabbi Cohen has become one of the most recognized voices in the intersection of faith and firearms training in America.<\/p><\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-certs-section",
+      "elType": "section",
+      "settings": {
+        "padding": {"unit":"px","top":"70","right":"48","bottom":"70","left":"48","isLinked":false},
+        "background_background": "classic",
+        "background_color": "#fdfcf9"
+      },
+      "elements": [
+        {
+          "id": "tr-certs-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-certs-head",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"margin-bottom:36px\"><span class=\"tr-label\">Credentials<\/span><h2>Credentialed, not just confident<\/h2><\/div>"
+              }
+            },
+            {
+              "id": "tr-certs-grid",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-cert-grid\"><div class=\"tr-cert-card\"><h4>NRA Certified<\/h4><p>Pistol Instructor<\/p><\/div><div class=\"tr-cert-card\"><h4>IDF Combat<\/h4><p>Infantry Training<\/p><\/div><div class=\"tr-cert-card\"><h4>Active Shooter<\/h4><p>Response Certified<\/p><\/div><div class=\"tr-cert-card\"><h4>Krav Maga<\/h4><p>Practitioner<\/p><\/div><div class=\"tr-cert-card\"><h4>Ordination<\/h4><p>Rabbinical Studies<\/p><\/div><\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-lineage-section",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "border_top_width": {"unit":"px","size":1},
+        "border_bottom_width": {"unit":"px","size":1},
+        "border_color": "#ece7d9",
+        "padding": {"unit":"px","top":"70","right":"48","bottom":"70","left":"48","isLinked":false}
+      },
+      "elements": [
+        {
+          "id": "tr-lineage-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-lineage-head",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style=\"margin-bottom:36px\"><span class=\"tr-label\">Training lineage<\/span><h2>Where this methodology comes from<\/h2><\/div>"
+              }
+            },
+            {
+              "id": "tr-lineage-grid",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-lineage-grid\"><div class=\"tr-lineage-card\"><span class=\"tr-label\">IDF<\/span><h4>Israeli Combat Doctrine<\/h4><\/div><div class=\"tr-lineage-card\"><span class=\"tr-label\">NRA<\/span><h4>Certified Instruction Standards<\/h4><\/div><div class=\"tr-lineage-card\"><span class=\"tr-label\">Krav Maga<\/span><h4>Practical Self-Defense<\/h4><\/div><div class=\"tr-lineage-card\"><span class=\"tr-label\">USCCA<\/span><h4>Concealed Carry Education<\/h4><\/div><\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-about-press",
+      "elType": "section",
+      "settings": {
+        "padding": {"unit":"px","top":"36","right":"0","bottom":"44","left":"0","isLinked":false}
+      },
+      "elements": [
+        {
+          "id": "tr-about-press-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-about-press-widget",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<span class=\"tr-label\" style=\"display:block;text-align:center;margin-bottom:8px\">As seen in<\/span><p style=\"display:block;text-align:center;font-size:12.5px;color:var(--muted);margin-bottom:18px\">Major outlets<\/p><div class=\"tr-press-marquee\"><div class=\"tr-press-track\"><a class=\"tr-press-chip\" href=\"#\"><span>Fox News<\/span><\/a><a class=\"tr-press-chip\" href=\"#\"><span>The Jerusalem Post<\/span><\/a><a class=\"tr-press-chip\" href=\"#\"><span>Newsweek<\/span><\/a><a class=\"tr-press-chip\" href=\"#\"><span>The Daily Wire<\/span><\/a><a class=\"tr-press-chip\" href=\"#\"><span>Breitbart<\/span><\/a><a class=\"tr-press-chip\" href=\"#\"><span>NY Post<\/span><\/a><a class=\"tr-press-chip\" href=\"#\"><span>Fox News<\/span><\/a><a class=\"tr-press-chip\" href=\"#\"><span>The Jerusalem Post<\/span><\/a><a class=\"tr-press-chip\" href=\"#\"><span>Newsweek<\/span><\/a><a class=\"tr-press-chip\" href=\"#\"><span>The Daily Wire<\/span><\/a><\/div><\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-about-cta",
+      "elType": "section",
+      "settings": {
+        "padding": {"unit":"px","top":"0","right":"48","bottom":"70","left":"48","isLinked":false}
+      },
+      "elements": [
+        {
+          "id": "tr-about-cta-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-about-cta-widget",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-dark-banner\"><div><span class=\"tr-label\" style=\"color:#d6d2c2\">Get started<\/span><h2>Ready to train with The Tactical Rabbi?<\/h2><p>Find the course that's right for your level and book your spot today.<\/p><a class=\"tr-btn coyote\" href=\"/courses\">Browse Courses<\/a><\/div><\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tr-about-footer",
+      "elType": "section",
+      "settings": {
+        "border_top_width": {"unit":"px","size":1},
+        "border_color": "#ece7d9",
+        "padding": {"unit":"px","top":"50","right":"48","bottom":"30","left":"48","isLinked":false}
+      },
+      "elements": [
+        {
+          "id": "tr-about-footer-col",
+          "elType": "column",
+          "settings": {"_column_size":100},
+          "elements": [
+            {
+              "id": "tr-about-footer-widget",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"tr-footer\"><div>© 2026 The Tactical Rabbi. All rights reserved.<\/div><div><a href=\"https://youtube.com\">YouTube<\/a><a href=\"https://instagram.com\">Instagram<\/a><a href=\"https://facebook.com\">Facebook<\/a><\/div><\/div>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {"hide_title": true}
+}
