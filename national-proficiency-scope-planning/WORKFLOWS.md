@@ -10,17 +10,20 @@ This file describes known/confirmed workflows in plain language — who does wha
 ### CAP-001 — App Launch → Branded Animation
 Any user, before logging in, opens the app on iOS or Android and sees a "National Proficiency" branded launch animation. *(Relates to S-001.)*
 
-### CAP-002 — Login
-A registered member reaches a login screen after the launch animation and signs in with a username and password. *(Relates to S-002; account provisioning still open — Q-005.)*
+### CAP-002 — Account Creation / Login
+The whole app requires an account — there is no guest/anonymous access. New users create an account (and, per S-007, will need to select a membership tier); returning users log in. *(Relates to S-002, S-007; account provisioning still open — Q-005.)*
 
 ### CAP-003 — Individual Profile Page
-Immediately after login, the member lands on their own profile page: photo on top, current rank, medals/achievements earned, and guidance on their next accomplishment. *(Relates to S-003; rank/medal system still open — Q-002, Q-003.)*
+Immediately after login, the member lands on their own profile page: photo on top, current rank, medals/achievements earned, and guidance on their next accomplishment. Available to all tiers. *(Relates to S-003; rank/medal system still open — Q-002, Q-003.)*
 
 ### CAP-004 — Home Tab
-From the tab bar, a logged-in member can open Home to see updates, monthly challenges, and a community aspect. *(Relates to S-004; content sources and challenge mechanics still open — Q-004, Q-006.)*
+From the tab bar, a logged-in member can open Home to see updates, monthly challenges, and a community aspect. Available to all tiers, though challenges may be gated to Mid/Premium — see Q-011. *(Relates to S-004.)*
 
-### CAP-005 — Messaging / Community Communications
-From the tab bar, a second tab next to Home lets a logged-in member send/receive messages or updates with other members. *(Relates to S-005; messaging model still open — Q-004.)*
+### CAP-005 — Chat / Messaging Tab
+A tab next to Home lets members send/receive messages or updates with other members. Confirmed for Premium; excluded for Free; Mid tier not yet defined. *(Relates to S-005; messaging model still open — Q-004.)*
+
+### CAP-006 — Media Tab
+A tab after Home and Chat hosts medical, fitness, and firearms/building training videos. **Premium tier only** — Free and Mid (TBD) are excluded. *(Relates to S-006; video categories and hosting approach still open — Q-008; content liability risk — R-002.)*
 
 ## Proposed / Draft Workflows
 _None yet beyond the above._

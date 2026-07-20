@@ -2,6 +2,16 @@
 
 All notable changes to the scope worksheet and its companion Markdown files are logged here, most recent first.
 
+## 2026-07-20 — Media Tab and Membership Tiers
+- Logged the client's addition: a Premium-only Media tab (medical, fitness, and firearms & building training videos) placed after Home and Chat; the whole app requires an account (no guest access); a three-tier membership structure (Free / Mid / Premium) gates feature access, with Mid still undefined by the client.
+- Added 2 scope items (`S-006` Media tab, `S-007` Membership tier system) and updated `S-002`, `S-004`, `S-005` "What Remains" to reflect account-required access and tier gating.
+- Added 6 open questions (`Q-008`–`Q-013`): exact Media video categories, Mid-tier feature list, tier pricing/billing, Home-tab tier-gating overlap with challenges, raffle mechanics, and meaning of "additional guidance."
+- Added 2 risks (`R-001` raffle sweepstakes/lottery law exposure, `R-002` firearms/medical content liability) — both proposal-impacting, flagged for legal/compliance review.
+- Added `CAP-006` (Media tab) to the System Capability Map; updated `CAP-002`, `CAP-004`, `CAP-005` for account-required access and tier gating.
+- Added the raw client message to Raw Notes.
+- Updated `PROJECT_OVERVIEW.md`, `REQUIREMENTS.md`, `OPEN_QUESTIONS.md`, `WORKFLOWS.md`, `DECISIONS.md`, `PROPOSAL_READINESS.md` to match.
+- Proposal readiness unchanged: **NOT READY** — now 6 P0 items open, plus 1 P0 legal/compliance risk.
+
 ## 2026-07-20 — Initial App Concept
 - Logged the client's first description of the app: branded launch animation → username/password login → individual profile page (photo, current rank, medals, next-accomplishment guidance) → Home tab (updates, monthly challenges, community aspect) → second tab, next to Home, for messaging/community communication.
 - Added 5 scope items (`S-001`–`S-005`) to the Scope Items tab, one per workflow, all with "What Remains" detailing missing rules.
