@@ -30,6 +30,9 @@ This file is a running log of **confirmed decisions** — things that are no lon
 | 2026-07-20 | Every user must sign a liability waiver: National Proficiency is solely a records-keeping company, takes no responsibility for shooting/medical/fitness qualification outcomes, and all liability — including compliance with local, state, and federal law — rests with the individual. | S-016 | Client description. Business-model clarification also resolves most of Q-001. |
 | 2026-07-20 | A zip-code-based map lets users find nearby approved instructors. | S-017 | Client description. |
 | 2026-07-20 | Users can earn a digital badge for a specific Media video by passing an online quiz. | S-020 | Client description. |
+| 2026-07-20 | The Home tab includes a leaderboard for Fitness and Firearms, ranking by badges earned, fastest mile, longest distance, and similar metrics. | S-021 | Client description. Supersedes the earlier, more tentative F-001. |
+| 2026-07-20 | Users can connect a Garmin, Apple Watch, or Strava account (their choice) to sync personal activity data into the app. | S-022 | Client description. |
+| 2026-07-20 | A full qualifications/training standards document exists and will be provided by the client at a later date. | Q-002, Q-003, S-011 | Client confirmation; document not yet received. |
 
 ---
 **How this stays in sync:** whenever a scope item's status changes to `Confirmed`, or an open decision is settled, a row is added here in the same pass, dated and attributed to its source.

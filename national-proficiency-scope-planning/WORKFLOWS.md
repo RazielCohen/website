@@ -43,8 +43,16 @@ All users (tier availability unconfirmed) search by zip code to find nearby appr
 ### CAP-012 — Video-Completion Badge
 Premium-tier members (Media tab access) watch a specific video, pass a quiz, and earn a badge on their profile — distinct from qualification-based medals. *(Relates to S-020.)*
 
+### CAP-013 — Home Tab Leaderboard
+Logged-in members (tier availability TBD) view a Fitness/Firearms leaderboard on Home — ranked by badges earned, fastest mile, longest distance, and similar metrics. *(Relates to S-021, supersedes F-001; metric list and Medical inclusion still open.)*
+
+### CAP-014 — Wearable/Fitness Platform Connection
+Logged-in members can connect a Garmin, Apple Watch, or Strava account to sync personal activity data, feeding the leaderboard and potentially future virtual qualifications. *(Relates to S-022; data points and consent handling still open.)*
+
 ## Proposed / Draft Workflows
-_None yet beyond the above, aside from F-001 (leaderboard-style bonus badges) — logged as a future idea, not yet confirmed for v1._
+
+### F-002 — Virtual Qualifications via Wearable Data
+Client's own framing: a future possibility where certain qualifications could be completed remotely using wearable-sourced data tied to specific events, instead of in-person instructor administration. Explicitly described as a later-phase idea, not current scope. See risk R-004 for the fraud/verification concern this would raise.
 
 ---
 **How this stays in sync:** any new workflow, user journey, or capability discussed is added here **and** as a row in the System Capability Map tab at the same time.

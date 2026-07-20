@@ -5,14 +5,15 @@ _This file is regenerated after every meaningful change — see `AI_INSTRUCTIONS
 
 ## Status: NOT READY
 
-The business model, role hierarchy, and legal/liability framing are now clear. What remains is mostly *content* (the actual qualification standards, rank/medal list) and a handful of process/legal confirmations — not open-ended concept questions.
+The concept, business model, role hierarchy, and now the leaderboard/wearable features are all captured. Most remaining gaps are now specific, named deliverables or confirmations rather than open-ended design questions — the biggest one (the qualifications/training standards document) is already committed by the client, just not yet delivered.
 
-## P0 Blockers (must be answered before a proposal can be written)
-- **Q-002 / Q-003** — Actual rank/tier list and medal/achievement list (mechanism confirmed).
+## P0 Blockers (must be answered/received before a proposal can be written)
+- **Q-002 / Q-003 / S-011** — The qualifications/training standards document (confirmed to exist, no delivery date yet).
 - **Q-005** — Account provisioning model, password-reset, and MFA requirements.
 - **Q-009** — Full Mid-tier feature list.
 - **Q-010** — Pricing per tier and payment/billing platform.
 - **Q-015 / Q-023** — Instructor vetting criteria and process.
+- **Q-019** — Whether instructor registration/vetting is a separate website or in-app (client's two statements haven't been reconciled).
 - **Q-021** — Downgrade-request approval authority and process.
 - **Q-022** — Whether the new-user serial number/code replaces or supplements login credentials.
 - **R-001** — Legal/compliance review of the Premium-tier monthly raffle.
@@ -20,19 +21,16 @@ The business model, role hierarchy, and legal/liability framing are now clear. W
 
 ## What's Confirmed
 - App is native, iOS + Android, account-required, unrelated to Tactical Rabbi.
-- **Business model:** National Proficiency is a records-keeping company for proficiency qualifications across three pillars (Medical, Firearms, Fitness); it takes no responsibility for the underlying training outcomes.
-- User-side: launch → account/login → profile → Home / Chat / Media, tier-gated (Free / Mid TBD / Premium).
-- Instructor side: registration + vetting (website), specialty selection, instructor waiver, "+" pre-registration, Google Calendar notice, qualification standards access, shot-timer/manual grading, strict pass/fail, mandatory audit trail.
-- **Role hierarchy:** two cofounders (full record access/edit) > Approved Instructors (can upgrade a tier on Pass, can only *request* a downgrade) > students (tier-gated access).
-- New accounts get a unique serial number/code; every user signs a liability waiver.
-- Zip-code-based instructor locator map.
-- Media tab awards quiz-verified video-completion badges.
+- Business model: records-keeping company across three pillars (Medical, Firearms, Fitness), no liability for outcomes.
+- Full user-side flow, tier structure, instructor workflow, role hierarchy, and both waivers (direction, not legal text).
+- **New:** Home tab leaderboard for Fitness and Firearms (badges, fastest mile, longest distance); optional Garmin/Apple Watch/Strava integration feeding it.
+- **New:** a complete qualifications/training standards document exists and will be provided — the content gap has a committed source.
 
 ## What's Still Open
 - All P0 items above.
-- P1: Media video categories (`Q-008`), Home-vs-Messaging overlap (`Q-004`, `Q-011`), monthly-challenge mechanics (`Q-006`), raffle mechanics (`Q-012`), "additional guidance" meaning (`Q-013`), pre-registration approval workflow (`Q-014`), Google Calendar and Shooter's Global specifics (`Q-016`, `Q-017`), whether the instructor site is a separate build (`Q-019`), Media content liability and qualification record-keeping enforceability review (`R-002`, `R-003`).
+- P1: Media video categories (`Q-008`), Home tab's three potentially overlapping social features — community aspect, messaging, and now the leaderboard (`Q-004`, `Q-011`, `S-021`), monthly-challenge mechanics (`Q-006`), raffle mechanics (`Q-012`), "additional guidance" meaning (`Q-013`), pre-registration approval workflow (`Q-014`), Google Calendar and Shooter's Global specifics (`Q-016`, `Q-017`), wearable data points (`S-022`), Media content liability and qualification record-keeping enforceability review (`R-002`, `R-003`).
 - P2: specific target market/segment (`Q-001`), full navigation structure (`Q-007`), retest policy (`Q-018`), multi-category instructor certification (`Q-020`), locator map search scope (`Q-024`).
-- F-001 (leaderboard badges) needs a scope/timing decision before any design work — client described it tentatively.
+- Future phase: F-002 (virtual qualifications via wearable data) is explicitly not current scope, but its fraud/verification risk (R-004) is worth keeping on record.
 
 ## Recommendation
-Do not draft a proposal yet, but the path to one is now much clearer. Two parallel tracks: (1) get the client to provide the actual qualification standards/course-of-fire documents (the core content gap), and (2) get legal counsel to draft the two waivers and review R-001/R-002/R-003 — these gate both the build and any liability language in the proposal itself.
+Do not draft a proposal yet, but the remaining work is now concrete: (1) receive and review the qualifications/training standards document — this alone resolves the largest scope unknown; (2) get legal counsel to draft the two waivers and review R-001/R-002/R-003; (3) get a handful of process confirmations (Q-005, Q-009, Q-010, Q-015, Q-019, Q-021, Q-022) that are mostly quick client decisions rather than open design work.

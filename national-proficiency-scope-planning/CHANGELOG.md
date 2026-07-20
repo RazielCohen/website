@@ -2,6 +2,19 @@
 
 All notable changes to the scope worksheet and its companion Markdown files are logged here, most recent first.
 
+## 2026-07-20 — Leaderboard, Wearable Integration, Standards Document Confirmed
+- Logged the client's clarification that instructor vetting/approval could be done in-app (not yet reconciled with the earlier "register on the website" statement — updated `Q-019` and `S-015` to flag the open tension rather than assume either way).
+- Added `S-021` (Home tab leaderboard for Fitness and Firearms — badges earned, fastest mile, longest distance) with concrete detail, **superseding** `F-001` (the earlier, more tentative leaderboard idea). Marked `F-001`'s Current Status as `Removed` with a note pointing to `S-021`, preserving the audit trail instead of silently overwriting it.
+- Added `S-022` (Garmin/Apple Watch/Strava wearable integration) feeding the leaderboard.
+- Added `F-002` (future idea: virtual/remote qualifications using wearable data, per the client's own "later" framing) and `R-004` (new risk: potential falsification of wearable-sourced qualification data — anti-fraud safeguards needed before this is ever built).
+- Added `CAP-013` and `CAP-014` to the System Capability Map.
+- **Major update:** client confirmed a full qualifications/training standards document exists and will be provided later. Updated `Q-002`, `Q-003`, and `S-011` to reflect that the biggest remaining content gap now has a committed source (just not yet a delivery date) — status changed to "Waiting on Client" rather than an open-ended unknown.
+- Updated `S-004` to cross-reference the new leaderboard's overlap with Home's existing "community aspect" and monthly challenges.
+- Added the raw client message to Raw Notes.
+- Logged 3 new confirmed decisions in `DECISIONS.md`.
+- Updated `PROJECT_OVERVIEW.md`, `REQUIREMENTS.md`, `OPEN_QUESTIONS.md`, `WORKFLOWS.md`, `PROPOSAL_READINESS.md` to match.
+- Proposal readiness unchanged: **NOT READY**, but the path is clearer — most remaining gaps are now specific deliverables/confirmations (a document, a few process decisions) rather than open-ended design questions.
+
 ## 2026-07-20 — Role Hierarchy, Vetting, Waivers, Locator Map, Media Badges
 - Logged the client's description of: the two-cofounder Owner role (full record access/edit); instructor registration and vetting via a website with specialty selection (Firearms/Fitness/Medical); a zip-code-based instructor locator map; the instructor tier-upgrade-yes/downgrade-request-only rule; new-account creation issuing a unique serial number/code; two required waivers (instructor standards waiver, and a universal liability waiver establishing National Proficiency as a records-keeping-only company with no responsibility for outcomes); and Media-tab video-completion badges verified by an online quiz.
 - Added 7 scope items (`S-014`–`S-020`), 1 future idea (`F-001`, leaderboard-style bonus badges — logged tentatively per the client's own phrasing), and 6 open questions (`Q-019`–`Q-024`).

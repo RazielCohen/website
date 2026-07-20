@@ -47,13 +47,19 @@ This file tracks confirmed and proposed **feature / scope requirements** in plai
 ### S-020 — Media Video-Completion Badges (Quiz-Verified)
 **P1 · Needs Clarification · Client portal (Media) / Database / records.** Users earn a digital badge for a specific video by passing an online quiz. **Remaining:** quiz content/format, pass threshold, retake policy.
 
+### S-021 — Home Tab Leaderboard (Fitness & Firearms)
+**P1 · Needs Clarification · Client portal / Reporting.** Ranks users by badges earned, fastest mile, longest distance, and similar metrics. **Remaining:** whether Medical is intentionally excluded, full metric list, data source (S-022), privacy/opt-out. Supersedes F-001.
+
+### S-022 — Wearable/Fitness Platform Integration (Garmin, Apple Watch, Strava)
+**P1 · Needs Clarification · External integration.** Users connect a platform of choice to sync personal activity data, feeding the leaderboard. **Remaining:** data points per platform, OAuth, consent/privacy, no-connection fallback.
+
 ## Future Ideas
 
-### F-001 — Leaderboard-Style Bonus Badges
-**P3 · Future Phase · Client portal (Media) / Reporting.** Beyond regular qualification medals, additional badges to rank against peers for camaraderie. Described tentatively by the client ("could be") — needs confirmation of v1 vs. future-phase scope before any design work.
+### F-002 — Virtual Qualifications via Wearable Data
+**P3 · Future Phase · Admin dashboard / External integration.** Client's own framing: "could also be used later" to complete certain qualifications remotely using wearable data tied to specific events. Not proposal-blocking now. See risk R-004 (anti-fraud/verification).
 
 ## Removed / Deferred Requirements
-_None yet._
+- **F-001** — Leaderboard-style bonus badges (superseded by S-021 once the client gave concrete details).
 
 ---
 **How this stays in sync:** whenever a scope item (`S-###`) is added, confirmed, changed, or removed in the spreadsheet, this file is updated in the same pass. See `AI_INSTRUCTIONS.md` for the full sync rule.
