@@ -67,10 +67,16 @@ Any logged-in user can enable/disable daily reminders per pillar — Fitness, Fi
 ### CAP-020 — Profile Photo Privacy Toggle
 Any logged-in user can opt to hide their profile photo from other users, while name and unique code remain visible. *(Relates to S-030; client's own phrasing was tentative — confirm scope via Q-033, and affected surfaces via Q-034.)*
 
+### CAP-021 — Minor/Dependent Account Creation ⚠ DO NOT BUILD YET
+An adult account can add a linked minor (under-18) account, which gets its own individual profile. **Blocked pending legal review (R-006)** — the highest-risk item logged for this project, given minors + firearms/medical content + explicitly reduced vetting. *(Relates to S-031, F-003.)*
+
 ## Proposed / Draft Workflows
 
 ### F-002 — Virtual Qualifications via Wearable Data
 Client's own framing: a future possibility where certain qualifications could be completed remotely using wearable-sourced data tied to specific events, instead of in-person instructor administration. Explicitly described as a later-phase idea, not current scope. See risk R-004 for the fraud/verification concern this would raise.
+
+### F-003 — Full Minor Skill-Development Program ⚠
+Client's own framing — "in the future" — a separate program for children under 18 with their own growth path, deliberately less strictly vetted than the adult program, oversight left to parents. Explicitly not current scope, but flagged as the project's highest-priority legal/child-safety risk (R-006) given the firearms/medical context. Legal review required before any design work.
 
 ---
 **How this stays in sync:** any new workflow, user journey, or capability discussed is added here **and** as a row in the System Capability Map tab at the same time.

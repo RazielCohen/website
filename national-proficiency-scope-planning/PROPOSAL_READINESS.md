@@ -3,6 +3,10 @@
 _Last updated: 2026-07-20_
 _This file is regenerated after every meaningful change — see `AI_INSTRUCTIONS.md`._
 
+## ⚠ Highest-Priority Flag: Do Not Scope or Price the Minor/Children's Program Yet
+
+The client wants a future program letting adults add linked minor (under-18) accounts, with less strict vetting than the adult program. Given National Proficiency's Firearms and Medical pillars, this carries **the single highest legal/child-safety risk logged for this project (R-006)**. Recommend excluding `S-031`/`F-003` from any near-term proposal, pricing, or timeline until the client has legal counsel review: pillar eligibility for minors (Q-036), the actual permissible vetting standard (Q-037 — likely stricter than described, not lighter), and data/consent requirements (Q-038).
+
 ## Status: NOT READY
 
 The concept, business model, role hierarchy, and now the leaderboard/wearable features are all captured. Most remaining gaps are now specific, named deliverables or confirmations rather than open-ended design questions — the biggest one (the qualifications/training standards document) is already committed by the client, just not yet delivered.
@@ -28,7 +32,8 @@ The concept, business model, role hierarchy, and now the leaderboard/wearable fe
 - **New:** a complete qualifications/training standards document exists and will be provided — the content gap has a committed source.
 - **New:** registration includes third-party ID verification (age 18+, firearm eligibility per the client) without storing raw ID documents; a banned identity can be recognized to block re-registration.
 - **Corrected:** qualification registration is student-initiated (not instructor-initiated); the app auto-restricts to the next eligible tier and recommends nearby instructors. Instructor access to standards is scoped per active registration only. Medical/Fitness standards are public; Firearms exact drills are confidential. Profile includes a Pokémon-style progression visual.
-- **New (not blocking):** customizable habit-reminder notifications per pillar; a tentatively-proposed profile-photo privacy toggle (not yet confirmed as committed scope — Q-033).
+- **New (not blocking the rest of the proposal):** customizable habit-reminder notifications per pillar; a tentatively-proposed profile-photo privacy toggle (not yet confirmed as committed scope — Q-033).
+- **New (excluded from proposal until legal review):** minor/dependent account linkage and a future children's program (R-006).
 
 ## What's Still Open
 - All P0 items above.

@@ -40,6 +40,7 @@ This file is a running log of **confirmed decisions** — things that are no lon
 | 2026-07-20 | Medical and Fitness qualification standards are fully public; Firearms exact drills are confidential, but each tier publicly shows the general skills needed to prepare. | S-011 | Client description. |
 | 2026-07-20 | The profile page will include a Pokémon-style progression visual: earned tiers in full color, in-progress tier grayed out, future tiers blacked-out/locked as a preview. | S-028 | Client description. |
 | 2026-07-20 | The app will include customizable daily habit-reminder notifications per pillar (Fitness, Firearms, Medical), similar to Garmin. | S-029 | Client description. |
+| 2026-07-20 | Adult accounts will have the option to add a linked minor (under-18) account, each with its own individual profile/program. | S-031 | Client description. **Not yet cleared for build — see R-006; requires legal review given the firearms/medical context and the client's own description of reduced vetting for this program.** |
 
 ---
 **How this stays in sync:** whenever a scope item's status changes to `Confirmed`, or an open decision is settled, a row is added here in the same pass, dated and attributed to its source.

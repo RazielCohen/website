@@ -5,6 +5,16 @@ _Companion file: `National_Proficiency_Scope_Planning_Worksheet.xlsx` (Scope Ite
 
 This file tracks open questions and risks in plain language. It mirrors the `Q-###` and `R-###` rows in the Scope Items tab.
 
+## ⚠ Highest-Priority Item: Minor Accounts / Future Children's Program
+
+Client wants adults to be able to add a linked minor (under-18) account, tied to a described future program for children with their own growth path — **deliberately less strictly vetted than the adult program**. Given National Proficiency's Firearms and Medical pillars, this is the **single highest-priority risk logged for this project (R-006)**. Do not scope or build any part of this (`S-031`, `F-003`) until legal counsel has reviewed:
+
+- **Q-036** — Will the minor program include Firearms training, or is it Medical/Fitness only? Materially changes the legal risk.
+- **Q-037** — What does "less strict vetting" mean concretely? Many jurisdictions require *more* background-check rigor for adults working with children, not less.
+- **Q-038** — What data is collected on a minor, and what parental-consent mechanism applies (COPPA and similar laws)?
+- **Q-035** — Is the "add a minor" entry point itself near-term scope, or does it move to the future phase with the rest of the program?
+- **Q-039** — Does a minor get independent login credentials, or is their account managed entirely through the parent's?
+
 ## Needs Answers Before a Proposal Can Be Written (P0)
 
 - **Q-002 / Q-003** — What is the actual rank/tier list and medal/achievement list? Mechanism confirmed; client has confirmed a full qualifications/training standards document exists and will be provided later — stays open until received and reviewed.
@@ -57,6 +67,7 @@ This file tracks open questions and risks in plain language. It mirrors the `Q-#
 - **R-003 (P1, partially mitigated)** — Qualification record-keeping compliance, partially addressed by the "records-keeping only" model and waiver; enforceability still needs legal review.
 - **R-004 (P2)** — Virtual/remote qualifications (F-002) sourced from wearable data could be vulnerable to falsification (GPS spoofing, device-sharing) since a qualification is an official pass/fail record. Lower urgency since F-002 itself is future-phase.
 - **R-005 (P0)** — Standard ID-verification vendors (e.g. ID.me) typically confirm identity and age, **not** firearm-purchase eligibility, which usually requires a separate NICS-style background check. Treating an identity-verification pass as confirmation of firearm eligibility (S-023) could create real liability exposure and a false sense of legal compliance. Recommend legal/compliance review and written confirmation from the chosen vendor of exactly what it certifies.
+- **R-006 (P0, highest priority)** — A program for minors (under 18) with explicitly *less* strict vetting than the adult program, on a platform whose core pillars include Firearms and Medical training, is a serious legal and child-safety risk: children's-data-privacy law (COPPA and similar), laws governing minors and firearms (typically require more supervision, not less), platform liability for connecting minors with instructors regardless of "leaving it to parents," and background-check standards for adults working with children (often stricter than general adult vetting). **Do not build S-031 or F-003 until legal counsel has reviewed this.**
 
 ## Registration Flow Correction
 

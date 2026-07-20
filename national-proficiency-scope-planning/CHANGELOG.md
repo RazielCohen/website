@@ -2,6 +2,17 @@
 
 All notable changes to the scope worksheet and its companion Markdown files are logged here, most recent first.
 
+## 2026-07-20 — ⚠ Minor Accounts & Future Children's Program (Highest-Priority Risk Logged)
+- Logged the client's request: adult accounts can add a linked minor (under-18) account, tied to a described future program giving children their own individual account and skill-development growth path, **deliberately less strictly monitored/vetted than the adult program**, with oversight largely left to parents.
+- Added `S-031` (minor/dependent account creation — mechanism) and `F-003` (future idea — the full children's program).
+- **Flagged `R-006` as a P0 risk — the highest-severity item logged for this project.** National Proficiency's core pillars include Firearms and Medical training; a children's program with intentionally *reduced* vetting in that context raises serious legal and child-safety exposure: children's-data-privacy law (COPPA and similar), laws governing minors and firearms (which typically require *more* supervision, not less), platform liability for connecting minors with instructors regardless of "leaving it to parents," and background-check standards for adults working with children (often stricter than general adult vetting, not lighter).
+- Added `Q-035` through `Q-039`, `CAP-021`. Explicitly marked `CAP-021` and `S-031`/`F-003` as **do-not-build-yet**, pending legal counsel review.
+- Cross-referenced `S-023` (18+ ID verification) against the new minor-account concept, since minor accounts are inherently under 18 by definition.
+- Added the raw client message to Raw Notes.
+- Logged 1 new decision in `DECISIONS.md`, explicitly caveated as not yet cleared for build.
+- Updated `PROJECT_OVERVIEW.md`, `REQUIREMENTS.md`, `OPEN_QUESTIONS.md`, `WORKFLOWS.md` with a prominent flag on this item, ahead of routine scope items.
+- Proposal readiness unchanged: **NOT READY** — this item does not block the *rest* of the proposal, but should not be included in any proposal or estimate until legal review is complete, given its severity.
+
 ## 2026-07-20 — Habit-Reminder Notifications and Photo Privacy Toggle
 - Added `S-029`: Garmin-style customizable daily habit-reminder notifications per pillar — Fitness (water intake, step count), Firearms (dry-fire practice), Medical (tourniquet practice).
 - Added `S-030`: an optional toggle to hide a profile photo from other users while name/unique code stay visible. Client's own phrasing was tentative ("might be worth integrating") — logged as `Needs Clarification` at P2 rather than a confirmed decision, and flagged `Q-033` to get a firm yes/no before it's built. (Not added to `DECISIONS.md`, unlike this session's other confirmed items, specifically because of that tentative framing.)

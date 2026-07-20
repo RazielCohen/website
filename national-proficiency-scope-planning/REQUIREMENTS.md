@@ -69,7 +69,13 @@ This file tracks confirmed and proposed **feature / scope requirements** in plai
 ### S-030 — Profile Photo Privacy Toggle
 **P2 · Needs Clarification · Client portal / Security / compliance.** Option to hide a profile photo from other users while name/code remain visible. **Remaining:** confirm this is committed scope, not just a suggestion (Q-033); full list of surfaces affected (Q-034).
 
+### S-031 — Minor/Dependent Account Creation (Parent-Linked) ⚠
+**P1 · Needs Clarification · User management / Security / compliance.** Once an adult is registered, they can add a minor (under 18) who gets their own individual linked account. **DO NOT BUILD until the legal review in R-006 is complete.** **Remaining:** whether this is near-term or future-phase scope (Q-035), parent's data visibility into the minor's account (Q-038), minor account access model (Q-039), interaction with the 18+ ID-verification gate (S-023).
+
 ## Future Ideas
+
+### F-003 — Full Minor Skill-Development Program ⚠
+**P3 · Future Phase · Security / compliance / Client portal.** Client's own framing — "in the future" — a separate, deliberately less strictly vetted program for children under 18 with their own growth path, oversight left to parents. **Carries the highest legal/child-safety risk logged for this project (R-006)** given the firearms/medical context. Legal review required before any design work — see Q-036 (pillar eligibility for minors), Q-037 (vetting standard), Q-038 (COPPA-adjacent data/consent).
 
 ### F-002 — Virtual Qualifications via Wearable Data
 **P3 · Future Phase · Admin dashboard / External integration.** Client's own framing: "could also be used later" to complete certain qualifications remotely using wearable data tied to specific events. Not proposal-blocking now. See risk R-004 (anti-fraud/verification).
