@@ -49,6 +49,12 @@ Logged-in members (tier availability TBD) view a Fitness/Firearms leaderboard on
 ### CAP-014 — Wearable/Fitness Platform Connection
 Logged-in members can connect a Garmin, Apple Watch, or Strava account to sync personal activity data, feeding the leaderboard and potentially future virtual qualifications. *(Relates to S-022; data points and consent handling still open.)*
 
+### CAP-015 — ID Verification During Registration
+All new registrants — students and instructors — go through a third-party ID-verification step (vendor TBD, client mentioned ID.me) confirming age 18+ and, per the client, firearm eligibility, without National Proficiency storing raw ID documents. *(Relates to S-023; vendor scope and what it actually verifies still open — Q-025, R-005.)*
+
+### CAP-016 — Ban Enforcement / Re-Registration Block
+When someone banned from the platform attempts to re-register under new account information, the system matches against their previously verified identity and blocks or flags the attempt. *(Relates to S-024; ban criteria and approval authority still open — Q-026.)*
+
 ## Proposed / Draft Workflows
 
 ### F-002 — Virtual Qualifications via Wearable Data

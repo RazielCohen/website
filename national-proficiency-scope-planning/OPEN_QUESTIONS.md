@@ -14,6 +14,7 @@ This file tracks open questions and risks in plain language. It mirrors the `Q-#
 5. **Q-015 / Q-023 — How are instructors vetted and designated "Approved Instructor"?**
 6. **Q-021 — Who approves an instructor's tier-downgrade request, and what happens if denied?**
 7. **Q-022 — Is the new-user unique serial number/code a replacement login credential or an additional ID?**
+8. **Q-025 (new) — Which ID-verification vendor will be used, and can it actually confirm firearm eligibility, not just identity/age?** This is a real legal-exposure point — see risk R-005.
 
 ## Important, Not Yet Blocking (P1)
 
@@ -27,6 +28,8 @@ This file tracks open questions and risks in plain language. It mirrors the `Q-#
 15. **Q-016 — What does the Google Calendar integration require in practice?**
 16. **Q-017 — Is "Shooter's Global" a confirmed technical/partner integration?**
 17. **Q-019 — Is instructor registration/vetting a separate website, or done in-app?** Client's two statements on this ("register on the website" vs. "approval process could be done on the app") haven't been reconciled yet.
+18. **Q-026 (new) — What is the ban process** (who decides, grounds, appeal)?
+19. **Q-027 (new) — Does a failed ID verification block the whole app, or only firearms-related features?**
 
 ## Nice to Know (P2)
 
@@ -35,6 +38,7 @@ This file tracks open questions and risks in plain language. It mirrors the `Q-#
 20. **Q-018 — Is there a retest/appeal policy after a failed qualification?**
 21. **Q-020 — Can an instructor be certified in more than one specialty category?**
 22. **Q-024 — What can a user search/filter by on the instructor locator map, and is it available to all tiers?**
+23. **Q-028 (new) — Does the ID-verification vendor's per-check cost factor into tier pricing (Q-010)?**
 
 ## New This Round
 
@@ -50,7 +54,8 @@ This file tracks open questions and risks in plain language. It mirrors the `Q-#
 - **R-001 (P0)** — The Premium tier's monthly raffle may implicate sweepstakes/lottery law.
 - **R-002 (P1, partially mitigated)** — Media content liability, partially addressed by the universal waiver; enforceability still needs legal review.
 - **R-003 (P1, partially mitigated)** — Qualification record-keeping compliance, partially addressed by the "records-keeping only" model and waiver; enforceability still needs legal review.
-- **R-004 (P2, new)** — Virtual/remote qualifications (F-002) sourced from wearable data could be vulnerable to falsification (GPS spoofing, device-sharing) since a qualification is an official pass/fail record. Lower urgency since F-002 itself is future-phase, but worth defining anti-fraud safeguards before it's ever built.
+- **R-004 (P2)** — Virtual/remote qualifications (F-002) sourced from wearable data could be vulnerable to falsification (GPS spoofing, device-sharing) since a qualification is an official pass/fail record. Lower urgency since F-002 itself is future-phase, but worth defining anti-fraud safeguards before it's ever built.
+- **R-005 (P0, new)** — Standard ID-verification vendors (e.g. ID.me) typically confirm identity and age, **not** firearm-purchase eligibility, which usually requires a separate NICS-style background check. Treating an identity-verification pass as confirmation of firearm eligibility (S-023) could create real liability exposure and a false sense of legal compliance. Recommend legal/compliance review and written confirmation from the chosen vendor of exactly what it certifies.
 
 ---
 **How this stays in sync:** any unclear requirement, missing decision, ambiguous item, or proposal-impacting risk is captured here **and** as a `Q-###`/`R-###` row in the Scope Items tab at the same time — never in only one place.

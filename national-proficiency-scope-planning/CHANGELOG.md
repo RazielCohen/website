@@ -2,6 +2,16 @@
 
 All notable changes to the scope worksheet and its companion Markdown files are logged here, most recent first.
 
+## 2026-07-20 — ID Verification and Ban Enforcement
+- Logged the client's request for third-party ID verification (e.g. ID.me) during both instructor and student registration, confirming age 18+ and firearm eligibility, explicitly without National Proficiency storing sensitive ID/legal documents itself.
+- Added `S-023` (ID verification) and `S-024` (ban enforcement — using a banned person's verified identity to block re-registration under new information). Cross-referenced into the existing registration items `S-002`, `S-015`, `S-019`.
+- Added `Q-025` through `Q-028` and a new **P0 risk, `R-005`**: standard ID-verification vendors typically confirm identity/age, not firearm-purchase eligibility (that's usually a separate NICS-style background check) — flagged so the client doesn't assume more legal coverage than the vendor actually provides.
+- Added `CAP-015` and `CAP-016` to the System Capability Map.
+- Added the raw client message to Raw Notes.
+- Logged 2 new confirmed decisions in `DECISIONS.md`.
+- Updated `PROJECT_OVERVIEW.md`, `REQUIREMENTS.md`, `OPEN_QUESTIONS.md`, `WORKFLOWS.md`, `PROPOSAL_READINESS.md` to match.
+- Proposal readiness unchanged: **NOT READY** — a new P0 legal-exposure question (R-005/Q-025) was added alongside the growing but increasingly concrete list of confirmations needed.
+
 ## 2026-07-20 — Leaderboard, Wearable Integration, Standards Document Confirmed
 - Logged the client's clarification that instructor vetting/approval could be done in-app (not yet reconciled with the earlier "register on the website" statement — updated `Q-019` and `S-015` to flag the open tension rather than assume either way).
 - Added `S-021` (Home tab leaderboard for Fitness and Firearms — badges earned, fastest mile, longest distance) with concrete detail, **superseding** `F-001` (the earlier, more tentative leaderboard idea). Marked `F-001`'s Current Status as `Removed` with a note pointing to `S-021`, preserving the audit trail instead of silently overwriting it.

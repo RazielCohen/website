@@ -53,6 +53,12 @@ This file tracks confirmed and proposed **feature / scope requirements** in plai
 ### S-022 — Wearable/Fitness Platform Integration (Garmin, Apple Watch, Strava)
 **P1 · Needs Clarification · External integration.** Users connect a platform of choice to sync personal activity data, feeding the leaderboard. **Remaining:** data points per platform, OAuth, consent/privacy, no-connection fallback.
 
+### S-023 — ID Verification During Registration
+**P0 · Needs Clarification · Security / compliance / External integration / User management.** Third-party ID verification (e.g. ID.me) for both students and instructors, confirming 18+ and, per the client, firearm eligibility — without National Proficiency storing raw ID documents. **Remaining:** vendor selection and confirmation of what it actually verifies (Q-025; see risk R-005), failed-verification behavior (Q-027).
+
+### S-024 — Ban Enforcement via Identity Verification
+**P0 · Needs Clarification · Security / compliance / User management.** Uses the verified identity from S-023 to detect and block a banned user re-registering under new information. **Remaining:** ban criteria and approval authority (Q-026).
+
 ## Future Ideas
 
 ### F-002 — Virtual Qualifications via Wearable Data

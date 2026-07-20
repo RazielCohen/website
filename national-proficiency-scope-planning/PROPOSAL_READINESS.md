@@ -18,6 +18,7 @@ The concept, business model, role hierarchy, and now the leaderboard/wearable fe
 - **Q-022** — Whether the new-user serial number/code replaces or supplements login credentials.
 - **R-001** — Legal/compliance review of the Premium-tier monthly raffle.
 - **S-016** — Actual legal text for both waivers, from the client's counsel.
+- **Q-025 / R-005 (new)** — Confirm the ID-verification vendor and whether it can actually verify firearm eligibility, not just identity/age — a real legal-exposure point if assumed incorrectly.
 
 ## What's Confirmed
 - App is native, iOS + Android, account-required, unrelated to Tactical Rabbi.
@@ -25,6 +26,7 @@ The concept, business model, role hierarchy, and now the leaderboard/wearable fe
 - Full user-side flow, tier structure, instructor workflow, role hierarchy, and both waivers (direction, not legal text).
 - **New:** Home tab leaderboard for Fitness and Firearms (badges, fastest mile, longest distance); optional Garmin/Apple Watch/Strava integration feeding it.
 - **New:** a complete qualifications/training standards document exists and will be provided — the content gap has a committed source.
+- **New:** registration includes third-party ID verification (age 18+, firearm eligibility per the client) without storing raw ID documents; a banned identity can be recognized to block re-registration.
 
 ## What's Still Open
 - All P0 items above.

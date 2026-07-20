@@ -33,6 +33,8 @@ This file is a running log of **confirmed decisions** — things that are no lon
 | 2026-07-20 | The Home tab includes a leaderboard for Fitness and Firearms, ranking by badges earned, fastest mile, longest distance, and similar metrics. | S-021 | Client description. Supersedes the earlier, more tentative F-001. |
 | 2026-07-20 | Users can connect a Garmin, Apple Watch, or Strava account (their choice) to sync personal activity data into the app. | S-022 | Client description. |
 | 2026-07-20 | A full qualifications/training standards document exists and will be provided by the client at a later date. | Q-002, Q-003, S-011 | Client confirmation; document not yet received. |
+| 2026-07-20 | Registration (students and instructors) will include third-party ID verification to confirm age 18+ and firearm eligibility, without National Proficiency storing sensitive ID/legal documents itself. | S-023 | Client description. Whether the chosen vendor can actually confirm firearm eligibility (vs. just identity/age) still needs legal/vendor confirmation — see R-005. |
+| 2026-07-20 | If a banned user tries to re-register under new information, the system will use their verified identity to detect and prevent it. | S-024 | Client description. |
 
 ---
 **How this stays in sync:** whenever a scope item's status changes to `Confirmed`, or an open decision is settled, a row is added here in the same pass, dated and attributed to its source.
