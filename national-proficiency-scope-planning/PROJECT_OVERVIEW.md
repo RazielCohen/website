@@ -25,6 +25,9 @@ On test day, instructors access qualification standards **scoped only to the spe
 - **Habit-reminder notifications** (S-029), Garmin-style: customizable daily reminders per pillar — Fitness (water intake, step count), Firearms (dry-fire practice), Medical (tourniquet practice). Users adjust which reminders they get.
 - **Profile photo privacy toggle** (S-030): a user's name and unique code may be shown to others, but they could optionally hide their photo. Client's own phrasing was tentative ("might be worth integrating") — flagged (Q-033) to confirm this is committed scope rather than assumed.
 
+## New This Round: Store Section
+Client wants a store area combining: a **merch store** for custom National-Proficiency-branded merchandise (S-032), **affiliate links** for recommended third-party products/gear generating commission revenue (S-033), and **daily/weekly deal updates** (S-034). Routine addition — main open items are the e-commerce platform choice (Q-040), affiliate network (Q-041), and standard FTC affiliate-disclosure compliance (R-007), not a major risk like the item below.
+
 ## ⚠ Highest-Priority Flag: Minor Accounts & Future Children's Program (R-006)
 The client wants adult members to be able to add a linked **minor (under-18) account**, as an entry point into a described **future program for children** with their own individual accounts and skill-development growth path — **deliberately less strictly monitored/vetted than the adult program**, with oversight largely left to parents.
 

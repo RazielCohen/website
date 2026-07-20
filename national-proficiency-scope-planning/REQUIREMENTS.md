@@ -69,6 +69,15 @@ This file tracks confirmed and proposed **feature / scope requirements** in plai
 ### S-030 — Profile Photo Privacy Toggle
 **P2 · Needs Clarification · Client portal / Security / compliance.** Option to hide a profile photo from other users while name/code remain visible. **Remaining:** confirm this is committed scope, not just a suggestion (Q-033); full list of surfaces affected (Q-034).
 
+### S-032 — Merch Store
+**P2 · Needs Clarification · Payments / External integration.** In-app store selling custom branded merchandise. **Remaining:** e-commerce platform decision (Q-040), fulfillment model, tier availability (Q-043).
+
+### S-033 — Affiliate Links / Recommended Gear
+**P2 · Needs Clarification · External integration / Payments.** Recommends third-party products via affiliate links for commission revenue. **Remaining:** affiliate network (Q-041), FTC disclosure language (R-007).
+
+### S-034 — Daily/Weekly Deal Updates
+**P2 · Needs Clarification · Client portal / Notifications.** Regularly refreshed deal content in the store section. **Remaining:** sourcing process and cadence (Q-042), possible notification tie-in (S-029).
+
 ### S-031 — Minor/Dependent Account Creation (Parent-Linked) ⚠
 **P1 · Needs Clarification · User management / Security / compliance.** Once an adult is registered, they can add a minor (under 18) who gets their own individual linked account. **DO NOT BUILD until the legal review in R-006 is complete.** **Remaining:** whether this is near-term or future-phase scope (Q-035), parent's data visibility into the minor's account (Q-038), minor account access model (Q-039), interaction with the 18+ ID-verification gate (S-023).
 

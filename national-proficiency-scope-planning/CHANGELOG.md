@@ -2,6 +2,15 @@
 
 All notable changes to the scope worksheet and its companion Markdown files are logged here, most recent first.
 
+## 2026-07-20 — Store: Merch, Affiliate Links, Deal Updates
+- Logged the client's request for a store section: a merch store for custom branded merchandise (`S-032`), affiliate links for recommended products/gear generating commission revenue (`S-033`), and daily/weekly deal updates (`S-034`).
+- Added `Q-040` through `Q-043` (e-commerce platform choice, affiliate network, deal-sourcing/cadence, tier availability) and `R-007` — a routine compliance flag (FTC affiliate/sponsored-content disclosure requirements), much lower severity than the prior round's `R-006`.
+- Added `CAP-022` through `CAP-024`.
+- Added the raw client message to Raw Notes.
+- Logged 1 new confirmed decision in `DECISIONS.md`.
+- Updated `PROJECT_OVERVIEW.md`, `REQUIREMENTS.md`, `OPEN_QUESTIONS.md`, `WORKFLOWS.md` to match.
+- Proposal readiness unchanged: **NOT READY** — this is a routine, non-blocking addition alongside the still-open P0 list and the still-pending minor-accounts legal review.
+
 ## 2026-07-20 — ⚠ Minor Accounts & Future Children's Program (Highest-Priority Risk Logged)
 - Logged the client's request: adult accounts can add a linked minor (under-18) account, tied to a described future program giving children their own individual account and skill-development growth path, **deliberately less strictly monitored/vetted than the adult program**, with oversight largely left to parents.
 - Added `S-031` (minor/dependent account creation — mechanism) and `F-003` (future idea — the full children's program).

@@ -34,6 +34,7 @@ The concept, business model, role hierarchy, and now the leaderboard/wearable fe
 - **Corrected:** qualification registration is student-initiated (not instructor-initiated); the app auto-restricts to the next eligible tier and recommends nearby instructors. Instructor access to standards is scoped per active registration only. Medical/Fitness standards are public; Firearms exact drills are confidential. Profile includes a Pokémon-style progression visual.
 - **New (not blocking the rest of the proposal):** customizable habit-reminder notifications per pillar; a tentatively-proposed profile-photo privacy toggle (not yet confirmed as committed scope — Q-033).
 - **New (excluded from proposal until legal review):** minor/dependent account linkage and a future children's program (R-006).
+- **New (routine, not blocking):** a store section — custom merch, affiliate links, daily/weekly deals.
 
 ## What's Still Open
 - All P0 items above.

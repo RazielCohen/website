@@ -43,6 +43,8 @@ Client wants adults to be able to add a linked minor (under-18) account, tied to
 - **Q-029 (new)** — Instructor visibility boundary was described unclearly (possible transcription issue): can an instructor ever view standards above what a specific active student registration requires, or is access always strictly limited to that one registration? Needs a plain confirmation rather than a guess at the garbled original phrasing.
 - **Q-031** — Does the new automatic instructor-recommendation-on-registration (S-025) replace the standalone locator map (S-017), or do both exist separately?
 - **Q-034 (new)** — In which specific places is a user's name, unique code, and/or photo shown to others (leaderboard, locator map, messaging, instructor-visible records) — needed to scope the photo-privacy toggle.
+- **Q-040 (new)** — Should the merch store use a custom checkout build or an existing e-commerce platform (Shopify, Printful, WooCommerce)? Significantly affects scope/cost.
+- **Q-043 (new)** — Is the store (merch/affiliate/deals) available to all tiers, or gated like Media/Chat?
 
 ## Nice to Know (P2)
 
@@ -55,6 +57,8 @@ Client wants adults to be able to add a linked minor (under-18) account, tied to
 - **Q-030** — For the profile progression visual (S-028): how many future tiers are shown locked, and is it one combined view or per-category?
 - **Q-032 (new)** — Is the habit-reminder feature's habit list fixed to the examples given, or expandable? Should completion be tracked (streaks), or are these just reminder pings?
 - **Q-033 (new)** — Is the profile-photo privacy toggle (S-030) confirmed scope, or a "nice to have" the client is still weighing? Client's own phrasing was tentative.
+- **Q-041 (new)** — Which affiliate program(s)/networks should be integrated?
+- **Q-042 (new)** — Are daily/weekly deals curated manually or pulled automatically from an affiliate feed?
 
 ## Future Idea Flagged
 
@@ -68,6 +72,7 @@ Client wants adults to be able to add a linked minor (under-18) account, tied to
 - **R-004 (P2)** — Virtual/remote qualifications (F-002) sourced from wearable data could be vulnerable to falsification (GPS spoofing, device-sharing) since a qualification is an official pass/fail record. Lower urgency since F-002 itself is future-phase.
 - **R-005 (P0)** — Standard ID-verification vendors (e.g. ID.me) typically confirm identity and age, **not** firearm-purchase eligibility, which usually requires a separate NICS-style background check. Treating an identity-verification pass as confirmation of firearm eligibility (S-023) could create real liability exposure and a false sense of legal compliance. Recommend legal/compliance review and written confirmation from the chosen vendor of exactly what it certifies.
 - **R-006 (P0, highest priority)** — A program for minors (under 18) with explicitly *less* strict vetting than the adult program, on a platform whose core pillars include Firearms and Medical training, is a serious legal and child-safety risk: children's-data-privacy law (COPPA and similar), laws governing minors and firearms (typically require more supervision, not less), platform liability for connecting minors with instructors regardless of "leaving it to parents," and background-check standards for adults working with children (often stricter than general adult vetting). **Do not build S-031 or F-003 until legal counsel has reviewed this.**
+- **R-007 (P2)** — Affiliate links and any sponsored/deal content (S-033, S-034) are subject to FTC endorsement/disclosure requirements in the US. Routine compliance item — recommend legal review of disclosure language before launch, not before build.
 
 ## Registration Flow Correction
 

@@ -67,6 +67,15 @@ Any logged-in user can enable/disable daily reminders per pillar — Fitness, Fi
 ### CAP-020 — Profile Photo Privacy Toggle
 Any logged-in user can opt to hide their profile photo from other users, while name and unique code remain visible. *(Relates to S-030; client's own phrasing was tentative — confirm scope via Q-033, and affected surfaces via Q-034.)*
 
+### CAP-022 — Merch Store
+Any user (tier TBD) browses and purchases custom branded merchandise from the store section. *(Relates to S-032; platform choice and tier availability still open — Q-040, Q-043.)*
+
+### CAP-023 — Affiliate Links / Recommended Gear
+Any user views recommended third-party products/gear and follows affiliate links out of the app. *(Relates to S-033; affiliate network and disclosure language still open — Q-041, R-007.)*
+
+### CAP-024 — Daily/Weekly Deal Updates
+Any user sees a regularly refreshed feed of deals in the store section. *(Relates to S-034; sourcing process and cadence still open — Q-042.)*
+
 ### CAP-021 — Minor/Dependent Account Creation ⚠ DO NOT BUILD YET
 An adult account can add a linked minor (under-18) account, which gets its own individual profile. **Blocked pending legal review (R-006)** — the highest-risk item logged for this project, given minors + firearms/medical content + explicitly reduced vetting. *(Relates to S-031, F-003.)*
 
