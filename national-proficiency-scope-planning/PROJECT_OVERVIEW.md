@@ -11,7 +11,15 @@ National Proficiency is a native mobile app (iOS + Android), account-required (n
 
 **User-side flow:** branded launch animation → account creation (basic info → issued a unique serial number/code) or login → individual profile page (photo, rank, medals, next-accomplishment guidance) → tab bar with Home, Chat/Messaging, and Media, tier-gated (Free / Mid TBD / Premium).
 
-**Instructor/backend side:** Approved Instructors register and are vetted (via a website, or possibly in-app — not yet reconciled, see Q-019), choosing a specialty (Firearms, Fitness, or Medical), sign a waiver, and get an instructor-only "+" button to pre-register students for qualifications (Google Calendar invite sent), access qualification standards on test day, record results (Shooter's Global or manual entry), and grade strictly pass/fail with a mandatory edit-audit-trail. An instructor can **upgrade** a tier on a Pass but **cannot lower one directly** — only request a downgrade with a reason.
+**Instructor/backend side:** Approved Instructors register and are vetted (via a website, or possibly in-app — not yet reconciled, see Q-019), choosing a specialty (Firearms, Fitness, or Medical), and sign a waiver.
+
+**CORRECTED registration flow:** the client revised how qualification registration works. Instead of an instructor typing in a student's info and tier, **the student now initiates it from their own profile** — selecting "Register"/"Choose qualification day," picking a category (Medical, Firearms, or Fitness). The app already knows the student's current tier and **only allows registering for the next eligible tier** (no skipping ahead), then **recommends nearby instructors** to choose from (Google Calendar invite sent). The old instructor-initiated flow (S-009) is marked **Removed/superseded** by the new S-025, kept in the sheet for traceability rather than silently overwritten.
+
+On test day, instructors access qualification standards **scoped only to the specific student registration in front of them** — they cannot browse other tiers freely (S-026). They record results (Shooter's Global or manual entry) and grade strictly pass/fail with a mandatory edit-audit-trail. An instructor can **upgrade** a tier on a Pass but **cannot lower one directly** — only request a downgrade with a reason.
+
+**New content-visibility rules:** Medical and Fitness qualification standards are fully **public** (each has a defined ceiling, so there's nothing sensitive to hide). Firearms exact drills stay **confidential**, but each tier publicly shows the general skills needed to prepare, without revealing the exact test content.
+
+**New profile feature:** a Pokémon-style progression visual (S-028) — earned tiers/medals in full color, the in-progress tier grayed out, and future tiers blacked-out/locked as a preview of what's ahead.
 
 **Role hierarchy:** two cofounders have full access to edit any record. A zip-code locator map helps users find nearby instructors.
 

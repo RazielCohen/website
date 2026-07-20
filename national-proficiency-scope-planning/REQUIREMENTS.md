@@ -17,12 +17,13 @@ This file tracks confirmed and proposed **feature / scope requirements** in plai
 
 ## Instructor / Backend Requirements
 
-- **S-008** Approved Instructor Role — P0, needs designation process (Q-015).
-- **S-009** Student Pre-Registration Form — P0, needs approval-step definition (Q-014).
+- **S-008** Approved Instructor Role — P0, needs designation process (Q-015). Updated: the "+" button pre-registration entry point has moved to the student's profile (S-025).
 - **S-010** Google Calendar Integration — P1, needs integration specifics (Q-016).
-- **S-011** Qualification Standards Library ("course of fire") — P0, needs the actual standards content (Q-002, Q-003) — likely as source documents from the client.
+- **S-011** Qualification Standards Library ("course of fire") — P0, needs the actual standards content (Q-002, Q-003) — client has confirmed a source document is coming. New: Medical/Fitness standards are fully public; Firearms exact drills are confidential (public "skills needed" summary per tier only). Instructor access is scoped per S-026.
 - **S-012** Shot Timer Integration ("Shooter's Global") — P1, needs partner/integration confirmation (Q-017); manual entry is the confirmed fallback.
 - **S-013** Qualification Grading, Pass/Fail & Audit Trail — P0, needs checklist criteria and audit-trail format; on Pass, upgrades the student's tier. Instructors cannot lower a tier directly (S-018).
+- **S-025** Student-Initiated Qualification Registration (**corrected flow**) — P0. From their own profile, a student selects "Register"/"Choose qualification day," picks a category, and the app — already knowing their current tier — only allows registering for the next eligible tier, then recommends nearby instructors. **Supersedes S-009** (see Removed section below). Remaining: full field/flow details, recommendation-engine logic (Q-031), approval step (Q-014).
+- **S-026** Scoped Instructor Access to Qualification Standards — P0. An instructor can't browse standards for tiers generally ("scroll through tier ten") — only the specific course a specific student is actively registered for. Remaining: exact access-control mechanics, and the unclear boundary condition in Q-029.
 
 ## Role Hierarchy, Vetting & Legal (new)
 
@@ -59,6 +60,9 @@ This file tracks confirmed and proposed **feature / scope requirements** in plai
 ### S-024 — Ban Enforcement via Identity Verification
 **P0 · Needs Clarification · Security / compliance / User management.** Uses the verified identity from S-023 to detect and block a banned user re-registering under new information. **Remaining:** ban criteria and approval authority (Q-026).
 
+### S-028 — Profile Rank/Medal Progression Visual ("Skill Tree")
+**P1 · Needs Clarification · Client portal.** Pokémon-style visual: earned tiers/medals in full color, in-progress tier grayed out, future tiers blacked-out/locked as a preview. **Remaining:** how many locked tiers to show, per-category vs. combined view (Q-030).
+
 ## Future Ideas
 
 ### F-002 — Virtual Qualifications via Wearable Data
@@ -66,6 +70,7 @@ This file tracks confirmed and proposed **feature / scope requirements** in plai
 
 ## Removed / Deferred Requirements
 - **F-001** — Leaderboard-style bonus badges (superseded by S-021 once the client gave concrete details).
+- **S-009** — Instructor-initiated pre-registration ("+" button, instructor types in student's category/tier/date). The client corrected this: registration is now student-initiated. **Superseded by S-025.** Kept in the tracker, marked Removed, rather than silently deleted, so the correction stays traceable.
 
 ---
 **How this stays in sync:** whenever a scope item (`S-###`) is added, confirmed, changed, or removed in the spreadsheet, this file is updated in the same pass. See `AI_INSTRUCTIONS.md` for the full sync rule.

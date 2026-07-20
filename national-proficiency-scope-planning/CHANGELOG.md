@@ -2,6 +2,18 @@
 
 All notable changes to the scope worksheet and its companion Markdown files are logged here, most recent first.
 
+## 2026-07-20 — Registration Flow Correction, Content Visibility, Profile Progression Visual
+- **Client correction:** qualification registration is now student-initiated (from the student's own profile — "Register"/"Choose qualification day," pick a category), not instructor-initiated. The app auto-restricts registration to the student's next eligible tier and recommends nearby instructors. Marked `S-009` (the original instructor-initiated design) as **Removed**, explicitly superseded by new `S-025` — kept in the tracker rather than deleted, so the correction is traceable. Updated `S-008` to drop the "+" button reference. Updated `CAP-007` to reflect the corrected flow.
+- Added `S-026` (scoped instructor access — an instructor only sees standards for the specific course a student is actively registered for, not a free browse of every tier) and `CAP-017`.
+- Added new content-visibility rules to `S-011`: Medical and Fitness standards are fully public; Firearms exact drills are confidential, with a public "skills needed" summary per tier.
+- Added `S-028` (profile rank/medal progression visual, Pokémon-style: earned in full color, in-progress grayed out, future locked) and `CAP-018`.
+- Added `Q-029` (flagged unclear/possibly garbled client phrasing about instructor visibility — asked for plain clarification rather than guessing), `Q-030`, `Q-031`.
+- Cross-referenced `S-017` (locator map) against the new `S-025` recommendation engine — relationship between the two not yet confirmed (Q-031).
+- Added the raw client message to Raw Notes.
+- Logged 4 new confirmed decisions (including the correction itself) in `DECISIONS.md`.
+- Updated `PROJECT_OVERVIEW.md`, `REQUIREMENTS.md`, `OPEN_QUESTIONS.md`, `WORKFLOWS.md` to match.
+- Proposal readiness unchanged: **NOT READY** — this round was mostly a correction and clarification round rather than net-new scope; overall picture is getting more precise, not more open-ended.
+
 ## 2026-07-20 — ID Verification and Ban Enforcement
 - Logged the client's request for third-party ID verification (e.g. ID.me) during both instructor and student registration, confirming age 18+ and firearm eligibility, explicitly without National Proficiency storing sensitive ID/legal documents itself.
 - Added `S-023` (ID verification) and `S-024` (ban enforcement — using a banned person's verified identity to block re-registration under new information). Cross-referenced into the existing registration items `S-002`, `S-015`, `S-019`.

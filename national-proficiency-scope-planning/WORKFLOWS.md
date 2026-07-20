@@ -25,11 +25,11 @@ A tab next to Home lets members send/receive messages or updates with other memb
 ### CAP-006 — Media Tab
 A tab after Home and Chat hosts medical, fitness, and firearms/building training videos. **Premium tier only** — Free and Mid (TBD) are excluded. *(Relates to S-006; video categories and hosting approach still open — Q-008; content liability risk — R-002.)*
 
-### CAP-007 — Instructor Pre-Registration ("+" Button)
-Approved Instructors only. From the tab bar, they tap a center "+" button to open a form: select category (Medical/Firearms/Fitness), tier, and date, then submit. This produces an approval confirmation and sends a Google Calendar invite to the student. *(Relates to S-008, S-009, S-010; approval workflow and calendar approach still open — Q-014, Q-016.)*
+### CAP-007 — Student-Initiated Qualification Registration (CORRECTED)
+**Corrected from an earlier instructor-initiated design.** A student, from their own profile, selects "Register"/"Choose qualification day," picks a category (Medical/Firearms/Fitness). The app already knows their current tier and only allows registering for the next eligible one, then recommends nearby instructors. This produces an approval confirmation and sends a Google Calendar invite. *(Relates to S-025, S-010; supersedes the original S-009, now Removed. Approval workflow, calendar approach, and recommendation-engine logic still open — Q-014, Q-016, Q-031.)*
 
 ### CAP-008 — Qualification Administration & Grading
-Approved Instructors only. On test day, the instructor opens the registered qualification, follows that tier's standard/course of fire, and records results — via the Shooter's Global shot-timer integration or manual entry. Grading is checklist-based and strictly pass/fail; any edit is logged in an audit trail. A Pass automatically updates the student's profile rank/medal (CAP-003). *(Relates to S-011, S-012, S-013; standards content, integration status, and retest policy still open — Q-002, Q-003, Q-017, Q-018.)*
+Approved Instructors only, **scoped to the specific student registration in front of them** — not a free browse of every tier (S-026). On test day, the instructor opens the registered qualification, follows that tier's standard/course of fire, and records results — via the Shooter's Global shot-timer integration or manual entry. Grading is checklist-based and strictly pass/fail; any edit is logged in an audit trail. A Pass automatically updates the student's profile rank/medal (CAP-003). *(Relates to S-011, S-012, S-013, S-026; standards content, integration status, and retest policy still open — Q-002, Q-003, Q-017, Q-018, Q-029.)*
 
 ### CAP-009 — Owner-Level Record Access & Edit
 The two cofounders only, with full access to view/edit any instructor or student record. *(Relates to S-014; whether cofounder edits are audit-logged like instructor edits still open.)*
@@ -54,6 +54,12 @@ All new registrants — students and instructors — go through a third-party ID
 
 ### CAP-016 — Ban Enforcement / Re-Registration Block
 When someone banned from the platform attempts to re-register under new account information, the system matches against their previously verified identity and blocks or flags the attempt. *(Relates to S-024; ban criteria and approval authority still open — Q-026.)*
+
+### CAP-017 — Scoped Instructor Access to Qualification Standards
+An instructor opens a student's active registration and sees only that course's standard — not other tiers. *(Relates to S-026, S-011; exact access mechanics and the unclear boundary in Q-029 still open.)*
+
+### CAP-018 — Profile Rank/Medal Progression Visual
+Every user, viewing their own profile, sees a Pokémon-style progression view: earned tiers in full color, the in-progress tier grayed out, future tiers blacked-out/locked as a preview. *(Relates to S-028, S-003; locked-tier depth and per-category vs. combined view still open — Q-030.)*
 
 ## Proposed / Draft Workflows
 

@@ -27,6 +27,7 @@ The concept, business model, role hierarchy, and now the leaderboard/wearable fe
 - **New:** Home tab leaderboard for Fitness and Firearms (badges, fastest mile, longest distance); optional Garmin/Apple Watch/Strava integration feeding it.
 - **New:** a complete qualifications/training standards document exists and will be provided — the content gap has a committed source.
 - **New:** registration includes third-party ID verification (age 18+, firearm eligibility per the client) without storing raw ID documents; a banned identity can be recognized to block re-registration.
+- **Corrected:** qualification registration is student-initiated (not instructor-initiated); the app auto-restricts to the next eligible tier and recommends nearby instructors. Instructor access to standards is scoped per active registration only. Medical/Fitness standards are public; Firearms exact drills are confidential. Profile includes a Pokémon-style progression visual.
 
 ## What's Still Open
 - All P0 items above.
