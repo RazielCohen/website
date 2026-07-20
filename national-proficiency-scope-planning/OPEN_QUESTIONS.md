@@ -8,7 +8,7 @@ This file tracks open questions and risks in plain language. It mirrors the `Q-#
 ## Needs Answers Before a Proposal Can Be Written (P0)
 
 1. **Q-001 — What is National Proficiency's core business/domain and target audience?**
-   The Media tab's content categories (medical, fitness, firearms/building training) hint at a tactical/safety/professional-training domain, but this hasn't been explicitly confirmed. Please also confirm whether this is related to any existing training business on file.
+   The Media tab's content categories (medical, fitness, firearms/building training) hint at a tactical/safety/professional-training domain, but the specific business description and audience still need to be stated explicitly. ~~Whether this is related to any existing training business on file~~ — **resolved**: client confirmed National Proficiency and Tactical Rabbi are completely separate, unrelated brands with no crossover of information.
 2. **Q-002 — What are the specific ranks/levels, and what are the criteria to advance?**
 3. **Q-003 — What are the specific medals/achievements, and how is each one earned?**
 4. **Q-005 — How are accounts created, and what are the auth requirements?**

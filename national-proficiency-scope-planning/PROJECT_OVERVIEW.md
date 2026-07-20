@@ -23,7 +23,7 @@ National Proficiency is a native mobile app (iOS + Android), **account-required*
 - **Mid** — feature set still being worked out by the client (not yet defined).
 - **Premium** — all features, plus monthly raffles tied to challenges, media access, chats, and additional personalized guidance based on what the user is working on.
 
-What proficiency the app is tracking and its target audience is still not explicitly confirmed. The Media tab's content categories (medical, fitness, firearms/building training) are a strong hint toward a tactical/safety/professional-training domain, but this hasn't been stated outright — see `OPEN_QUESTIONS.md` (Q-001).
+**National Proficiency is a completely separate brand/company from Tactical Rabbi (the other project in this repo), with no crossover of information between the two** — confirmed by the client. What proficiency the app is tracking and its target audience is still not explicitly confirmed. The Media tab's content categories (medical, fitness, firearms/building training) are a strong hint toward a tactical/safety/professional-training domain, but this hasn't been stated outright — see `OPEN_QUESTIONS.md` (Q-001).
 
 ## Business Goal
 TBD — not yet explicitly stated by the client.

@@ -2,6 +2,12 @@
 
 All notable changes to the scope worksheet and its companion Markdown files are logged here, most recent first.
 
+## 2026-07-20 — Brand Separation Confirmed
+- Client confirmed National Proficiency and Tactical Rabbi (the other project already in this repo) are completely separate, unrelated brands/companies, with no crossover of information between the two.
+- Closed the Tactical Rabbi sub-question inside `Q-001`; the core business-description/audience question remains open.
+- Logged the decision in `DECISIONS.md` and updated `PROJECT_OVERVIEW.md`, `OPEN_QUESTIONS.md`, and the Scope Items/Raw Notes tabs to match.
+- Raised a repo-hygiene question with the client: both projects currently live in the same git repository — asked whether National Proficiency's docs should move to a separate repo to guarantee no data crossover, given the explicit "no crossover" instruction.
+
 ## 2026-07-20 — Media Tab and Membership Tiers
 - Logged the client's addition: a Premium-only Media tab (medical, fitness, and firearms & building training videos) placed after Home and Chat; the whole app requires an account (no guest access); a three-tier membership structure (Free / Mid / Premium) gates feature access, with Mid still undefined by the client.
 - Added 2 scope items (`S-006` Media tab, `S-007` Membership tier system) and updated `S-002`, `S-004`, `S-005` "What Remains" to reflect account-required access and tier gating.
