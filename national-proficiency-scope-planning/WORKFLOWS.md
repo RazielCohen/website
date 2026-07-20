@@ -61,6 +61,12 @@ An instructor opens a student's active registration and sees only that course's 
 ### CAP-018 — Profile Rank/Medal Progression Visual
 Every user, viewing their own profile, sees a Pokémon-style progression view: earned tiers in full color, the in-progress tier grayed out, future tiers blacked-out/locked as a preview. *(Relates to S-028, S-003; locked-tier depth and per-category vs. combined view still open — Q-030.)*
 
+### CAP-019 — Customizable Habit-Reminder Notifications
+Any logged-in user can enable/disable daily reminders per pillar — Fitness, Firearms, Medical — from settings/preferences. *(Relates to S-029; full habit list and completion-tracking scope still open — Q-032.)*
+
+### CAP-020 — Profile Photo Privacy Toggle
+Any logged-in user can opt to hide their profile photo from other users, while name and unique code remain visible. *(Relates to S-030; client's own phrasing was tentative — confirm scope via Q-033, and affected surfaces via Q-034.)*
+
 ## Proposed / Draft Workflows
 
 ### F-002 — Virtual Qualifications via Wearable Data

@@ -21,6 +21,10 @@ On test day, instructors access qualification standards **scoped only to the spe
 
 **New profile feature:** a Pokémon-style progression visual (S-028) — earned tiers/medals in full color, the in-progress tier grayed out, and future tiers blacked-out/locked as a preview of what's ahead.
 
+**New this round:**
+- **Habit-reminder notifications** (S-029), Garmin-style: customizable daily reminders per pillar — Fitness (water intake, step count), Firearms (dry-fire practice), Medical (tourniquet practice). Users adjust which reminders they get.
+- **Profile photo privacy toggle** (S-030): a user's name and unique code may be shown to others, but they could optionally hide their photo. Client's own phrasing was tentative ("might be worth integrating") — flagged (Q-033) to confirm this is committed scope rather than assumed.
+
 **Role hierarchy:** two cofounders have full access to edit any record. A zip-code locator map helps users find nearby instructors.
 
 **Legal/liability model:** every user signs a liability waiver — National Proficiency is a records-keeping company only, not responsible for outcomes.

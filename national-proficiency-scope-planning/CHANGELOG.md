@@ -2,6 +2,17 @@
 
 All notable changes to the scope worksheet and its companion Markdown files are logged here, most recent first.
 
+## 2026-07-20 — Habit-Reminder Notifications and Photo Privacy Toggle
+- Added `S-029`: Garmin-style customizable daily habit-reminder notifications per pillar — Fitness (water intake, step count), Firearms (dry-fire practice), Medical (tourniquet practice).
+- Added `S-030`: an optional toggle to hide a profile photo from other users while name/unique code stay visible. Client's own phrasing was tentative ("might be worth integrating") — logged as `Needs Clarification` at P2 rather than a confirmed decision, and flagged `Q-033` to get a firm yes/no before it's built. (Not added to `DECISIONS.md`, unlike this session's other confirmed items, specifically because of that tentative framing.)
+- Added `Q-032` (habit list scope/completion tracking), `Q-033` (privacy toggle commitment), `Q-034` (full list of surfaces showing name/code/photo to others).
+- Cross-referenced `S-030` into `S-021`'s leaderboard privacy note.
+- Added `CAP-019` and `CAP-020` to the System Capability Map.
+- Added the raw client message to Raw Notes.
+- Logged 1 new confirmed decision (habit reminders) in `DECISIONS.md`.
+- Updated `PROJECT_OVERVIEW.md`, `REQUIREMENTS.md`, `OPEN_QUESTIONS.md`, `WORKFLOWS.md` to match.
+- Proposal readiness unchanged: **NOT READY** — both additions are enhancements, not blockers; core P0 list is unchanged.
+
 ## 2026-07-20 — Registration Flow Correction, Content Visibility, Profile Progression Visual
 - **Client correction:** qualification registration is now student-initiated (from the student's own profile — "Register"/"Choose qualification day," pick a category), not instructor-initiated. The app auto-restricts registration to the student's next eligible tier and recommends nearby instructors. Marked `S-009` (the original instructor-initiated design) as **Removed**, explicitly superseded by new `S-025` — kept in the tracker rather than deleted, so the correction is traceable. Updated `S-008` to drop the "+" button reference. Updated `CAP-007` to reflect the corrected flow.
 - Added `S-026` (scoped instructor access — an instructor only sees standards for the specific course a student is actively registered for, not a free browse of every tier) and `CAP-017`.

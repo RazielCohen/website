@@ -63,6 +63,12 @@ This file tracks confirmed and proposed **feature / scope requirements** in plai
 ### S-028 — Profile Rank/Medal Progression Visual ("Skill Tree")
 **P1 · Needs Clarification · Client portal.** Pokémon-style visual: earned tiers/medals in full color, in-progress tier grayed out, future tiers blacked-out/locked as a preview. **Remaining:** how many locked tiers to show, per-category vs. combined view (Q-030).
 
+### S-029 — Customizable Habit-Reminder Notifications
+**P1 · Needs Clarification · Notifications / Client portal.** Garmin-style daily reminders per pillar: Fitness (water/steps), Firearms (dry-fire), Medical (tourniquet practice). **Remaining:** full habit list and expandability (Q-032), whether completion is tracked/streaked, scheduling configurability.
+
+### S-030 — Profile Photo Privacy Toggle
+**P2 · Needs Clarification · Client portal / Security / compliance.** Option to hide a profile photo from other users while name/code remain visible. **Remaining:** confirm this is committed scope, not just a suggestion (Q-033); full list of surfaces affected (Q-034).
+
 ## Future Ideas
 
 ### F-002 — Virtual Qualifications via Wearable Data

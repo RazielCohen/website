@@ -31,7 +31,8 @@ This file tracks open questions and risks in plain language. It mirrors the `Q-#
 - **Q-026** — What is the ban process (who decides, grounds, appeal)?
 - **Q-027** — Does a failed ID verification block the whole app, or only firearms-related features?
 - **Q-029 (new)** — Instructor visibility boundary was described unclearly (possible transcription issue): can an instructor ever view standards above what a specific active student registration requires, or is access always strictly limited to that one registration? Needs a plain confirmation rather than a guess at the garbled original phrasing.
-- **Q-031 (new)** — Does the new automatic instructor-recommendation-on-registration (S-025) replace the standalone locator map (S-017), or do both exist separately?
+- **Q-031** — Does the new automatic instructor-recommendation-on-registration (S-025) replace the standalone locator map (S-017), or do both exist separately?
+- **Q-034 (new)** — In which specific places is a user's name, unique code, and/or photo shown to others (leaderboard, locator map, messaging, instructor-visible records) — needed to scope the photo-privacy toggle.
 
 ## Nice to Know (P2)
 
@@ -41,7 +42,9 @@ This file tracks open questions and risks in plain language. It mirrors the `Q-#
 - **Q-020** — Can an instructor be certified in more than one specialty category?
 - **Q-024** — What can a user search/filter by on the instructor locator map, and is it available to all tiers?
 - **Q-028** — Does the ID-verification vendor's per-check cost factor into tier pricing (Q-010)?
-- **Q-030 (new)** — For the profile progression visual (S-028): how many future tiers are shown locked, and is it one combined view or per-category?
+- **Q-030** — For the profile progression visual (S-028): how many future tiers are shown locked, and is it one combined view or per-category?
+- **Q-032 (new)** — Is the habit-reminder feature's habit list fixed to the examples given, or expandable? Should completion be tracked (streaks), or are these just reminder pings?
+- **Q-033 (new)** — Is the profile-photo privacy toggle (S-030) confirmed scope, or a "nice to have" the client is still weighing? Client's own phrasing was tentative.
 
 ## Future Idea Flagged
 
