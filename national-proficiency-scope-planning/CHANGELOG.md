@@ -2,6 +2,16 @@
 
 All notable changes to the scope worksheet and its companion Markdown files are logged here, most recent first.
 
+## 2026-07-20 — Instructor / Backend Qualification Workflow
+- Logged the client's description of the instructor/backend side: Approved Instructor role, a center "+" pre-registration button (category/tier/date), Google Calendar integration, an instructor-accessible qualification-standards library ("course of fire"), Shooter's Global shot-timer integration with manual-entry fallback, strict pass/fail grading with a mandatory edit-audit-trail, and automatic profile rank/medal updates on Pass.
+- Added 6 scope items (`S-008`–`S-013`) and 5 open questions (`Q-014`–`Q-018`), plus 1 new risk (`R-003`, qualification record-keeping/compliance exposure — related to `R-001`, `R-002`).
+- Updated `Q-001` (three pillars confirmed: Medical, Firearms, Fitness; audience/business model still open), `Q-002`/`Q-003` (earning mechanism now confirmed, actual standards content still needed), and `S-003` (rank/medal update mechanism now confirmed).
+- Added `CAP-007` and `CAP-008` to the System Capability Map for the instructor workflow.
+- Added the raw client message to Raw Notes.
+- Logged 5 new confirmed decisions in `DECISIONS.md` (three pillars, instructor role definition, strict pass/fail, edit audit trail, auto profile update on Pass).
+- Updated `PROJECT_OVERVIEW.md`, `REQUIREMENTS.md`, `OPEN_QUESTIONS.md`, `WORKFLOWS.md`, `PROPOSAL_READINESS.md` to match.
+- Proposal readiness unchanged: **NOT READY** — significant new detail captured, but P0 questions grew (business audience/model, actual qualification standards content, instructor designation process) and a second compliance risk (R-003) was flagged alongside R-001.
+
 ## 2026-07-20 — Brand Separation Confirmed
 - Client confirmed National Proficiency and Tactical Rabbi (the other project already in this repo) are completely separate, unrelated brands/companies, with no crossover of information between the two.
 - Closed the Tactical Rabbi sub-question inside `Q-001`; the core business-description/audience question remains open.

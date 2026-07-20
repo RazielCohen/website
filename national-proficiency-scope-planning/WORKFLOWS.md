@@ -25,6 +25,12 @@ A tab next to Home lets members send/receive messages or updates with other memb
 ### CAP-006 — Media Tab
 A tab after Home and Chat hosts medical, fitness, and firearms/building training videos. **Premium tier only** — Free and Mid (TBD) are excluded. *(Relates to S-006; video categories and hosting approach still open — Q-008; content liability risk — R-002.)*
 
+### CAP-007 — Instructor Pre-Registration ("+" Button)
+Approved Instructors only. From the tab bar, they tap a center "+" button to open a form: select category (Medical/Firearms/Fitness), tier, and date, then submit. This produces an approval confirmation and sends a Google Calendar invite to the student. *(Relates to S-008, S-009, S-010; approval workflow and calendar approach still open — Q-014, Q-016.)*
+
+### CAP-008 — Qualification Administration & Grading
+Approved Instructors only. On test day, the instructor opens the registered qualification, follows that tier's standard/course of fire, and records results — via the Shooter's Global shot-timer integration or manual entry. Grading is checklist-based and strictly pass/fail; any edit is logged in an audit trail. A Pass automatically updates the student's profile rank/medal (CAP-003). *(Relates to S-011, S-012, S-013; standards content, integration status, and retest policy still open — Q-002, Q-003, Q-017, Q-018.)*
+
 ## Proposed / Draft Workflows
 _None yet beyond the above._
 

@@ -7,38 +7,41 @@ _Companion file: `National_Proficiency_Scope_Planning_Worksheet.xlsx` (Summary t
 National Proficiency Scope Planning
 
 ## Current Understanding
-National Proficiency is a native mobile app (iOS + Android), **account-required** — no guest/anonymous access. Confirmed flow, per the client:
+National Proficiency is a native mobile app (iOS + Android), **account-required** (no guest access), and **completely unrelated to Tactical Rabbi** (no information crossover — client-confirmed).
 
-1. User opens the app on their Android or Apple device.
-2. A branded launch animation displays "National Proficiency."
-3. All access requires an account. New users create one; existing users log in.
-4. On successful login, the app opens to the user's **individual profile page**: photo on top, current rank, medals/achievements earned, and guidance on the next accomplishment.
-5. A tab bar provides access to:
-   - **Home** — updates, monthly challenges, possibly a community aspect
-   - **Chat / Messaging** — second tab, next to Home, for members to keep each other updated
-   - **Media** — a video hosting platform (medical training, fitness training, and firearms & building training videos — exact meaning of "building" videos not yet confirmed, see Q-008)
+**User-side flow (confirmed):**
+1. Branded launch animation → account login (no guest access).
+2. Lands on the **individual profile page**: photo, current rank, medals/achievements, next-accomplishment guidance.
+3. Tab bar: **Home** (updates, monthly challenges, community aspect) → **Chat/Messaging** → **Media** (medical, fitness, and firearms & building training videos, Premium-only).
+4. **Three membership tiers** gate access: Free (app + profile + Home only), Mid (still being defined by the client), Premium (everything, plus monthly raffles and personalized guidance).
+5. **Three proficiency pillars are confirmed: Medical, Firearms, and Fitness.**
 
-**Three membership tiers gate feature access:**
-- **Free** — app access, profile page, Home page only. No chats, media, or monthly challenges.
-- **Mid** — feature set still being worked out by the client (not yet defined).
-- **Premium** — all features, plus monthly raffles tied to challenges, media access, chats, and additional personalized guidance based on what the user is working on.
+**Instructor/backend side (new):**
+- **Approved Instructors** share the regular user's profile and access, plus an instructor-only **"+" button** (center bottom of the app) to pre-register a student for a qualification — selecting category (Medical/Firearms/Fitness), level/tier, and date.
+- Submission produces an approval confirmation and a **Google Calendar** invite sent to the student.
+- On qualification day, the instructor follows that tier's **qualification standard / course of fire**, records results via a **"Shooter's Global" shot-timer integration** or manual entry.
+- Grading is **strictly pass/fail — no partial credit**. Any edit to recorded results must leave a **verifiable audit trail**.
+- After the instructor checks off each qualification criterion to standard, a **Pass** button updates the student's profile with the new medal/badge/accomplishment — this is the confirmed mechanism behind the profile page's rank/medal display (S-003).
 
-**National Proficiency is a completely separate brand/company from Tactical Rabbi (the other project in this repo), with no crossover of information between the two** — confirmed by the client. What proficiency the app is tracking and its target audience is still not explicitly confirmed. The Media tab's content categories (medical, fitness, firearms/building training) are a strong hint toward a tactical/safety/professional-training domain, but this hasn't been stated outright — see `OPEN_QUESTIONS.md` (Q-001).
+The target audience and business model (who takes this program, and how National Proficiency operates commercially) is still not explicitly stated — see `OPEN_QUESTIONS.md` (Q-001).
 
 ## Business Goal
 TBD — not yet explicitly stated by the client.
 
 ## Highest Priority Next
-Resolve P0 items: business domain/audience (Q-001), rank system (Q-002), medal system (Q-003), account/auth rules (Q-005), Mid-tier feature list and tier pricing (Q-009, Q-010), and the raffle legal/compliance risk (R-001).
+Resolve P0 items: business audience/model (Q-001), the actual qualification standards content per category/tier (Q-002, Q-003, S-011), account/auth rules (Q-005), Mid-tier feature list and tier pricing (Q-009, Q-010), the raffle legal/compliance risk (R-001), and instructor designation process (Q-015).
 
 ## Verification Required
-Client confirmation of navigation structure, rank/medal rules, monthly-challenge mechanics, Home-vs-Messaging community overlap and whether challenges are tier-gated (Q-004, Q-011), exact Media tab video categories (Q-008), and what "additional guidance" means in practice (Q-013).
+Client confirmation of navigation structure, monthly-challenge mechanics, Home-vs-Messaging community overlap and tier-gating (Q-004, Q-011), exact Media tab video categories (Q-008), the pre-registration approval workflow (Q-014), Google Calendar integration approach (Q-016), and Shooter's Global integration/partner status (Q-017).
 
 ## Open Decisions
-Login mechanism, profile-page landing screen, tab order, account-required access, and the three-tier structure and its Free/Premium boundaries are decided in direction — see `DECISIONS.md`. Mid tier and all pricing remain undecided.
+Login mechanism, profile-page landing screen, tab order, account-required access, the three-tier structure, the three proficiency pillars, strict pass/fail grading, and the edit-audit-trail requirement are decided in direction — see `DECISIONS.md`. Mid tier, all pricing, and the full qualification standards content remain undecided.
 
 ## Proposal Notes
-App concept and tier/paywall structure now captured. Still not proposal-ready — multiple P0 items open, plus one legal/compliance risk (R-001) around the premium raffle that should be reviewed before proposing pricing or timelines. See `PROPOSAL_READINESS.md`.
+App concept, tier/paywall structure, and instructor/qualification workflow now captured. Still not proposal-ready — multiple P0 items open, plus legal/compliance risks (R-001 raffle, R-003 qualification record-keeping) that should be reviewed before proposing pricing or timelines. See `PROPOSAL_READINESS.md`.
+
+## Repo Note
+The client has asked for National Proficiency's docs to live in a separate repository from Tactical Rabbi, to guarantee no information crossover. This session's GitHub integration cannot create new repositories (permission error) — waiting on the client to create an empty repo so this content can be moved and this folder removed from `website`.
 
 ---
 This file mirrors the **Summary** tab of the companion spreadsheet. It is updated any time the spreadsheet's Summary tab changes, and vice versa.

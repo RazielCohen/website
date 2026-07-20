@@ -17,6 +17,11 @@ This file is a running log of **confirmed decisions** — things that are no lon
 | 2026-07-20 | Premium tier includes all features, plus monthly raffles tied to challenges, media access, chats, and additional personalized guidance. | S-007 | Client description. |
 | 2026-07-20 | Media tab is Premium-tier only. | S-006 | Client description. |
 | 2026-07-20 | National Proficiency and Tactical Rabbi (the other project in this repo) are completely separate, unrelated brands/companies — no crossover of information between the two. | Q-001 | Client confirmation, in response to a direct question. |
+| 2026-07-20 | The three proficiency pillars are Medical, Firearms, and Fitness. | Q-001, S-009, S-011 | Client description. |
+| 2026-07-20 | Approved Instructors have the same profile/access as regular users, plus an instructor-only "+" registration/administration capability. | S-008 | Client description. |
+| 2026-07-20 | All qualifications are graded strictly pass/fail — no partial or leniency option. | S-013 | Client description. |
+| 2026-07-20 | Any edit to recorded qualification results must leave a verifiable record that an edit was made. | S-013 | Client description. |
+| 2026-07-20 | Passing a qualification automatically updates the student's profile with the corresponding new medal/badge/accomplishment. | S-013, S-003 | Client description. |
 
 ---
 **How this stays in sync:** whenever a scope item's status changes to `Confirmed`, or an open decision is settled, a row is added here in the same pass, dated and attributed to its source.
