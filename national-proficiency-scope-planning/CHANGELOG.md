@@ -2,6 +2,17 @@
 
 All notable changes to the scope worksheet and its companion Markdown files are logged here, most recent first.
 
+## 2026-07-20 — Role Hierarchy, Vetting, Waivers, Locator Map, Media Badges
+- Logged the client's description of: the two-cofounder Owner role (full record access/edit); instructor registration and vetting via a website with specialty selection (Firearms/Fitness/Medical); a zip-code-based instructor locator map; the instructor tier-upgrade-yes/downgrade-request-only rule; new-account creation issuing a unique serial number/code; two required waivers (instructor standards waiver, and a universal liability waiver establishing National Proficiency as a records-keeping-only company with no responsibility for outcomes); and Media-tab video-completion badges verified by an online quiz.
+- Added 7 scope items (`S-014`–`S-020`), 1 future idea (`F-001`, leaderboard-style bonus badges — logged tentatively per the client's own phrasing), and 6 open questions (`Q-019`–`Q-024`).
+- **Significant resolution:** the universal liability waiver and "records-keeping only" description substantially answers `Q-001`'s business-model question — downgraded from P0 to P2, since only the specific target market/segment remains unstated. This also partially mitigates `R-002` and `R-003`, though both still need a legal review of the waiver's actual enforceability.
+- Updated `S-002` (serial-number/login relationship — Q-022) and `S-013` (tier-upgrade/no-unilateral-downgrade rule, ties to `S-018`).
+- Added `CAP-009` through `CAP-012` to the System Capability Map.
+- Added the raw client message to Raw Notes.
+- Logged 8 new confirmed decisions in `DECISIONS.md`.
+- Updated `PROJECT_OVERVIEW.md`, `REQUIREMENTS.md`, `OPEN_QUESTIONS.md`, `WORKFLOWS.md`, `PROPOSAL_READINESS.md` to match.
+- Proposal readiness unchanged: **NOT READY** — business model is now clear, but instructor vetting process, waiver legal text, pricing, and the actual qualification standards content are still outstanding P0 items.
+
 ## 2026-07-20 — Instructor / Backend Qualification Workflow
 - Logged the client's description of the instructor/backend side: Approved Instructor role, a center "+" pre-registration button (category/tier/date), Google Calendar integration, an instructor-accessible qualification-standards library ("course of fire"), Shooter's Global shot-timer integration with manual-entry fallback, strict pass/fail grading with a mandatory edit-audit-trail, and automatic profile rank/medal updates on Pass.
 - Added 6 scope items (`S-008`–`S-013`) and 5 open questions (`Q-014`–`Q-018`), plus 1 new risk (`R-003`, qualification record-keeping/compliance exposure — related to `R-001`, `R-002`).

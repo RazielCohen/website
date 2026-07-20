@@ -7,38 +7,32 @@ _Companion file: `National_Proficiency_Scope_Planning_Worksheet.xlsx` (Summary t
 National Proficiency Scope Planning
 
 ## Current Understanding
-National Proficiency is a native mobile app (iOS + Android), **account-required** (no guest access), and **completely unrelated to Tactical Rabbi** (no information crossover — client-confirmed).
+National Proficiency is a native mobile app (iOS + Android), account-required (no guest access), completely unrelated to Tactical Rabbi. It is a **proficiency records-keeping platform** across three pillars — **Medical, Firearms, Fitness** — administered by vetted Approved Instructors. National Proficiency itself takes no responsibility for the underlying qualification standards or outcomes (see Business Goal, and risks R-002/R-003).
 
-**User-side flow (confirmed):**
-1. Branded launch animation → account login (no guest access).
-2. Lands on the **individual profile page**: photo, current rank, medals/achievements, next-accomplishment guidance.
-3. Tab bar: **Home** (updates, monthly challenges, community aspect) → **Chat/Messaging** → **Media** (medical, fitness, and firearms & building training videos, Premium-only).
-4. **Three membership tiers** gate access: Free (app + profile + Home only), Mid (still being defined by the client), Premium (everything, plus monthly raffles and personalized guidance).
-5. **Three proficiency pillars are confirmed: Medical, Firearms, and Fitness.**
+**User-side flow:** branded launch animation → account creation (basic info → issued a unique serial number/code to access the account) or login → individual profile page (photo, rank, medals, next-accomplishment guidance) → tab bar with Home, Chat/Messaging, and Media, tier-gated (Free / Mid TBD / Premium).
 
-**Instructor/backend side (new):**
-- **Approved Instructors** share the regular user's profile and access, plus an instructor-only **"+" button** (center bottom of the app) to pre-register a student for a qualification — selecting category (Medical/Firearms/Fitness), level/tier, and date.
-- Submission produces an approval confirmation and a **Google Calendar** invite sent to the student.
-- On qualification day, the instructor follows that tier's **qualification standard / course of fire**, records results via a **"Shooter's Global" shot-timer integration** or manual entry.
-- Grading is **strictly pass/fail — no partial credit**. Any edit to recorded results must leave a **verifiable audit trail**.
-- After the instructor checks off each qualification criterion to standard, a **Pass** button updates the student's profile with the new medal/badge/accomplishment — this is the confirmed mechanism behind the profile page's rank/medal display (S-003).
+**Instructor/backend side:** Approved Instructors register and are vetted via a website (choosing a specialty — Firearms, Fitness, or Medical), sign a waiver to follow National Proficiency's standards, and get an instructor-only "+" button to pre-register students for qualifications (Google Calendar invite sent), access qualification standards on test day, record results (Shooter's Global shot timer or manual entry), and grade strictly pass/fail with a mandatory edit-audit-trail. An instructor can **upgrade** a student's tier on a Pass, but **cannot lower/remove** a tier directly — only submit a downgrade request with a required reason.
 
-The target audience and business model (who takes this program, and how National Proficiency operates commercially) is still not explicitly stated — see `OPEN_QUESTIONS.md` (Q-001).
+**Role hierarchy:** Two **cofounders** sit above instructors with full access to view/edit any student or instructor record. A **zip-code-based locator map** lets users find nearby instructors.
+
+**Legal/liability model:** every user signs a liability waiver stating National Proficiency is solely a records-keeping company, not responsible for shooting/medical/fitness outcomes — that liability, and legal compliance, is the individual's own.
+
+**Media tab:** also awards quiz-verified badges for watching specific training videos (e.g. a "How to Build an AR-15" video + quiz = badge). The client also mentioned, more tentatively, additional leaderboard-style badges for peer ranking/camaraderie (logged as a future idea, F-001).
 
 ## Business Goal
-TBD — not yet explicitly stated by the client.
+National Proficiency is a **records-keeping/tracking company**: it documents where people are qualifying (medical, firearms, fitness) and what they currently hold, via vetted Approved Instructors — it does not set or guarantee the underlying training standards and assumes no liability for outcomes (client's own description). The exact target market/customer segment and any monetization beyond the three membership tiers is still not stated — see `OPEN_QUESTIONS.md` (Q-001, now P2).
 
 ## Highest Priority Next
-Resolve P0 items: business audience/model (Q-001), the actual qualification standards content per category/tier (Q-002, Q-003, S-011), account/auth rules (Q-005), Mid-tier feature list and tier pricing (Q-009, Q-010), the raffle legal/compliance risk (R-001), and instructor designation process (Q-015).
+Resolve P0 items: the actual qualification standards content per category/tier (Q-002, Q-003, S-011), account/auth rules including how the unique serial number relates to login (Q-005, Q-022), Mid-tier feature list and tier pricing (Q-009, Q-010), the raffle legal/compliance risk (R-001), instructor vetting criteria and downgrade-approval authority (Q-015, Q-021, Q-023), and legal review/drafting of both waivers (S-016).
 
 ## Verification Required
-Client confirmation of navigation structure, monthly-challenge mechanics, Home-vs-Messaging community overlap and tier-gating (Q-004, Q-011), exact Media tab video categories (Q-008), the pre-registration approval workflow (Q-014), Google Calendar integration approach (Q-016), and Shooter's Global integration/partner status (Q-017).
+Client confirmation of navigation structure, monthly-challenge mechanics, Home-vs-Messaging community overlap and tier-gating (Q-004, Q-011), exact Media tab video categories (Q-008), the pre-registration approval workflow (Q-014), Google Calendar and Shooter's Global integration details (Q-016, Q-017), whether the instructor registration website is a separate build from the app (Q-019), and locator-map search/filter scope (Q-024).
 
 ## Open Decisions
-Login mechanism, profile-page landing screen, tab order, account-required access, the three-tier structure, the three proficiency pillars, strict pass/fail grading, and the edit-audit-trail requirement are decided in direction — see `DECISIONS.md`. Mid tier, all pricing, and the full qualification standards content remain undecided.
+Login mechanism, profile-page landing screen, tab order, account-required access, the three-tier structure, the three proficiency pillars, strict pass/fail grading, the edit-audit-trail requirement, the two-cofounder Owner role, instructor upgrade/no-unilateral-downgrade rule, and both required waivers are decided in direction — see `DECISIONS.md`. Mid tier, all pricing, the full qualification standards content, and the actual waiver legal text remain undecided.
 
 ## Proposal Notes
-App concept, tier/paywall structure, and instructor/qualification workflow now captured. Still not proposal-ready — multiple P0 items open, plus legal/compliance risks (R-001 raffle, R-003 qualification record-keeping) that should be reviewed before proposing pricing or timelines. See `PROPOSAL_READINESS.md`.
+App concept, tier/paywall structure, instructor/qualification workflow, role hierarchy, and liability model now captured. Still not proposal-ready — multiple P0 items open, plus legal/compliance risks (R-001 raffle, R-002/R-003 now partially mitigated by the liability waiver but still need enforceability review) that should be resolved before proposing pricing or timelines. See `PROPOSAL_READINESS.md`.
 
 ## Repo Note
 The client has asked for National Proficiency's docs to live in a separate repository from Tactical Rabbi, to guarantee no information crossover. This session's GitHub integration cannot create new repositories (permission error) — waiting on the client to create an empty repo so this content can be moved and this folder removed from `website`.

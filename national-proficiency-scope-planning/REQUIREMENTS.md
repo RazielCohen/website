@@ -7,46 +7,50 @@ This file tracks confirmed and proposed **feature / scope requirements** in plai
 
 ## User-Side Requirements
 
-### S-001 — Branded App Launch Animation
-**P1 · Needs detail · Public form / Onboarding.** Branded "National Proficiency" animation on open, before login. **Remaining:** animation assets, skippability, cold-start behavior.
+- **S-001** Branded App Launch Animation — P1, needs asset/skip details.
+- **S-002** Account Required for All Access — P0, needs auth rules and how the serial number (S-019) relates to login (Q-022).
+- **S-003** Individual Profile Page — P0, earning mechanism confirmed via instructor Pass (S-013); still needs the actual rank/medal list (Q-002, Q-003).
+- **S-004** Home Tab (updates, challenges, community) — P1, needs tier-gating clarification (Q-011).
+- **S-005** Messaging / Community Tab — P1, needs message model and Mid-tier access (Q-004, Q-009).
+- **S-006** Media Hosting Tab (Premium only) — P1, needs exact video categories (Q-008).
+- **S-007** Membership Tier System (Free/Mid/Premium) — P0, needs Mid-tier features and pricing (Q-009, Q-010).
 
-### S-002 — Account Required for All Access
-**P0 · Needs Clarification · User management.** No guest access; new users create an account and select a tier. **Remaining:** provisioning model, password reset, MFA (Q-005).
+## Instructor / Backend Requirements
 
-### S-003 — Individual Profile Page
-**P0 · Needs Clarification · Client portal.** Photo, current rank, medals/achievements, next-accomplishment guidance. Earning mechanism now confirmed: updates automatically when an instructor marks a qualification Pass (S-013). **Remaining:** full rank/medal list (Q-002, Q-003), photo source.
+- **S-008** Approved Instructor Role — P0, needs designation process (Q-015).
+- **S-009** Student Pre-Registration Form — P0, needs approval-step definition (Q-014).
+- **S-010** Google Calendar Integration — P1, needs integration specifics (Q-016).
+- **S-011** Qualification Standards Library ("course of fire") — P0, needs the actual standards content (Q-002, Q-003) — likely as source documents from the client.
+- **S-012** Shot Timer Integration ("Shooter's Global") — P1, needs partner/integration confirmation (Q-017); manual entry is the confirmed fallback.
+- **S-013** Qualification Grading, Pass/Fail & Audit Trail — P0, needs checklist criteria and audit-trail format; on Pass, upgrades the student's tier. Instructors cannot lower a tier directly (S-018).
 
-### S-004 — Home Tab
-**P1 · Needs Clarification · Client portal.** Updates, monthly challenges, community aspect; Free tier excludes challenges. **Remaining:** content sources, challenge mechanics (Q-006), tier-gating within the tab (Q-011).
+## Role Hierarchy, Vetting & Legal (new)
 
-### S-005 — Messaging / Community Communications Tab
-**P1 · Needs Clarification · Client portal.** Free excludes chats; Premium includes them; Mid TBD. **Remaining:** message model (Q-004), moderation, Mid-tier access (Q-009).
+### S-014 — Cofounder / Owner Role
+**P0 · Needs Clarification · Admin dashboard / Security / compliance.** The two cofounders have full access to view/edit any instructor or student record. **Remaining:** whether cofounder edits are also audit-logged; whether cofounders approve instructor downgrade requests (Q-021).
 
-### S-006 — Media Hosting Tab (Premium Only)
-**P1 · Needs Clarification · Client portal (Media).** Medical, fitness, and firearms & building training videos. **Remaining:** exact categories (Q-008), hosting approach, content liability review (R-002).
+### S-015 — Instructor Registration & Vetting
+**P0 · Needs Clarification · Admin dashboard / User management / Public form.** Instructors register on a website, choose a specialty (Firearms/Fitness/Medical), and are individually vetted before approval. **Remaining:** whether the registration site is a separate build (Q-019), vetting criteria (Q-023), multi-category eligibility (Q-020).
 
-### S-007 — Membership Tier System (Free / Mid / Premium)
-**P0 · Needs Clarification · Payments.** Free: app + profile + Home only. Mid: undefined by client. Premium: everything + raffles + media + chats + guidance. **Remaining:** Mid-tier features (Q-009), pricing/billing (Q-010), raffle legal review (R-001).
+### S-016 — Instructor Waiver & Universal Liability Waiver
+**P0 · Needs Clarification · Security / compliance / User management.** Instructors sign a waiver to follow National Proficiency's standards; every user signs a liability waiver establishing National Proficiency as a records-keeping company only, with no responsibility for shooting/medical/fitness outcomes. **Remaining:** actual legal text (needs client's counsel), e-signature/storage, enforceability review (relates to R-002, R-003).
 
-## Instructor / Backend Requirements (new)
+### S-017 — Instructor Locator Map (Zip Code)
+**P1 · Needs Clarification · Client portal / External integration.** Search by zip code for nearby approved instructors by drill/qualification needed. **Remaining:** search/filter scope and tier availability (Q-024).
 
-### S-008 — Approved Instructor Role
-**P0 · Needs Clarification · Admin dashboard / User management.** Same profile/access as a regular user, plus an instructor-only "+" button (center bottom) opening qualification-administration tools. **Remaining:** instructor designation process, per-category certification (Q-015).
+### S-018 — Tier Upgrade / Downgrade-Request Workflow
+**P0 · Needs Clarification · Admin dashboard / Security / compliance.** Instructor can upgrade a tier directly on a Pass; cannot lower/remove a tier directly — only submit a downgrade request with a required reason. **Remaining:** approval authority and process (Q-021).
 
-### S-009 — Student Pre-Registration Form
-**P0 · Needs Clarification · Admin dashboard.** Via the "+" button: instructor selects category (Medical/Firearms/Fitness), tier, and date; submits for approval. **Remaining:** full field list, approval-step definition (Q-014).
+### S-019 — New Account Creation & Unique Serial Number
+**P0 · Needs Clarification · User management / Security / compliance.** New users provide basic info and are issued a unique serial number/code to access their account. **Remaining:** whether this replaces or supplements username/password login (Q-022).
 
-### S-010 — Google Calendar Integration
-**P1 · Needs Clarification · External integration.** Sends the qualification date to the student on submission. **Remaining:** personal vs. org calendar, no-Google-account fallback (Q-016).
+### S-020 — Media Video-Completion Badges (Quiz-Verified)
+**P1 · Needs Clarification · Client portal (Media) / Database / records.** Users earn a digital badge for a specific video by passing an online quiz. **Remaining:** quiz content/format, pass threshold, retake policy.
 
-### S-011 — Qualification Standards Library
-**P0 · Needs Clarification · Admin dashboard / Database / records.** Instructor accesses the tier's qualification standard/course of fire on test day. **Remaining:** the actual standards content per category × tier (Q-002, Q-003) — likely needs source documents from the client.
+## Future Ideas
 
-### S-012 — Shot Timer Integration ("Shooter's Global")
-**P1 · Needs Clarification · External integration.** Drill times recorded directly into the app. **Remaining:** partner/integration status and interface (Q-017); manual entry is the confirmed fallback.
-
-### S-013 — Qualification Grading, Pass/Fail & Audit Trail
-**P0 · Needs Clarification · Admin dashboard / Database / records / Security / compliance.** Checklist grading, strictly pass/fail, manual notes supported, all edits logged with an audit trail. A Pass auto-updates the student's profile (S-003). **Remaining:** checklist criteria per category/tier, audit-trail format, retest policy (Q-018).
+### F-001 — Leaderboard-Style Bonus Badges
+**P3 · Future Phase · Client portal (Media) / Reporting.** Beyond regular qualification medals, additional badges to rank against peers for camaraderie. Described tentatively by the client ("could be") — needs confirmation of v1 vs. future-phase scope before any design work.
 
 ## Removed / Deferred Requirements
 _None yet._

@@ -22,6 +22,14 @@ This file is a running log of **confirmed decisions** — things that are no lon
 | 2026-07-20 | All qualifications are graded strictly pass/fail — no partial or leniency option. | S-013 | Client description. |
 | 2026-07-20 | Any edit to recorded qualification results must leave a verifiable record that an edit was made. | S-013 | Client description. |
 | 2026-07-20 | Passing a qualification automatically updates the student's profile with the corresponding new medal/badge/accomplishment. | S-013, S-003 | Client description. |
+| 2026-07-20 | Two cofounders hold the top permission level, with full access to view/edit any instructor or student record. | S-014 | Client description. |
+| 2026-07-20 | Instructors register via a website, choose a specialty (Firearms, Fitness, or Medical), and are individually vetted before being listed as an Approved Instructor. | S-015 | Client description. |
+| 2026-07-20 | An instructor can upgrade a student's tier on a qualification Pass, but cannot lower/remove a tier directly — only submit a downgrade request with a required reason. | S-018, S-013 | Client description. |
+| 2026-07-20 | New users provide basic information and are issued a unique serial number/code to access their account. | S-019 | Client description. Relationship to username/password login still open — Q-022. |
+| 2026-07-20 | Instructors must sign a waiver agreeing to follow National Proficiency's standards. | S-016 | Client description. |
+| 2026-07-20 | Every user must sign a liability waiver: National Proficiency is solely a records-keeping company, takes no responsibility for shooting/medical/fitness qualification outcomes, and all liability — including compliance with local, state, and federal law — rests with the individual. | S-016 | Client description. Business-model clarification also resolves most of Q-001. |
+| 2026-07-20 | A zip-code-based map lets users find nearby approved instructors. | S-017 | Client description. |
+| 2026-07-20 | Users can earn a digital badge for a specific Media video by passing an online quiz. | S-020 | Client description. |
 
 ---
 **How this stays in sync:** whenever a scope item's status changes to `Confirmed`, or an open decision is settled, a row is added here in the same pass, dated and attributed to its source.
