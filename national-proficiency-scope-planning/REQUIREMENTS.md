@@ -83,6 +83,12 @@ This file tracks confirmed and proposed **feature / scope requirements** in plai
 
 ## Future Ideas
 
+### F-004 — Media as an Entertainment "Network"
+**P3 · Future Phase · Client portal (Media) / External integration.** Client's own framing — "down the line" — expand the Media tab beyond today's educational content into shows and entertainment. Worth considering during S-006's architecture (Q-044) even though not current scope.
+
+### F-005 — Additional Proficiency Categories Beyond the Three Pillars
+**P3 · Future Phase · Database / records / Client portal.** Client's own framing — "more for the future" — expand beyond Medical/Firearms/Fitness into other neutral categories (e.g. vehicle knowledge); explains why the company name is intentionally generic. Recommend discussing category-system extensibility now (Q-044) to avoid rework later.
+
 ### F-003 — Full Minor Skill-Development Program ⚠
 **P3 · Future Phase · Security / compliance / Client portal.** Client's own framing — "in the future" — a separate, deliberately less strictly vetted program for children under 18 with their own growth path, oversight left to parents. **Carries the highest legal/child-safety risk logged for this project (R-006)** given the firearms/medical context. Legal review required before any design work — see Q-036 (pillar eligibility for minors), Q-037 (vetting standard), Q-038 (COPPA-adjacent data/consent).
 

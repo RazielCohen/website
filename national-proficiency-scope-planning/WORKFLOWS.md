@@ -87,5 +87,11 @@ Client's own framing: a future possibility where certain qualifications could be
 ### F-003 — Full Minor Skill-Development Program ⚠
 Client's own framing — "in the future" — a separate program for children under 18 with their own growth path, deliberately less strictly vetted than the adult program, oversight left to parents. Explicitly not current scope, but flagged as the project's highest-priority legal/child-safety risk (R-006) given the firearms/medical context. Legal review required before any design work.
 
+### F-004 — Media as an Entertainment "Network"
+Client's own framing — "down the line" — the Media tab could grow beyond today's educational content (medical, firearms, fitness) into a section hosting shows and entertainment content too. Not current scope, but worth a mention during S-006's architecture discussion (Q-044).
+
+### F-005 — Additional Proficiency Categories Beyond the Three Pillars
+Client's own framing — "more for the future" — expansion beyond Medical/Firearms/Fitness into other neutral categories (vehicle knowledge given as an example), which is also why the company name is intentionally generic. Not current scope, but raises a real question (Q-044) about whether to build the category system extensibly now.
+
 ---
 **How this stays in sync:** any new workflow, user journey, or capability discussed is added here **and** as a row in the System Capability Map tab at the same time.

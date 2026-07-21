@@ -59,10 +59,14 @@ Client wants adults to be able to add a linked minor (under-18) account, tied to
 - **Q-033 (new)** — Is the profile-photo privacy toggle (S-030) confirmed scope, or a "nice to have" the client is still weighing? Client's own phrasing was tentative.
 - **Q-041 (new)** — Which affiliate program(s)/networks should be integrated?
 - **Q-042 (new)** — Are daily/weekly deals curated manually or pulled automatically from an affiliate feed?
+- **Q-044 (new)** — Given the stated future intent to expand Media into an entertainment network (F-004) and add pillars beyond the current three (F-005), should the category system and media hosting be architected for extensibility now, rather than hardcoded to three pillars? A technical/cost trade-off worth discussing even though the expansion itself isn't happening yet.
 
-## Future Idea Flagged
+## Future Ideas Flagged
 
 - **F-002** — Virtual/remote qualifications using wearable data, tied to specific events. Client explicitly framed this as a later possibility, not current scope. See risk R-004.
+- **F-003** — Full minor skill-development program. See the highest-priority flag above (R-006).
+- **F-004** — Media tab growing into a broader entertainment "network." Not current scope.
+- **F-005** — Additional proficiency categories beyond Medical/Firearms/Fitness (e.g. vehicle knowledge). Not current scope, but see Q-044 on whether to build the category system extensibly now.
 
 ## Risks / Proposal-Impacting Concerns
 

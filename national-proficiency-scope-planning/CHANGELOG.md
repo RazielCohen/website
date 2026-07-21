@@ -2,6 +2,15 @@
 
 All notable changes to the scope worksheet and its companion Markdown files are logged here, most recent first.
 
+## 2026-07-20 — Future Direction: Media Network & Additional Pillars
+- Logged two future-phase directions, both explicitly framed by the client as "down the line"/"more for the future," not current scope: (1) the Media tab eventually growing into a broader entertainment "network" beyond today's educational content; (2) expansion beyond the three current pillars (Medical, Firearms, Fitness) into other neutral categories (e.g. vehicle knowledge) — which also explains why the company name "National Proficiency" is intentionally generic.
+- Added `F-004` (media network expansion) and `F-005` (additional pillars), plus `Q-044`: a practical question about whether the current build should architect the category system and media hosting for extensibility now, to avoid costly rework if either future direction happens. This is a recommendation surfaced for discussion, not a decision made unilaterally.
+- Updated `Q-001` with the naming-rationale context and `S-006` with a forward-looking architecture note.
+- Added the raw client message to Raw Notes.
+- Logged 1 new confirmed decision (the naming rationale) in `DECISIONS.md`; did not log F-004/F-005 themselves as decisions, consistent with how other future-phase ideas (F-002, F-003) are handled — future ideas are logged as ideas, not commitments.
+- Updated `PROJECT_OVERVIEW.md`, `REQUIREMENTS.md`, `OPEN_QUESTIONS.md`, `WORKFLOWS.md` to match.
+- Proposal readiness unchanged: **NOT READY** — purely future-phase context, doesn't add or resolve any P0 blocker.
+
 ## 2026-07-20 — Store: Merch, Affiliate Links, Deal Updates
 - Logged the client's request for a store section: a merch store for custom branded merchandise (`S-032`), affiliate links for recommended products/gear generating commission revenue (`S-033`), and daily/weekly deal updates (`S-034`).
 - Added `Q-040` through `Q-043` (e-commerce platform choice, affiliate network, deal-sourcing/cadence, tier availability) and `R-007` — a routine compliance flag (FTC affiliate/sponsored-content disclosure requirements), much lower severity than the prior round's `R-006`.

@@ -25,6 +25,13 @@ On test day, instructors access qualification standards **scoped only to the spe
 - **Habit-reminder notifications** (S-029), Garmin-style: customizable daily reminders per pillar — Fitness (water intake, step count), Firearms (dry-fire practice), Medical (tourniquet practice). Users adjust which reminders they get.
 - **Profile photo privacy toggle** (S-030): a user's name and unique code may be shown to others, but they could optionally hide their photo. Client's own phrasing was tentative ("might be worth integrating") — flagged (Q-033) to confirm this is committed scope rather than assumed.
 
+## Future-Phase Direction: Media Network & Additional Pillars (Not Current Scope)
+Client described two long-term directions, explicitly framed as future ("down the line," "more for the future"), not current build scope:
+- **Media as a "network"** (F-004): the Media tab could eventually grow beyond brand-associated educational content (medical, firearms, fitness — today's scope, S-006) into a broader section hosting shows and entertainment content too.
+- **Beyond the three pillars** (F-005): the client explained the name "National Proficiency" is intentionally neutral/generic, because they intend to eventually add other neutral educational categories beyond Medical/Firearms/Fitness — vehicle knowledge was given as an example — to help people become more well-rounded.
+
+**Worth considering now (Q-044):** since the category system (used across the profile, registration, standards library, and leaderboard) and Media's hosting model currently appear built around exactly three fixed pillars, it may be worth architecting both as configurable/extensible from the start rather than hardcoded — to avoid costly rework if either future direction materializes. This is a recommendation for discussion with the client/technical lead, not a decision made on their behalf.
+
 ## New This Round: Store Section
 Client wants a store area combining: a **merch store** for custom National-Proficiency-branded merchandise (S-032), **affiliate links** for recommended third-party products/gear generating commission revenue (S-033), and **daily/weekly deal updates** (S-034). Routine addition — main open items are the e-commerce platform choice (Q-040), affiliate network (Q-041), and standard FTC affiliate-disclosure compliance (R-007), not a major risk like the item below.
 

@@ -35,6 +35,7 @@ The concept, business model, role hierarchy, and now the leaderboard/wearable fe
 - **New (not blocking the rest of the proposal):** customizable habit-reminder notifications per pillar; a tentatively-proposed profile-photo privacy toggle (not yet confirmed as committed scope — Q-033).
 - **New (excluded from proposal until legal review):** minor/dependent account linkage and a future children's program (R-006).
 - **New (routine, not blocking):** a store section — custom merch, affiliate links, daily/weekly deals.
+- **New (future-phase context, not blocking):** Media may grow into an entertainment network (F-004); the three pillars may expand later (F-005) — worth a technical discussion on category/media extensibility (Q-044), but not a current scope item.
 
 ## What's Still Open
 - All P0 items above.
