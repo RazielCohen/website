@@ -17,7 +17,7 @@ This file tracks confirmed and proposed **feature / scope requirements** in plai
 
 ## Instructor / Backend Requirements
 
-- **S-008** Approved Instructor Role — P0, needs designation process (Q-015). Updated: the "+" button pre-registration entry point has moved to the student's profile (S-025).
+- **S-008** Approved Instructor Role — P0, needs designation process (Q-015). **CORRECTED (second correction):** by default, instructors get only the instructor module — running/approving qualifications. Full member access (messaging, profile/tier progression, media, etc.) requires a paid subscription (Free/Mid/Premium), same as any other user. See Q-045–Q-047 for the exact boundary. The "+" button pre-registration entry point also moved to the student's profile (S-025).
 - **S-010** Google Calendar Integration — P1, needs integration specifics (Q-016).
 - **S-011** Qualification Standards Library ("course of fire") — P0, needs the actual standards content (Q-002, Q-003) — client has confirmed a source document is coming. New: Medical/Fitness standards are fully public; Firearms exact drills are confidential (public "skills needed" summary per tier only). Instructor access is scoped per S-026.
 - **S-012** Shot Timer Integration ("Shooter's Global") — P1, needs partner/integration confirmation (Q-017); manual entry is the confirmed fallback.

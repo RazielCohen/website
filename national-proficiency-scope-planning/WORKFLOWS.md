@@ -13,6 +13,9 @@ Any user, before logging in, opens the app on iOS or Android and sees a "Nationa
 ### CAP-002 — Account Creation / Login
 The whole app requires an account — there is no guest/anonymous access. New users create an account (and, per S-007, will need to select a membership tier); returning users log in. *(Relates to S-002, S-007; account provisioning still open — Q-005.)*
 
+### CAP-025 — Instructor Access Tiering (Instructor Module vs. Full Membership) — CORRECTED
+An Approved Instructor without a paid subscription can only run/approve student qualifications (the instructor module). Subscribing to Free/Mid/Premium, same as any other user, unlocks messaging, their own profile/tier progression, media, and everything else. **This reverses the earlier stated direction** that instructors get full regular-user access by default. *(Relates to S-008 (corrected), S-007; exact instructor-module boundary and pricing still open — Q-045–Q-047.)*
+
 ### CAP-003 — Individual Profile Page
 Immediately after login, the member lands on their own profile page: photo on top, current rank, medals/achievements earned, and guidance on their next accomplishment. Available to all tiers. *(Relates to S-003; rank/medal system still open — Q-002, Q-003.)*
 

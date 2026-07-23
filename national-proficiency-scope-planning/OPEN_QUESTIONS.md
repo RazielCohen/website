@@ -25,6 +25,7 @@ Client wants adults to be able to add a linked minor (under-18) account, tied to
 - **Q-021** — Who approves an instructor's tier-downgrade request, and what happens if denied?
 - **Q-022** — Is the new-user unique serial number/code a replacement login credential or an additional ID?
 - **Q-025** — Which ID-verification vendor will be used, and can it actually confirm firearm eligibility, not just identity/age? Real legal-exposure point — see risk R-005.
+- **Q-045 (new)** — What exactly is included in "the instructor module" that an Approved Instructor gets without a paid subscription? Does it include their own profile/rank tracking?
 
 ## Important, Not Yet Blocking (P1)
 
@@ -60,6 +61,8 @@ Client wants adults to be able to add a linked minor (under-18) account, tied to
 - **Q-041 (new)** — Which affiliate program(s)/networks should be integrated?
 - **Q-042 (new)** — Are daily/weekly deals curated manually or pulled automatically from an affiliate feed?
 - **Q-044 (new)** — Given the stated future intent to expand Media into an entertainment network (F-004) and add pillars beyond the current three (F-005), should the category system and media hosting be architected for extensibility now, rather than hardcoded to three pillars? A technical/cost trade-off worth discussing even though the expansion itself isn't happening yet.
+- **Q-046 (new)** — Client said unsubscribed instructors won't have access to "their tier setups" — does this mean the instructor's own profile/rank progression, or something else? Wording was ambiguous.
+- **Q-047 (new)** — Do Approved Instructors pay the same Free/Mid/Premium pricing as regular users for full access, or a distinct instructor subscription price?
 
 ## Future Ideas Flagged
 
@@ -81,6 +84,10 @@ Client wants adults to be able to add a linked minor (under-18) account, tied to
 ## Registration Flow Correction
 
 The client corrected the qualification-registration flow: it is now **student-initiated** (from the student's own profile), not instructor-initiated. The original instructor-side design is preserved in the spreadsheet as `S-009`, marked **Removed**, superseded by `S-025` — see `DECISIONS.md` and `CHANGELOG.md` for the full correction.
+
+## Instructor Access Correction
+
+The client corrected the instructor access model: an Approved Instructor does **not** get full regular-user access for free. By default they get only the instructor module; full access requires a paid subscription like any other user. The earlier decision stating instructors share full regular-user access is marked **superseded** in `DECISIONS.md`, not silently edited — see `Q-045`–`Q-047` for what's still unresolved.
 
 ---
 **How this stays in sync:** any unclear requirement, missing decision, ambiguous item, or proposal-impacting risk is captured here **and** as a `Q-###`/`R-###` row in the Scope Items tab at the same time — never in only one place.

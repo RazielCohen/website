@@ -2,6 +2,16 @@
 
 All notable changes to the scope worksheet and its companion Markdown files are logged here, most recent first.
 
+## 2026-07-20 — Correction: Instructor Access Is Subscription-Gated
+- **Client correction:** because the app is subscription-based, an Approved Instructor should not get full regular-user access just by being an instructor. By default, instructors get only the **instructor module** (running/approving student qualifications). Full access to messaging, their own profile/tier progression, media, and everything else requires them to **also** pay for a subscription (Free/Mid/Premium), same as any other user.
+- Rewrote `S-008` in place to reflect this (kept the same ID, since it's the same role concept just corrected — unlike the `S-009`→`S-025` registration-flow correction, which became a new ID because the whole approach changed).
+- Updated `S-007` to note the tier system now also governs instructor access to non-instructor features.
+- Added `Q-045` (exact instructor-module boundary), `Q-046` (unclear meaning of "their tier setups" — possible transcription ambiguity, flagged rather than guessed), `Q-047` (instructor subscription pricing), and `CAP-025`.
+- **Corrected the outdated `DECISIONS.md` entry** that stated instructors get full regular-user access — marked it superseded with a strikethrough rather than silently editing history, and added a new decision row with the correction.
+- Added the raw client message to Raw Notes.
+- Updated `PROJECT_OVERVIEW.md`, `REQUIREMENTS.md`, `OPEN_QUESTIONS.md`, `WORKFLOWS.md` to match.
+- Proposal readiness unchanged: **NOT READY** — this is a meaningful monetization-model correction (closes a gap that would have let instructors get full access for free), but doesn't add new P0 blockers beyond the three new questions.
+
 ## 2026-07-20 — Future Direction: Media Network & Additional Pillars
 - Logged two future-phase directions, both explicitly framed by the client as "down the line"/"more for the future," not current scope: (1) the Media tab eventually growing into a broader entertainment "network" beyond today's educational content; (2) expansion beyond the three current pillars (Medical, Firearms, Fitness) into other neutral categories (e.g. vehicle knowledge) — which also explains why the company name "National Proficiency" is intentionally generic.
 - Added `F-004` (media network expansion) and `F-005` (additional pillars), plus `Q-044`: a practical question about whether the current build should architect the category system and media hosting for extensibility now, to avoid costly rework if either future direction happens. This is a recommendation surfaced for discussion, not a decision made unilaterally.

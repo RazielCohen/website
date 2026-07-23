@@ -22,7 +22,8 @@ The concept, business model, role hierarchy, and now the leaderboard/wearable fe
 - **Q-022** — Whether the new-user serial number/code replaces or supplements login credentials.
 - **R-001** — Legal/compliance review of the Premium-tier monthly raffle.
 - **S-016** — Actual legal text for both waivers, from the client's counsel.
-- **Q-025 / R-005 (new)** — Confirm the ID-verification vendor and whether it can actually verify firearm eligibility, not just identity/age — a real legal-exposure point if assumed incorrectly.
+- **Q-025 / R-005** — Confirm the ID-verification vendor and whether it can actually verify firearm eligibility, not just identity/age — a real legal-exposure point if assumed incorrectly.
+- **Q-045 (new)** — Exact boundary of the free "instructor module" vs. paid full access — needed for the entitlement/paywall logic underlying nearly every instructor account.
 
 ## What's Confirmed
 - App is native, iOS + Android, account-required, unrelated to Tactical Rabbi.
@@ -36,6 +37,7 @@ The concept, business model, role hierarchy, and now the leaderboard/wearable fe
 - **New (excluded from proposal until legal review):** minor/dependent account linkage and a future children's program (R-006).
 - **New (routine, not blocking):** a store section — custom merch, affiliate links, daily/weekly deals.
 - **New (future-phase context, not blocking):** Media may grow into an entertainment network (F-004); the three pillars may expand later (F-005) — worth a technical discussion on category/media extensibility (Q-044), but not a current scope item.
+- **Corrected:** Approved Instructors do not get full regular-user access for free — only the instructor module, unless they also subscribe (Free/Mid/Premium) like any other user. Closes a monetization gap in the earlier design.
 
 ## What's Still Open
 - All P0 items above.
