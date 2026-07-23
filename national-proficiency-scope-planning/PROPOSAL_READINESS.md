@@ -16,7 +16,7 @@ The concept, business model, role hierarchy, and now the leaderboard/wearable fe
 - **Q-005** — Account provisioning model, password-reset, and MFA requirements.
 - **Q-009** — Full Mid-tier feature list.
 - **Q-010** — Pricing per tier and payment/billing platform.
-- **Q-015 / Q-023** — Instructor vetting criteria and process.
+- **Q-015 / Q-023** — Instructor vetting criteria and process. Partially answered: questionnaire includes certifying org (NRA/USCCA/etc.), classes taught per month, company website — full field list and review process still needed.
 - **Q-019** — Whether instructor registration/vetting is a separate website or in-app (client's two statements haven't been reconciled).
 - **Q-021** — Downgrade-request approval authority and process.
 - **Q-022** — Whether the new-user serial number/code replaces or supplements login credentials.
@@ -38,6 +38,7 @@ The concept, business model, role hierarchy, and now the leaderboard/wearable fe
 - **New (routine, not blocking):** a store section — custom merch, affiliate links, daily/weekly deals.
 - **New (future-phase context, not blocking):** Media may grow into an entertainment network (F-004); the three pillars may expand later (F-005) — worth a technical discussion on category/media extensibility (Q-044), but not a current scope item.
 - **Corrected:** Approved Instructors do not get full regular-user access for free — only the instructor module, unless they also subscribe (Free/Mid/Premium) like any other user. Closes a monetization gap in the earlier design.
+- **New detail:** instructor vetting includes a questionnaire (certifying organization, classes taught per month, company website) — example fields given, full list still pending.
 
 ## What's Still Open
 - All P0 items above.

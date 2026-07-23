@@ -2,6 +2,15 @@
 
 All notable changes to the scope worksheet and its companion Markdown files are logged here, most recent first.
 
+## 2026-07-20 — Instructor Vetting Questionnaire Details
+- Logged the client's description of the instructor-vetting questionnaire: certifying organization (e.g. NRA, USCCA, or similar), average classes taught per month, company website, and similar questions to confirm the applicant runs a real, active organization.
+- Updated `S-015` and `Q-023` — previously an abstract "what's the vetting criteria" question, now partially answered with concrete example fields, though the client's own phrasing ("questions similar to that") signals the full field list is still incomplete.
+- Added `Q-048`: whether claimed certifications are actively verified with the issuing organization or self-reported — affects whether a verification workflow/integration is needed.
+- Updated `CAP-010` to reflect the questionnaire step.
+- Added the raw client message to Raw Notes.
+- Updated `PROJECT_OVERVIEW.md`, `REQUIREMENTS.md`, `OPEN_QUESTIONS.md`, `WORKFLOWS.md` to match.
+- Proposal readiness unchanged: **NOT READY** — this fleshes out an existing open item (Q-023) rather than adding a new blocker.
+
 ## 2026-07-20 — Correction: Instructor Access Is Subscription-Gated
 - **Client correction:** because the app is subscription-based, an Approved Instructor should not get full regular-user access just by being an instructor. By default, instructors get only the **instructor module** (running/approving student qualifications). Full access to messaging, their own profile/tier progression, media, and everything else requires them to **also** pay for a subscription (Free/Mid/Premium), same as any other user.
 - Rewrote `S-008` in place to reflect this (kept the same ID, since it's the same role concept just corrected — unlike the `S-009`→`S-025` registration-flow correction, which became a new ID because the whole approach changed).

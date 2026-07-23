@@ -37,8 +37,8 @@ Approved Instructors only, **scoped to the specific student registration in fron
 ### CAP-009 — Owner-Level Record Access & Edit
 The two cofounders only, with full access to view/edit any instructor or student record. *(Relates to S-014; whether cofounder edits are audit-logged like instructor edits still open.)*
 
-### CAP-010 — Instructor Registration & Vetting
-Prospective instructors register (on a website — separate build unconfirmed, Q-019), choose a specialty, go through vetting, sign the instructor waiver, and become an Approved Instructor. *(Relates to S-015, S-016; vetting criteria still open — Q-023.)*
+### CAP-010 — Instructor Registration & Vetting (With Questionnaire)
+Prospective instructors register (on a website — separate build unconfirmed, Q-019), choose a specialty, complete a vetting questionnaire (certifying organization e.g. NRA/USCCA, average classes taught per month, company website), sign the instructor waiver, and become an Approved Instructor. *(Relates to S-015, S-016; full questionnaire field list, review process, and certification-verification approach still open — Q-023, Q-048.)*
 
 ### CAP-011 — Instructor Locator Map
 All users (tier availability unconfirmed) search by zip code to find nearby approved instructors. *(Relates to S-017; search/filter scope still open — Q-024.)*

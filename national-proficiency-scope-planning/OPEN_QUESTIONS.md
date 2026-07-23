@@ -21,7 +21,7 @@ Client wants adults to be able to add a linked minor (under-18) account, tied to
 - **Q-005** — How are accounts created, and what are the auth requirements?
 - **Q-009** — What features belong to the Mid tier?
 - **Q-010** — What is the price of each tier, and what payment/billing platform should be used?
-- **Q-015 / Q-023** — How are instructors vetted and designated "Approved Instructor"?
+- **Q-015 / Q-023** — How are instructors vetted and designated "Approved Instructor"? Partially answered: the vetting questionnaire includes certifying organization (e.g. NRA, USCCA, or similar), average classes taught per month, and company website — client gave these as examples, so the full field list and review process are still needed.
 - **Q-021** — Who approves an instructor's tier-downgrade request, and what happens if denied?
 - **Q-022** — Is the new-user unique serial number/code a replacement login credential or an additional ID?
 - **Q-025** — Which ID-verification vendor will be used, and can it actually confirm firearm eligibility, not just identity/age? Real legal-exposure point — see risk R-005.
@@ -63,6 +63,7 @@ Client wants adults to be able to add a linked minor (under-18) account, tied to
 - **Q-044 (new)** — Given the stated future intent to expand Media into an entertainment network (F-004) and add pillars beyond the current three (F-005), should the category system and media hosting be architected for extensibility now, rather than hardcoded to three pillars? A technical/cost trade-off worth discussing even though the expansion itself isn't happening yet.
 - **Q-046 (new)** — Client said unsubscribed instructors won't have access to "their tier setups" — does this mean the instructor's own profile/rank progression, or something else? Wording was ambiguous.
 - **Q-047 (new)** — Do Approved Instructors pay the same Free/Mid/Premium pricing as regular users for full access, or a distinct instructor subscription price?
+- **Q-048 (new)** — Will a claimed instructor certification (NRA, USCCA, etc.) be actively verified with the issuing organization, or is it self-reported on the questionnaire?
 
 ## Future Ideas Flagged
 
