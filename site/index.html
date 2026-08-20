@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Tactical Rabbi — Firearms Training &amp; Security Assessments</title>
+<link rel="stylesheet" href="css/base.css">
+<style>
+  .hero{
+    position:relative;
+    min-height:640px;
+    display:flex;
+    align-items:center;
+    padding:0 48px;
+    overflow:hidden;
+  }
+  .hero-bg{
+    position:absolute;inset:0;
+    width:100%;height:100%;
+    object-fit:cover;
+    z-index:0;
+    filter:grayscale(45%);
+  }
+  .hero-wash{
+    position:absolute;inset:0;
+    background:linear-gradient(100deg, rgba(29,29,22,0.88) 0%, rgba(29,29,22,0.72) 38%, rgba(29,29,22,0.30) 68%, rgba(29,29,22,0.08) 100%);
+    z-index:1;
+  }
+  .hero-content{position:relative;z-index:2;max-width:560px;padding:90px 0;}
+  .hero .tag{
+    display:inline-flex;align-items:center;gap:8px;
+    background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.25);border-radius:30px;padding:7px 16px;margin-bottom:24px;
+  }
+  .hero .tag .dot{width:6px;height:6px;background:var(--coyote);border-radius:50%;}
+  .hero .tag span.txt{font-size:13px;font-weight:600;color:#fff;}
+  .hero h1{font-size:52px;line-height:1.05;margin-bottom:20px;color:#fff;}
+  .hero h1 .accent{color:var(--coyote);}
+  .hero p.sub{font-size:18px;color:rgba(255,255,255,0.82);max-width:480px;line-height:1.6;margin-bottom:32px;}
+  .hero .actions{display:flex;gap:14px;margin-bottom:48px;flex-wrap:wrap;}
+  .hero .actions .cta-btn{padding:15px 28px;}
+
+  .stat-row{display:flex;gap:36px;}
+  .stat-row .stat{text-align:left;}
+  .stat-row .num{font-family:'Space Grotesk';font-weight:700;font-size:28px;color:#fff;}
+  .stat-row .stat-label{font-size:11px;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.65);margin-top:2px;}
+
+  .course-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+  .course-card{
+    background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;
+    transition:transform .2s, box-shadow .2s;
+  }
+  .course-card:hover{transform:translateY(-4px);box-shadow:0 16px 30px -16px rgba(120,100,60,0.2);}
+  .course-card img{width:100%;height:170px;object-fit:cover;display:block;}
+  .course-card .body{padding:18px;}
+  .course-card .tag-mini{font-size:11px;font-weight:700;text-transform:uppercase;color:var(--olive);letter-spacing:0.08em;}
+  .course-card h3{font-size:17px;margin:6px 0 10px;}
+  .course-card a.view-link{font-size:13px;font-weight:600;color:var(--coyote);text-decoration:none;}
+
+  .about-split{
+    display:grid;grid-template-columns:0.8fr 1.2fr;gap:56px;align-items:center;
+    background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  }
+  .about-split img{width:100%;height:520px;object-fit:cover;display:block;}
+  .about-copy{padding:48px 48px 48px 0;}
+  .about-copy h2{font-size:32px;margin-bottom:18px;}
+  .about-copy p{color:var(--muted);font-size:16px;line-height:1.7;margin-bottom:16px;max-width:520px;}
+
+  /* press strip - clickable wordmarks */
+  .press-strip{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:36px 0;overflow:hidden;}
+  .press-strip .label{display:block;text-align:center;margin-bottom:20px;}
+  .press-marquee{overflow:hidden;position:relative;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);}
+  .press-track{display:flex;gap:14px;width:max-content;will-change:transform;}
+  .press-chip{
+    display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:10px;
+    padding:10px 22px;background:var(--panel);text-decoration:none;flex-shrink:0;height:64px;
+    transition:border-color .2s, box-shadow .2s;
+  }
+  .press-chip:hover{border-color:var(--coyote);box-shadow:0 4px 14px rgba(0,0,0,0.06);}
+  .press-chip img{height:34px;max-width:140px;width:auto;object-fit:contain;display:block;}
+
+  .mag-banner{
+    display:grid;grid-template-columns:0.5fr 1fr;gap:40px;align-items:center;
+    background:linear-gradient(135deg,#3a3c30,var(--charcoal));color:#fff;border-radius:18px;margin:0 48px;padding:40px;
+  }
+  .mag-banner img{width:100%;border-radius:10px;box-shadow:0 20px 40px -10px rgba(0,0,0,0.35);}
+  .mag-banner h2{color:#fff;font-size:28px;margin-bottom:12px;}
+  .mag-banner p{color:#d6d2c2;line-height:1.6;margin-bottom:20px;max-width:440px;}
+
+  .testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .t-card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px;}
+  .t-card .stars{color:var(--coyote);margin-bottom:14px;font-size:14px;}
+  .t-card p{color:var(--muted);font-size:14.5px;line-height:1.6;margin-bottom:18px;min-height:90px;}
+  .t-card .who{font-weight:600;font-size:13.5px;border-top:1px solid var(--line);padding-top:12px;}
+  .t-card .who span{color:var(--olive);display:block;font-size:11.5px;font-weight:500;margin-top:2px;}
+
+  .signal{
+    background:#f3ecdd;border-radius:18px;margin:0 48px;
+    padding:54px 48px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px;
+  }
+  .signal h2{font-size:30px;max-width:440px;line-height:1.15;}
+  .signal-form{display:flex;flex-direction:column;gap:8px;}
+  .signal-form .row{display:flex;gap:10px;flex-wrap:wrap;}
+  .signal-form input{
+    background:#fff;border:1px solid var(--line);border-radius:8px;color:var(--ink);
+    padding:13px 16px;font-family:'Inter';width:220px;
+  }
+  .signal-form .cta-btn{border-radius:8px;}
+  .signal .form-success,.signal .form-error{max-width:280px;}
+
+  .video-section{padding:0 48px 80px;}
+  .video-wrap{
+    position:relative;width:100%;max-width:640px;margin:0 auto;padding-bottom:36%;
+    border-radius:18px;overflow:hidden;
+    box-shadow:0 24px 50px -24px rgba(120,100,60,0.25);
+  }
+  .video-wrap iframe{
+    position:absolute;top:0;left:0;width:100%;height:100%;border:0;
+  }
+  @media (max-width:640px){
+    .video-wrap{max-width:100%;padding-bottom:56.25%;}
+  }
+  @media (max-width:1000px){
+    .course-grid{grid-template-columns:repeat(2,1fr);}
+    .about-split{grid-template-columns:1fr;}
+    .about-split img{height:320px;}
+    .about-copy{padding:32px 24px;}
+    .mag-banner{grid-template-columns:1fr;margin:0 24px;padding:28px;}
+    .testimonials{grid-template-columns:1fr;}
+    .signal{margin:0 24px;padding:36px 28px;}
+    .hero h1{font-size:38px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a class="brandmark" href="index.html">THE TACTICAL RABBI</a>
+  <nav>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <a class="cta-btn" href="courses.html">Book Training</a>
+</header>
+
+<div class="hero">
+  <img class="hero-bg" src="images/home-1.jpg" alt="">
+  <div class="hero-wash"></div>
+  <div class="hero-content">
+    <div class="tag"><span class="dot"></span><span class="txt">Firearms Training · Security Assessments · Media</span></div>
+    <h1>Bridging the gap until help <span class="accent">arrives.</span></h1>
+    <p class="sub">Rabbi Raziel Cohen — NRA &amp; DOJ certified instructor, Homeland Security–approved security assessor, and creator of The Tactical Rabbi YouTube channel.</p>
+    <div class="actions">
+      <a class="cta-btn coyote" href="courses.html">Browse Courses</a>
+      <a class="cta-btn ghost" href="https://www.youtube.com/@TheTacticalRabbi" target="_blank" rel="noopener">Watch the Channel</a>
+    </div>
+    <div class="stat-row">
+      <div class="stat"><div class="num">75K+</div><div class="stat-label">Subscribers</div></div>
+      <div class="stat"><div class="num">35M+</div><div class="stat-label">Channel Views</div></div>
+    </div>
+  </div>
+</div>
+
+<section class="video-section">
+  <div class="section-head">
+    <div><span class="label">Behind the name</span><h2>Who is The Tactical Rabbi?</h2></div>
+  </div>
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/eea3Fitv-nU" title="The Tactical Rabbi" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <div><span class="label">Training Catalog</span><h2>Core offerings</h2></div>
+    <a class="cta-btn ghost" href="courses.html">View all courses</a>
+  </div>
+  <div class="course-grid">
+    <div class="course-card">
+      <img src="images/atp-1.jpg" alt="Advanced Tactical Pistol">
+      <div class="body"><span class="tag-mini">Pistol</span><h3>Tactical Pistol</h3><a class="view-link" href="course-detail-tactical-pistol.html">View course →</a></div>
+    </div>
+    <div class="course-card">
+      <img src="images/tr-1.jpg" alt="Tactical Rifle">
+      <div class="body"><span class="tag-mini">Rifle</span><h3>Tactical Rifle</h3><a class="view-link" href="course-detail-tactical-rifle.html">View course →</a></div>
+    </div>
+    <div class="course-card">
+      <img src="images/asr-1.png" alt="Active Shooter Response">
+      <div class="body"><span class="tag-mini">Response</span><h3>Active Shooter Response</h3><a class="view-link" href="course-detail-active-shooter-response.html">View course →</a></div>
+    </div>
+    <div class="course-card">
+      <img src="images/priv-1.png" alt="Private Lesson">
+      <div class="body"><span class="tag-mini">1:1</span><h3>Private Lesson</h3><a class="view-link" href="course-detail-private-lesson.html">View course →</a></div>
+    </div>
+  </div>
+</section>
+
+<div class="press-strip">
+  <span class="label" style="display:block;text-align:center;margin-bottom:18px;">As featured on</span>
+  <div class="press-marquee">
+    <div class="press-track">
+      <a class="press-chip" href="https://video.foxnews.com/v/6035670191001#sp=show-clips" target="_blank" rel="noopener"><img src="images/about-6.png" alt="Fox News"></a>
+      <a class="press-chip" href="https://archive.org/details/nratv_nr-190524-danaloeschrelentless-s02-e91-interview-razielcohen-oc" target="_blank" rel="noopener"><img src="images/about-7.png" alt="NRA TV"></a>
+      <a class="press-chip" href="https://www.latimes.com/local/lanow/la-me-chabad-security-after-poway-20190510-story.html" target="_blank" rel="noopener"><img src="images/about-8.png" alt="LA Times"></a>
+      <a class="press-chip" href="https://www.thejc.com/news/us-news/usa-synagogue-attacks-pittsburgh-poway-san-diego-rabbi-raziel-cohen-chabad-los-angeles-shoot-guns-1.485354" target="_blank" rel="noopener"><img src="images/about-9.png" alt="New York Post"></a>
+      <a class="press-chip" href="https://www.dailywire.com/news/here-what-you-need-know-about-ar-15-toting-josh-hammer" target="_blank" rel="noopener"><img src="images/about-10.png" alt="Daily Wire"></a>
+      <a class="press-chip" href="https://www.dailymail.co.uk/news/article-7123841/Tactical-Rabbi-teaches-Jewish-community-shoot-combat-rise-anti-Semitism.html" target="_blank" rel="noopener"><img src="images/about-11.png" alt="Daily Mail"></a>
+      <a class="press-chip" href="https://video.foxnews.com/v/6035670191001#sp=show-clips" target="_blank" rel="noopener"><img src="images/about-6.png" alt="Fox News"></a>
+      <a class="press-chip" href="https://archive.org/details/nratv_nr-190524-danaloeschrelentless-s02-e91-interview-razielcohen-oc" target="_blank" rel="noopener"><img src="images/about-7.png" alt="NRA TV"></a>
+      <a class="press-chip" href="https://www.latimes.com/local/lanow/la-me-chabad-security-after-poway-20190510-story.html" target="_blank" rel="noopener"><img src="images/about-8.png" alt="LA Times"></a>
+      <a class="press-chip" href="https://www.thejc.com/news/us-news/usa-synagogue-attacks-pittsburgh-poway-san-diego-rabbi-raziel-cohen-chabad-los-angeles-shoot-guns-1.485354" target="_blank" rel="noopener"><img src="images/about-9.png" alt="New York Post"></a>
+      <a class="press-chip" href="https://www.dailywire.com/news/here-what-you-need-know-about-ar-15-toting-josh-hammer" target="_blank" rel="noopener"><img src="images/about-10.png" alt="Daily Wire"></a>
+      <a class="press-chip" href="https://www.dailymail.co.uk/news/article-7123841/Tactical-Rabbi-teaches-Jewish-community-shoot-combat-rise-anti-Semitism.html" target="_blank" rel="noopener"><img src="images/about-11.png" alt="Daily Mail"></a>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="mag-banner">
+    <img src="images/home-1.png" alt="Divine Armor Magazine">
+    <div>
+      <span class="label" style="color:#dcb87a">New release</span>
+      <h2>Divine Armor Magazine</h2>
+      <p>Exclusive security insights, training breakdowns, and in-depth preparedness content. Digital and hard-copy editions available while supplies last.</p>
+      <a class="cta-btn coyote" href="contact.html">Get the latest issue</a>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="section-head">
+    <div><span class="label">Field Reports</span><h2>From the students</h2></div>
+  </div>
+  <div class="testimonials">
+    <div class="t-card">
+      <div class="stars">★★★★★</div>
+      <p>"Raziel is by far the best instructor I have ever met. His classes are very educational for new and old shooters."</p>
+      <div class="who">Yakov G. <span>Student</span></div>
+    </div>
+    <div class="t-card">
+      <div class="stars">★★★★★</div>
+      <p>"Took a training from them — not only was it great, the entire experience was sooo good. Great teacher, great atmosphere."</p>
+      <div class="who">S.P. <span>Student</span></div>
+    </div>
+    <div class="t-card">
+      <div class="stars">★★★★★</div>
+      <p>"Very informative, thorough, and good-tempered. His way of teaching brings you into the experience with him. Highly recommended."</p>
+      <div class="who">Dovi J. <span>Student</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="signal">
+  <h2>Get notified before new courses open up.</h2>
+  <form class="signal-form" id="newsletterForm" novalidate>
+    <div class="row">
+      <input type="email" placeholder="Email address" required>
+      <button class="cta-btn" type="submit">Subscribe</button>
+    </div>
+    <div class="form-success"></div>
+    <div class="form-error"></div>
+  </form>
+</div>
+
+<footer>
+  <div>© 2026 The Tactical Rabbi. All rights reserved.</div>
+  <div><a href="#" target="_blank" rel="noopener">YouTube</a><a href="#" target="_blank" rel="noopener">Instagram</a><a href="#" target="_blank" rel="noopener">Facebook</a></div>
+</footer>
+
+<script src="js/nav.js"></script>
+<script src="js/press-marquee.js"></script>
+<script src="js/forms.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Courses — The Tactical Rabbi</title>
+<link rel="stylesheet" href="css/base.css">
+<style>
+  .page-hero{padding:56px 48px 40px;border-bottom:1px solid var(--line);}
+  .page-hero h1{font-size:42px;margin-bottom:12px;}
+  .page-hero p{color:var(--muted);font-size:17px;max-width:600px;}
+
+  .filter-bar{padding:24px 48px;display:flex;gap:10px;flex-wrap:wrap;border-bottom:1px solid var(--line);}
+  .filter-chip{border:1px solid var(--line);border-radius:999px;padding:8px 18px;font-size:13.5px;font-weight:600;background:var(--panel);cursor:pointer;}
+  .filter-chip.active{background:var(--ink);color:#fff;border-color:var(--ink);}
+
+  .course-grid{padding:48px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .course-card{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;}
+  .course-card img{width:100%;height:220px;object-fit:cover;display:block;}
+  .course-card .body{padding:20px;}
+  .course-card .tag-mini{font-size:11px;font-weight:700;text-transform:uppercase;color:var(--olive);letter-spacing:0.08em;}
+  .course-card h3{font-size:19px;margin:6px 0 8px;}
+  .course-card .meta{display:flex;gap:14px;color:var(--muted);font-size:13px;margin-bottom:14px;}
+  .course-card .price{font-family:'Space Grotesk';font-weight:700;font-size:18px;color:var(--ink);}
+  .course-card a.view-btn{display:inline-block;margin-top:12px;background:var(--coyote);color:#fff;text-decoration:none;font-size:13px;font-weight:600;padding:10px 18px;border-radius:6px;width:100%;text-align:center;box-sizing:border-box;}
+
+  @media (max-width:1000px){
+    .course-grid{grid-template-columns:repeat(2,1fr);padding:32px 24px;}
+    .page-hero{padding:40px 24px 28px;}
+    .filter-bar{padding:20px 24px;}
+  }
+  @media (max-width:640px){
+    .course-grid{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a class="brandmark" href="index.html">THE TACTICAL RABBI</a>
+  <nav>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html" class="active">Courses</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <a class="cta-btn" href="#courses-grid">Book Training</a>
+</header>
+
+<div class="page-hero">
+  <span class="label">Training Catalog</span>
+  <h1>Courses</h1>
+  <p>From first-time shooters to advanced operators — find the course that matches where you are and where you want to be.</p>
+</div>
+
+<div class="filter-bar">
+  <div class="filter-chip active" data-filter="all">All Courses</div>
+  <div class="filter-chip" data-filter="pistol">Pistol</div>
+  <div class="filter-chip" data-filter="rifle">Rifle</div>
+  <div class="filter-chip" data-filter="response">Tactical Response</div>
+  <div class="filter-chip" data-filter="private">Private / 1:1</div>
+  <div class="filter-chip" data-filter="beginner">Beginner</div>
+</div>
+
+<div class="course-grid" id="courses-grid">
+
+  <div class="course-card" data-category="pistol,beginner">
+    <img src="images/tp-1.png" alt="Tactical Pistol">
+    <div class="body">
+      <span class="tag-mini">Pistol</span>
+      <h3>Tactical Pistol</h3>
+      <div class="meta"><span>4 hrs</span><span>Henryville, PA</span></div>
+      <div class="price">$275</div>
+      <a class="view-btn" href="course-detail-tactical-pistol.html">View Course →</a>
+    </div>
+  </div>
+
+  <div class="course-card" data-category="pistol">
+    <img src="images/atp-1.jpg" alt="Advanced Tactical Pistol">
+    <div class="body">
+      <span class="tag-mini">Pistol</span>
+      <h3>Advanced Tactical Pistol</h3>
+      <div class="meta"><span>4 hrs</span><span>Henryville, PA</span></div>
+      <div class="price">$275</div>
+      <a class="view-btn" href="course-detail-advanced-tactical-pistol.html">View Course →</a>
+    </div>
+  </div>
+
+  <div class="course-card" data-category="rifle,beginner">
+    <img src="images/tr-1.jpg" alt="Tactical Rifle">
+    <div class="body">
+      <span class="tag-mini">Rifle</span>
+      <h3>Tactical Rifle</h3>
+      <div class="meta"><span>4 hrs</span><span>Henryville, PA</span></div>
+      <div class="price">$275</div>
+      <a class="view-btn" href="course-detail-tactical-rifle.html">View Course →</a>
+    </div>
+  </div>
+
+  <div class="course-card" data-category="rifle">
+    <img src="images/atr-1.png" alt="Advanced Tactical Rifle">
+    <div class="body">
+      <span class="tag-mini">Rifle</span>
+      <h3>Advanced Tactical Rifle</h3>
+      <div class="meta"><span>4 hrs</span><span>Henryville, PA</span></div>
+      <div class="price">$275</div>
+      <a class="view-btn" href="course-detail-advanced-tactical-rifle.html">View Course →</a>
+    </div>
+  </div>
+
+  <div class="course-card" data-category="response,beginner">
+    <img src="images/asr-1.png" alt="Active Shooter Response">
+    <div class="body">
+      <span class="tag-mini">Response</span>
+      <h3>Active Shooter Response</h3>
+      <div class="meta"><span>4 hrs</span><span>Henryville, PA</span></div>
+      <div class="price">$275</div>
+      <a class="view-btn" href="course-detail-active-shooter-response.html">View Course →</a>
+    </div>
+  </div>
+
+  <div class="course-card" data-category="response">
+    <img src="images/sbox-1.png" alt="Stress Box">
+    <div class="body">
+      <span class="tag-mini">Shoot House</span>
+      <h3>Stress Box</h3>
+      <div class="meta"><span>4 hrs</span><span>Randolph, NJ</span></div>
+      <div class="price">$350</div>
+      <a class="view-btn" href="course-detail-stress-box.html">View Course →</a>
+    </div>
+  </div>
+
+  <div class="course-card" data-category="private">
+    <img src="images/priv-1.png" alt="Private Lesson">
+    <div class="body">
+      <span class="tag-mini">1:1</span>
+      <h3>Private Lesson</h3>
+      <div class="meta"><span>Flexible</span><span>By appointment</span></div>
+      <div class="price">From $150</div>
+      <a class="view-btn" href="course-detail-private-lesson.html">View Course →</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div>© 2026 The Tactical Rabbi. All rights reserved.</div>
+  <div><a href="#" target="_blank" rel="noopener">YouTube</a><a href="#" target="_blank" rel="noopener">Instagram</a><a href="#" target="_blank" rel="noopener">Facebook</a></div>
+</footer>
+
+<script src="js/nav.js"></script>
+<script src="js/course-filter.js"></script>
+</body>
+</html>

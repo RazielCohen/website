@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — The Tactical Rabbi</title>
+<link rel="stylesheet" href="css/base.css">
+<style>
+  .page-hero{text-align:center;padding:64px 48px 44px;border-bottom:1px solid var(--line);}
+  .page-hero h1{font-size:38px;margin:10px 0 14px;}
+  .page-hero p{color:var(--muted);font-size:16px;max-width:540px;margin:0 auto;line-height:1.7;}
+
+  .contact-wrap{display:grid;grid-template-columns:1fr 0.85fr;gap:40px;padding:64px 48px;max-width:1180px;margin:0 auto;}
+
+  .form-panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:40px;}
+  .form-panel h2{font-size:22px;margin-bottom:6px;}
+  .form-panel .sub{color:var(--muted);font-size:14px;margin-bottom:28px;}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;}
+  .field{margin-bottom:16px;}
+  .field label{display:block;font-size:13px;font-weight:600;margin-bottom:6px;color:var(--charcoal);}
+  .field input, .field select, .field textarea{
+    width:100%;border:1px solid var(--line);border-radius:8px;padding:12px 14px;font-family:'Inter';font-size:14.5px;
+    background:#fdfcf9;color:var(--ink);
+  }
+  .field input:focus, .field select:focus, .field textarea:focus{outline:none;border-color:var(--coyote);background:#fff;}
+  .field textarea{resize:vertical;min-height:110px;}
+  .submit-btn{
+    width:100%;background:var(--coyote);color:#fff;font-weight:700;font-size:15px;padding:14px;border:none;
+    border-radius:8px;cursor:pointer;margin-top:6px;font-family:'Space Grotesk';
+  }
+  .submit-btn:hover{background:#946a42;}
+  .form-note{font-size:12.5px;color:var(--muted);margin-top:14px;text-align:center;}
+
+  .sidebar{display:flex;flex-direction:column;gap:18px;}
+  .info-card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px;}
+  .info-card .icon-row{display:flex;align-items:flex-start;gap:14px;margin-bottom:18px;}
+  .info-card .icon-row:last-child{margin-bottom:0;}
+  .icon-badge{
+    width:38px;height:38px;border-radius:9px;background:#f3ecdd;color:var(--coyote);flex-shrink:0;
+    display:flex;align-items:center;justify-content:center;font-size:17px;
+  }
+  .icon-row h4{font-size:14px;margin-bottom:3px;}
+  .icon-row p, .icon-row a{font-size:13.5px;color:var(--muted);text-decoration:none;line-height:1.5;}
+  .icon-row a:hover{color:var(--coyote);}
+
+  .info-card.dark{background:var(--charcoal);color:#fff;border:none;}
+  .info-card.dark h3{color:#fff;font-size:17px;margin-bottom:10px;}
+  .info-card.dark p{color:#cfcab8;font-size:13.5px;line-height:1.6;margin-bottom:16px;}
+  .social-row{display:flex;gap:10px;}
+  .social-chip{
+    flex:1;text-align:center;padding:10px 0;border:1px solid #4a4c3d;border-radius:8px;color:#fff;
+    text-decoration:none;font-size:12.5px;font-weight:600;
+  }
+  .social-chip:hover{background:#3a3c30;}
+
+  .faq-strip{background:var(--panel);border-top:1px solid var(--line);padding:60px 48px;text-align:center;}
+  .faq-strip h2{font-size:24px;margin-bottom:10px;}
+  .faq-strip p{color:var(--muted);font-size:15px;max-width:480px;margin:0 auto 24px;}
+
+  @media(max-width:880px){
+    .contact-wrap{grid-template-columns:1fr;padding:40px 24px;}
+    .form-row{grid-template-columns:1fr;}
+    .page-hero{padding:44px 24px 32px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a class="brandmark" href="index.html">THE TACTICAL RABBI</a>
+  <nav>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <a class="cta-btn" href="courses.html">Book Training</a>
+</header>
+
+<div class="page-hero">
+  <span class="label">Get in touch</span>
+  <h1>Contact Us To Get Better Information</h1>
+  <p>If you have a question about us or our training courses, please send us a message using the form below. We usually respond to email requests within 48 hours.</p>
+</div>
+
+<div class="contact-wrap">
+  <div class="form-panel">
+    <h2>Send a message</h2>
+    <p class="sub">Fields marked with * are required.</p>
+
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <div class="field">
+          <label for="firstName">First Name *</label>
+          <input type="text" id="firstName" name="firstName" placeholder="John" required>
+        </div>
+        <div class="field">
+          <label for="lastName">Last Name *</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Smith" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" placeholder="john@example.com" required>
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="interest">I'm interested in *</label>
+        <select id="interest" name="interest" required>
+          <option value="">Select one</option>
+          <option>General Inquiry</option>
+          <option>Tactical Pistol</option>
+          <option>Advanced Tactical Pistol</option>
+          <option>Tactical Rifle</option>
+          <option>Advanced Tactical Rifle</option>
+          <option>Active Shooter Response</option>
+          <option>Stress Box</option>
+          <option>Private Lesson</option>
+          <option>Security Assessment (Schools / Synagogues)</option>
+          <option>Speaking Engagement</option>
+          <option>Press / Media</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" placeholder="Tell us a bit about what you're looking for..." required></textarea>
+      </div>
+
+      <button class="submit-btn" type="submit">Send Message</button>
+      <p class="form-note">We typically respond within 48 hours. For urgent scheduling requests, call us directly.</p>
+      <div class="form-success"></div>
+      <div class="form-error"></div>
+    </form>
+  </div>
+
+  <div class="sidebar">
+    <div class="info-card">
+      <div class="icon-row">
+        <div class="icon-badge">☎</div>
+        <div>
+          <h4>Call Us</h4>
+          <a href="tel:+17608333711">(760) 833-3711</a>
+        </div>
+      </div>
+      <div class="icon-row">
+        <div class="icon-badge">✉</div>
+        <div>
+          <h4>Email Response Time</h4>
+          <p>We usually respond to email requests within 48 hours.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-card dark">
+      <h3>Follow Along</h3>
+      <p>30M+ views of real training, drills, and preparedness content — see what a session actually looks like before you book.</p>
+      <div class="social-row">
+        <a class="social-chip" href="#" target="_blank" rel="noopener">YouTube</a>
+        <a class="social-chip" href="#" target="_blank" rel="noopener">Instagram</a>
+        <a class="social-chip" href="#" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="faq-strip">
+  <span class="label">Before you reach out</span>
+  <h2>Looking for course details instead?</h2>
+  <p>Pricing, prerequisites, and what to bring are listed on each individual course page — might save you a step.</p>
+  <a class="cta-btn coyote" href="courses.html">Browse Courses →</a>
+</div>
+
+<footer>
+  <div>© 2026 The Tactical Rabbi. All rights reserved.</div>
+  <div><a href="#" target="_blank" rel="noopener">YouTube</a><a href="#" target="_blank" rel="noopener">Instagram</a><a href="#" target="_blank" rel="noopener">Facebook</a></div>
+</footer>
+
+<script src="js/nav.js"></script>
+<script src="js/forms.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About — The Tactical Rabbi</title>
+<link rel="stylesheet" href="css/base.css">
+<style>
+  /* hero with dual identity image */
+  .about-hero{display:grid;grid-template-columns:0.9fr 1.1fr;gap:0;align-items:stretch;border-bottom:1px solid var(--line);}
+  .about-hero .img-side img{width:100%;height:100%;object-fit:cover;display:block;min-height:560px;}
+  .about-hero .copy-side{padding:70px 60px;display:flex;flex-direction:column;justify-content:center;}
+  .about-hero h1{font-size:40px;line-height:1.1;margin:10px 0 20px;}
+  .about-hero h1 .accent{color:var(--coyote);}
+  .about-hero p.lede{font-size:17px;color:var(--muted);line-height:1.7;max-width:480px;margin-bottom:28px;}
+  .about-hero .actions{display:flex;gap:14px;flex-wrap:wrap;}
+
+  .section-head{margin-bottom:36px;max-width:640px;}
+  .section-head h2{font-size:30px;margin-top:8px;}
+  .section-head p{color:var(--muted);font-size:15.5px;margin-top:10px;line-height:1.6;}
+
+  .bio-block{max-width:760px;}
+  .bio-block p{color:var(--muted);font-size:16px;line-height:1.75;margin-bottom:20px;}
+  .bio-block strong{color:var(--ink);}
+
+  .cert-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;}
+  .cert-card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px 14px;text-align:center;transition:border-color .2s, transform .2s;}
+  .cert-card:hover{border-color:var(--coyote);transform:translateY(-2px);}
+  .cert-card .cert-logo{
+    width:100%;aspect-ratio:1/1;border-radius:8px;background:#fff;border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;margin-bottom:14px;overflow:hidden;
+  }
+  .cert-card .cert-logo img{max-width:82%;max-height:82%;object-fit:contain;}
+  .cert-card h4{font-size:13.5px;font-weight:700;margin-bottom:4px;}
+  .cert-card p{font-size:12px;color:var(--muted);}
+
+  .press-strip{padding:36px 0 44px;overflow:hidden;}
+  .press-strip .label{display:block;text-align:center;margin-bottom:8px;}
+  .press-marquee{overflow:hidden;position:relative;margin-bottom:16px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);}
+  .press-track{display:flex;gap:14px;width:max-content;will-change:transform;}
+  .press-chip{
+    display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:10px;
+    padding:10px 22px;background:var(--panel);text-decoration:none;flex-shrink:0;height:64px;
+    transition:border-color .2s, box-shadow .2s;
+  }
+  .press-chip:hover{border-color:var(--coyote);box-shadow:0 4px 14px rgba(0,0,0,0.06);}
+  .press-chip img{height:34px;max-width:140px;width:auto;object-fit:contain;display:block;}
+  .press-chip.secondary{height:48px;padding:8px 16px;}
+  .press-chip.secondary img{height:22px;max-width:110px;}
+  .press-divider{text-align:center;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin:4px 0 14px;opacity:0.7;}
+
+  .closing-cta{
+    background:linear-gradient(135deg,#3a3c30,var(--charcoal));color:#fff;border-radius:18px;
+    margin:0 48px 70px;padding:54px 48px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px;
+  }
+  .closing-cta h2{color:#fff;font-size:28px;max-width:440px;line-height:1.2;}
+  .closing-cta p{color:#d6d2c2;margin-top:10px;max-width:440px;}
+
+  @media (max-width:900px){
+    .about-hero{grid-template-columns:1fr;}
+    .about-hero .img-side img{min-height:320px;}
+    .about-hero .copy-side{padding:40px 24px;}
+    .cert-grid{grid-template-columns:repeat(2,1fr);}
+    .closing-cta{margin:0 24px 56px;padding:36px 28px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a class="brandmark" href="index.html">THE TACTICAL RABBI</a>
+  <nav>
+    <ul>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <a class="cta-btn" href="courses.html">Book Training</a>
+</header>
+
+<div class="about-hero">
+  <div class="img-side">
+    <img src="images/about-1.jpg" alt="Raziel Cohen - The Tactical Rabbi">
+  </div>
+  <div class="copy-side">
+    <span class="label">About</span>
+    <h1>Two callings.<br>One <span class="accent">mission.</span></h1>
+    <p class="lede">Raziel Cohen is an ordained Rabbi and a certified firearms instructor — two identities that, on paper, shouldn't fit together. In practice, they're the same calling: protecting people, preparing communities, and bridging the gap from when an incident begins until help arrives.</p>
+    <div class="actions">
+      <a class="cta-btn coyote" href="courses.html">Browse Courses</a>
+      <a class="cta-btn" style="background:transparent;border:1.5px solid var(--ink);color:var(--ink);" href="contact.html">Book a Speaking Engagement</a>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="section-head">
+    <span class="label">The story</span>
+    <h2>From the pulpit to the range</h2>
+  </div>
+  <div class="bio-block">
+    <p>Raziel Cohen, known as <strong>"The Tactical Rabbi,"</strong> is an ordained Rabbi, firearms instructor, and sought-after public speaker regularly featured in prominent media outlets such as Fox News, Vice, NRA TV, The LA Times, New York Post, The Drudge Report, and more. His popular YouTube channel has amassed over 30 million views, offering educational and entertaining content.</p>
+    <p>Rabbi Cohen is on a mission, actively traveling across the United States to provide firearms training, security assessments for facilities, and lockdown training for schools. Certified by the NRA and DOJ, and approved by Homeland Security for assessments, he ensures he stays current with training and emerging threats through active participation in relevant courses.</p>
+    <p>Cohen's extensive firearms training includes renowned programs like <strong>Magpul Dynamics, Tactical Response, GoRuck Counterterrorism, and Condition Gray</strong> — the foundation his own courses are built on.</p>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="section-head">
+    <span class="label">Certifications</span>
+    <h2>Credentialed, not just confident</h2>
+    <p>Every course is built on top of formal instructor-level training — not just personal experience.</p>
+  </div>
+  <div class="cert-grid">
+    <div class="cert-card"><div class="cert-logo"><img src="images/about-1.png" alt="NRA Certified Instructor"></div><h4>NRA Certified Instructor</h4><p>Firearms Instruction</p></div>
+    <div class="cert-card"><div class="cert-logo"><img src="images/about-2.png" alt="NRA Range Safety Officer"></div><h4>NRA Range Safety Officer</h4><p>RSO</p></div>
+    <div class="cert-card"><div class="cert-logo"><img src="images/about-3.png" alt="NRA Chief Range Safety Officer"></div><h4>NRA Chief RSO</h4><p>CRSO</p></div>
+    <div class="cert-card"><div class="cert-logo"><img src="images/about-4.png" alt="Homeland Security"></div><h4>Homeland Security–Approved</h4><p>Security Assessments</p></div>
+    <div class="cert-card"><div class="cert-logo"><img src="images/about-5.png" alt="Tactical Response"></div><h4>Tactical Response</h4><p>Training Program</p></div>
+  </div>
+</section>
+
+<div class="press-strip">
+  <span class="label" style="display:block;text-align:center;margin-bottom:8px;">As featured on</span>
+  <div class="press-marquee">
+    <div class="press-track">
+      <a class="press-chip" href="https://video.foxnews.com/v/6035670191001#sp=show-clips" target="_blank" rel="noopener"><img src="images/about-6.png" alt="Fox News"></a>
+      <a class="press-chip" href="https://archive.org/details/nratv_nr-190524-danaloeschrelentless-s02-e91-interview-razielcohen-oc" target="_blank" rel="noopener"><img src="images/about-7.png" alt="NRA TV"></a>
+      <a class="press-chip" href="https://www.latimes.com/local/lanow/la-me-chabad-security-after-poway-20190510-story.html" target="_blank" rel="noopener"><img src="images/about-8.png" alt="LA Times"></a>
+      <a class="press-chip" href="https://www.thejc.com/news/us-news/usa-synagogue-attacks-pittsburgh-poway-san-diego-rabbi-raziel-cohen-chabad-los-angeles-shoot-guns-1.485354" target="_blank" rel="noopener"><img src="images/about-9.png" alt="New York Post"></a>
+      <a class="press-chip" href="https://www.dailywire.com/news/here-what-you-need-know-about-ar-15-toting-josh-hammer" target="_blank" rel="noopener"><img src="images/about-10.png" alt="Daily Wire"></a>
+      <a class="press-chip" href="https://www.dailymail.co.uk/news/article-7123841/Tactical-Rabbi-teaches-Jewish-community-shoot-combat-rise-anti-Semitism.html" target="_blank" rel="noopener"><img src="images/about-11.png" alt="Daily Mail"></a>
+    </div>
+  </div>
+
+  <div class="press-divider">+ ongoing coverage</div>
+
+  <div class="press-marquee">
+    <div class="press-track reverse">
+      <a class="press-chip secondary" href="https://www.cbsnews.com" target="_blank" rel="noopener"><img src="images/about-12.png" alt="CBS"></a>
+      <a class="press-chip secondary" href="https://www.ktla.com" target="_blank" rel="noopener"><img src="images/about-13.png" alt="KTLA"></a>
+      <a class="press-chip secondary" href="https://www.vice.com" target="_blank" rel="noopener"><img src="images/about-14.png" alt="Vice"></a>
+      <a class="press-chip secondary" href="https://www.northjersey.com" target="_blank" rel="noopener"><img src="images/about-15.png" alt="NorthJersey.com"></a>
+      <a class="press-chip secondary" href="https://www.ynetnews.com/jewish-world/article/skegk1zjmg" target="_blank" rel="noopener"><img src="images/about-16.png" alt="Ynetnews"></a>
+      <a class="press-chip secondary" href="https://www.yahoo.com/news/slideshows/tactical-rabbi-changing-narrative-firearms-083048054.html" target="_blank" rel="noopener"><img src="images/about-17.png" alt="Yahoo News"></a>
+      <a class="press-chip secondary" href="https://jewishlink.news/raziel-cohen-the-tactical-rabbi/" target="_blank" rel="noopener"><img src="images/about-18.png" alt="The Jewish Link"></a>
+      <a class="press-chip secondary" href="https://crownheights.info/chabad-news/784987/the-jew-project-rabbi-raziel-cohen-the-tactical-rabbi/" target="_blank" rel="noopener"><img src="images/about-19.png" alt="CrownHeights.info"></a>
+      <a class="press-chip secondary" href="https://anash.org/tactical-rabbi-gives-survival-tips/" target="_blank" rel="noopener"><img src="images/about-20.png" alt="Anash.org"></a>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="closing-cta">
+    <div>
+      <h2>Ready to train with The Tactical Rabbi?</h2>
+      <p>Browse upcoming courses or reach out to book a private lesson, security assessment, or speaking engagement.</p>
+    </div>
+    <a class="cta-btn coyote" href="courses.html">View Courses →</a>
+  </div>
+</section>
+
+<footer>
+  <div>© 2026 The Tactical Rabbi. All rights reserved.</div>
+  <div><a href="#" target="_blank" rel="noopener">YouTube</a><a href="#" target="_blank" rel="noopener">Instagram</a><a href="#" target="_blank" rel="noopener">Facebook</a></div>
+</footer>
+
+<script src="js/nav.js"></script>
+<script src="js/press-marquee.js"></script>
+</body>
+</html>

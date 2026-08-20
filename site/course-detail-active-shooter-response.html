@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Active Shooter Response — The Tactical Rabbi</title>
+<link rel="stylesheet" href="css/base.css">
+<style>
+  .breadcrumb{padding:18px 48px 0;font-size:13px;color:var(--muted);}
+  .breadcrumb a{color:var(--muted);text-decoration:none;}
+  .breadcrumb a:hover{color:var(--coyote);}
+
+  .course-hero{display:grid;grid-template-columns:1.1fr 0.9fr;gap:48px;padding:30px 48px 60px;align-items:start;}
+  .course-hero .img-frame{
+    width:100%;height:460px;border-radius:16px;background:#f3efe4;
+    display:flex;align-items:center;justify-content:center;overflow:hidden;
+    border:1px solid var(--line);
+  }
+  .course-hero img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block;}
+
+  .course-info .tag-mini{font-size:12px;font-weight:700;text-transform:uppercase;color:var(--olive);letter-spacing:0.08em;}
+  .course-info h1{font-size:36px;margin:8px 0 16px;}
+  .course-info p.desc{color:var(--muted);font-size:16px;line-height:1.65;margin-bottom:24px;}
+
+  .meta-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:28px;}
+  .meta-box{border:1px solid var(--line);border-radius:10px;padding:14px 16px;}
+  .meta-box .k{font-size:11px;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:4px;}
+  .meta-box .v{font-family:'Space Grotesk';font-weight:700;font-size:17px;}
+
+  .price-cta{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding-top:24px;flex-wrap:wrap;gap:14px;}
+  .price-cta .price{font-family:'Space Grotesk';font-weight:700;font-size:28px;}
+  .price-cta .price span{font-size:14px;color:var(--muted);font-weight:500;display:block;}
+
+  .registration{background:var(--panel);border-top:1px solid var(--line);padding:70px 48px;}
+  .reg-head{text-align:center;max-width:620px;margin:0 auto 40px;}
+  .reg-head h2{font-size:30px;margin-bottom:10px;}
+  .reg-head p{color:var(--muted);font-size:15.5px;}
+
+  .reg-wrap{max-width:760px;margin:0 auto;border:2px dashed var(--coyote);border-radius:16px;padding:40px;background:#fbf6ec;}
+  .reg-wrap .slot-label{
+    display:inline-flex;align-items:center;gap:8px;background:var(--coyote);color:#fff;
+    font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;
+    padding:6px 14px;border-radius:999px;margin-bottom:18px;
+  }
+  .reg-wrap h3{font-size:20px;margin-bottom:10px;}
+  .reg-wrap p{color:var(--muted);font-size:14.5px;line-height:1.6;margin-bottom:0;}
+  .airtable-mock{
+    margin-top:24px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:24px;
+  }
+  .airtable-mock .field{margin-bottom:14px;}
+  .airtable-mock .field-label{font-size:12.5px;font-weight:600;color:var(--ink);margin-bottom:6px;display:block;}
+  .airtable-mock .field-input{
+    border:1px solid var(--line);border-radius:6px;padding:10px 12px;font-size:14px;color:var(--muted);background:#faf9f5;
+  }
+
+  .waiver{max-width:760px;margin:28px auto 0;border:1px solid var(--line);border-radius:16px;padding:40px;background:var(--panel);}
+  .waiver .step-tag{
+    display:inline-flex;align-items:center;gap:8px;background:var(--olive);color:#fff;
+    font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;
+    padding:6px 14px;border-radius:999px;margin-bottom:18px;
+  }
+  .waiver h3{font-size:20px;margin-bottom:10px;}
+  .waiver p.intro{color:var(--muted);font-size:14.5px;line-height:1.6;margin-bottom:18px;}
+
+  .terms-box{
+    border:1px solid var(--line);border-radius:10px;background:#fdfcf9;padding:22px 24px;
+    height:280px;overflow-y:scroll;margin-bottom:18px;font-size:13px;line-height:1.65;color:var(--charcoal);
+  }
+  .terms-box h4{font-family:'Space Grotesk';font-size:14px;margin:16px 0 8px;color:var(--ink);}
+  .terms-box h4:first-child{margin-top:0;}
+  .terms-box ul{margin:6px 0 6px 18px;}
+  .terms-box li{margin-bottom:3px;}
+  .terms-box .doc-title{font-family:'Space Grotesk';font-weight:700;font-size:15px;text-align:center;margin-bottom:14px;line-height:1.4;}
+  .scroll-hint{font-size:11.5px;color:var(--muted);text-align:center;margin-top:-12px;margin-bottom:16px;}
+
+  .check-row{display:flex;align-items:flex-start;gap:10px;font-size:13.5px;color:var(--charcoal);margin-bottom:12px;}
+  .check-row input[type=checkbox]{margin-top:3px;width:16px;height:16px;accent-color:var(--coyote);flex-shrink:0;cursor:pointer;}
+  .check-row label{cursor:pointer;line-height:1.5;}
+
+  .sig-field{margin-bottom:16px;}
+  .sig-field label{display:block;font-size:13px;font-weight:600;margin-bottom:6px;color:var(--charcoal);}
+  .sig-field input[type=text]{
+    width:100%;border:1px solid var(--line);border-radius:8px;padding:11px 14px;font-size:14px;
+    background:#fdfcf9;color:var(--ink);font-family:'Inter';
+  }
+  .sig-field input[type=text]:focus{outline:none;border-color:var(--coyote);background:#fff;}
+
+  .sig-pad-wrap{margin-bottom:10px;}
+  #sigCanvas{
+    width:100%;height:150px;border:1px solid var(--line);border-radius:10px;background:#fff;
+    cursor:crosshair;touch-action:none;display:block;
+  }
+  .sig-controls{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;}
+  .sig-controls .sig-status{font-size:12.5px;color:var(--muted);}
+  .sig-controls .sig-status.signed{color:var(--olive);font-weight:600;}
+  .clear-btn{
+    background:none;border:1px solid var(--line);border-radius:6px;padding:6px 14px;font-size:12.5px;
+    color:var(--muted);cursor:pointer;font-family:'Inter';
+  }
+  .clear-btn:hover{border-color:var(--coyote);color:var(--coyote);}
+
+  .record-note{
+    font-size:12.5px;color:var(--olive);background:#f4f5ef;border:1px solid var(--line);border-radius:8px;
+    padding:10px 14px;
+  }
+
+  .submit-bar{max-width:760px;margin:30px auto 0;display:flex;flex-direction:column;align-items:flex-end;gap:8px;}
+  .submit-bar .gate-note{font-size:12.5px;color:var(--muted);}
+  .submit-bar .form-success{max-width:100%;}
+
+  .gear-section{background:var(--panel);padding:0 48px 60px;}
+  .gear-section .inner{max-width:920px;margin:0 auto;border-top:1px solid var(--line);padding-top:50px;}
+  .gear-head{text-align:center;max-width:640px;margin:0 auto 36px;}
+  .gear-head h2{font-size:28px;margin-bottom:10px;}
+  .gear-head p{color:var(--muted);font-size:15px;line-height:1.6;}
+  .gear-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;}
+  .gear-col{border:1px solid var(--line);border-radius:14px;padding:26px 28px;background:#fff;}
+  .gear-col.required{border-color:var(--coyote);}
+  .gear-col h4{font-family:'Space Grotesk';font-size:14px;text-transform:uppercase;letter-spacing:0.07em;margin-bottom:16px;display:flex;align-items:center;gap:8px;}
+  .gear-col.required h4{color:var(--coyote);}
+  .gear-col.recommended h4{color:var(--olive);}
+  .gear-col ul{list-style:none;}
+  .gear-col li{position:relative;padding-left:22px;margin-bottom:11px;font-size:14.5px;line-height:1.5;color:var(--charcoal);}
+  .gear-col li::before{content:'';position:absolute;left:0;top:6px;width:9px;height:9px;border-radius:2px;background:var(--coyote);}
+  .gear-col.recommended li::before{background:var(--olive);}
+  .gear-note{margin-top:18px;font-size:13px;color:var(--muted);background:#f4f5ef;border:1px solid var(--line);border-radius:8px;padding:12px 16px;}
+  @media (max-width:720px){
+    .course-hero{grid-template-columns:1fr;padding:24px 24px 40px;}
+    .gear-grid{grid-template-columns:1fr;}
+    .gear-section{padding:0 24px 40px;}
+    .registration{padding:48px 24px;}
+    .waiver{padding:24px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a class="brandmark" href="index.html">THE TACTICAL RABBI</a>
+  <nav>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html" class="active">Courses</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <a class="cta-btn" href="#register">Book Training</a>
+</header>
+
+<div class="breadcrumb"><a href="courses.html">Courses</a> / Active Shooter Response</div>
+
+<div class="course-hero">
+  <div class="img-frame"><img src="images/asr-1.png" alt="Active Shooter Response"></div>
+  <div class="course-info">
+    <span class="tag-mini">Response</span>
+    <h1>Active Shooter Response</h1>
+    <p class="desc">Scenario-driven training on recognizing, responding to, and surviving an active threat — for armed and unarmed civilians alike. Covers movement, cover, communication, and decision-making under stress.</p>
+
+    <div class="meta-grid">
+      <div class="meta-box"><div class="k">Duration</div><div class="v">4 Hours</div></div>
+      <div class="meta-box"><div class="k">Location</div><div class="v">Henryville, PA</div></div>
+      <div class="meta-box"><div class="k">Skill Level</div><div class="v">All Levels</div></div>
+      <div class="meta-box"><div class="k">Group Size</div><div class="v">Up to 8</div></div>
+    </div>
+
+    <div class="price-cta">
+      <div class="price">$275 <span>per student</span></div>
+      <a class="cta-btn" href="#register">Register Below ↓</a>
+    </div>
+  </div>
+</div>
+
+<div class="gear-section">
+  <div class="inner">
+    <div class="gear-head">
+      <span class="label">Before you arrive</span>
+      <h2>What it covers &amp; what to bring</h2>
+    </div>
+    <div class="gear-grid">
+      <div class="gear-col recommended">
+        <h4>● What It Covers</h4>
+        <ul>
+          <li>Fundamentals Recap</li>
+          <li>Medical Intro</li>
+          <li>Advanced Malfunction Clearing</li>
+          <li>Advanced Barricade Usage</li>
+          <li>Tourniquet Application</li>
+          <li>Hostage Drills</li>
+          <li>Shooting Positions</li>
+          <li>Team Threat Drills</li>
+          <li>Self Aid</li>
+          <li>Single Hand Shooting</li>
+        </ul>
+      </div>
+      <div class="gear-col required">
+        <h4>● What You Need</h4>
+        <ul>
+          <li>1 Pistol</li>
+          <li>1 Holster</li>
+          <li>3 Magazines and carriers</li>
+          <li>250 Rounds of ammunition</li>
+          <li>Eye and ear protection</li>
+          <li>Sun Hat</li>
+          <li>Long Pants</li>
+          <li>Closed-toe shoes</li>
+          <li>Food & water</li>
+        </ul>
+      </div>
+    </div>
+    <div class="gear-note" style="border-color:var(--coyote);background:#fbf1e9;color:var(--charcoal);font-weight:600;">⚠ This course involves rolling in mud and simulated blood as part of the scenario work — don't wear anything you care too much about!</div>
+    <div class="gear-note">While this training course is scheduled for up to 4 hours, the actual duration may vary depending on class size and participation. Smaller groups often allow us to move more efficiently through the material. Please note that the full value and curriculum are delivered regardless of course length. We appreciate your understanding.</div>
+  </div>
+</div>
+
+<div class="registration" id="register">
+  <div class="reg-head">
+    <span class="label">Step 1</span>
+    <h2>Register for this course</h2>
+    <p>This is where your live Airtable registration form gets embedded — name, contact info, date selection, payment, whatever fields your form collects today.</p>
+  </div>
+
+  <div class="reg-wrap">
+    <span class="slot-label">⬡ Airtable embed slot</span>
+    <h3>Course Registration Form</h3>
+    <p>Drop in your Airtable form's embed/share link here (Airtable gives you an iframe embed code per form). This box represents exactly where that goes — same spot, every course page, just swap the form ID per course.</p>
+
+    <div class="airtable-mock">
+      <div class="field"><span class="field-label">Full Name</span><div class="field-input">— Airtable field —</div></div>
+      <div class="field"><span class="field-label">Email</span><div class="field-input">— Airtable field —</div></div>
+      <div class="field"><span class="field-label">Preferred Date</span><div class="field-input">— Airtable field —</div></div>
+      <div class="field"><span class="field-label">Payment</span><div class="field-input">— Airtable field / payment block —</div></div>
+    </div>
+  </div>
+
+  <div class="waiver">
+    <span class="step-tag">Step 2</span>
+    <h3>Sign the liability waiver</h3>
+    <p class="intro">This waiver is required before registration is finalized. Please read the full agreement below, check the acknowledgment box, then sign digitally. The signature, full name, timestamp, IP address, and waiver version are stored on the backend as a permanent record tied to this registration.</p>
+
+    <div class="terms-box" id="termsBox">
+      <div class="doc-title">RELEASE, WAIVER, INDEMNIFICATION, HOLD HARMLESS,<br>ASSUMPTION OF RISK, AND PARTICIPATION AGREEMENT</div>
+
+      <p>Whereas, in consideration of being permitted to attend and participate in firearms instruction, defensive training, classroom instruction, live-fire exercises, scenario-based training, range activities, or any other course or event conducted by TTRC LLC under the instruction of Raziel Cohen, together with any assistant instructors, range safety officers, employees, agents, contractors, volunteers, affiliated facilities, property owners, successors, and assigns (collectively referred to herein as the "Released Parties"), and for other good and valuable consideration, the receipt and sufficiency of which are hereby acknowledged, the undersigned agrees as follows:</p>
+
+      <h4>Indemnification</h4>
+      <p>The undersigned agrees to indemnify, defend, and hold harmless the Released Parties from and against any and all claims, demands, causes of action, lawsuits, damages, judgments, liabilities, fines, penalties, costs, expenses, attorney's fees, or losses of any nature whatsoever arising out of, related to, or connected with:</p>
+      <ul>
+        <li>The undersigned's attendance at or participation in any course or activity;</li>
+        <li>The handling, loading, unloading, possession, transportation, storage, or discharge of any firearm;</li>
+        <li>The use of any ammunition, magazines, optics, suppressors, holsters, medical equipment, knives, or other equipment;</li>
+        <li>The undersigned's presence upon or use of any range, classroom, building, parking area, land, or other premises used for instruction ("Premises");</li>
+        <li>Any act, omission, negligence, or misconduct of the undersigned.</li>
+      </ul>
+
+      <h4>Waiver and Release</h4>
+      <p>The undersigned, on behalf of himself/herself and his/her executors, administrators, personal representatives, heirs, successors, assigns, and next of kin, knowingly and voluntarily waives, releases, acquits, and forever discharges the Released Parties from any and all claims, demands, actions, liabilities, damages, losses, costs, expenses, or causes of action of every kind whatsoever, whether known or unknown, anticipated or unanticipated, including claims arising from personal injury, illness, disability, property damage, emotional distress, or death, arising out of or relating in any manner to:</p>
+      <ul>
+        <li>Participation in any training or course;</li>
+        <li>Use of the Premises;</li>
+        <li>Any latent or patent defects of the Premises;</li>
+        <li>Firearms instruction;</li>
+        <li>Live-fire exercises;</li>
+        <li>The discharge of firearms;</li>
+        <li>The handling of firearms or equipment by any participant;</li>
+        <li>Property belonging to the undersigned, whether or not entrusted to the Released Parties.</li>
+      </ul>
+
+      <h4>Assumption of Risk</h4>
+      <p>The undersigned acknowledges that firearms training is an inherently dangerous activity involving known and unknown risks that cannot be completely eliminated through reasonable care. The undersigned voluntarily assumes all risks associated with participation, including but not limited to:</p>
+      <ul>
+        <li>Accidental discharge of firearms;</li>
+        <li>Ricochets;</li>
+        <li>Projectile fragments;</li>
+        <li>Equipment malfunctions;</li>
+        <li>Exposure to loud noise;</li>
+        <li>Flying debris;</li>
+        <li>Physical exertion;</li>
+        <li>Slip, trip, or fall hazards;</li>
+        <li>Negligence of other participants;</li>
+        <li>Permanent injury;</li>
+        <li>Disability; or</li>
+        <li>Death.</li>
+      </ul>
+      <p>The undersigned voluntarily elects to participate despite these risks.</p>
+
+      <h4>Firearm Safety Acknowledgment</h4>
+      <p>The undersigned certifies that he/she understands and agrees to abide by the universally accepted Four Fundamental Rules of Firearm Safety:</p>
+      <ul>
+        <li>Treat every firearm as if it is loaded.</li>
+        <li>Never allow the muzzle to point at anything you are not willing to destroy.</li>
+        <li>Keep your finger off the trigger until your sights are on target and you have made the conscious decision to fire.</li>
+        <li>Be sure of your target, what is beyond it, and what is around it.</li>
+      </ul>
+      <p>The undersigned further agrees to obey all range commands, instructor directions, safety briefings, and range procedures at all times. Failure to follow any safety instruction may result in immediate removal from the course without refund.</p>
+
+      <h4>Responsibility for Firearms and Equipment</h4>
+      <p>The undersigned acknowledges that he/she is solely responsible for every firearm, magazine, ammunition, optic, suppressor, holster, body armor, medical equipment, knife, accessory, or other equipment brought to any TTRC LLC course. The Released Parties make no representations regarding the legality or suitability of any participant's equipment. The undersigned certifies that he/she alone is responsible for ensuring compliance with all applicable federal, state, and local laws regarding the possession, transportation, ownership, configuration, carrying, storage, and use of any equipment brought to the course. The undersigned further acknowledges that the Released Parties do not provide legal advice regarding firearms laws and that it is the participant's responsibility to know and comply with all applicable laws before attending.</p>
+
+      <h4>Compliance with Instructor Directions</h4>
+      <p>The undersigned agrees to immediately comply with all verbal and written instructions issued by any member of the Released Parties. The undersigned understands that the Instructor has sole discretion to remove any participant whose conduct is determined to be unsafe, reckless, disruptive, threatening, impaired, or otherwise detrimental to the safety of the course. Removal from the course may occur without refund.</p>
+
+      <h4>Acknowledgment</h4>
+      <p>The undersigned certifies that he/she has carefully read this Agreement in its entirety, fully understands its contents, understands that substantial legal rights are being waived, has had adequate opportunity to ask questions, and signs this Agreement voluntarily and without coercion.</p>
+
+      <h4>Severability</h4>
+      <p>The undersigned expressly agrees that this Agreement is intended to be as broad and inclusive as permitted by applicable law. If any provision is determined to be invalid, illegal, or unenforceable, the remaining provisions shall remain in full force and effect.</p>
+
+      <h4>Cumulative Remedies</h4>
+      <p>No remedy conferred by any provision of this Agreement shall be deemed exclusive of any other remedy available at law or in equity. The exercise of any remedy by the Released Parties shall not constitute a waiver of any other available remedy.</p>
+
+      <h4>Governing Law and Venue</h4>
+      <p>This Agreement shall be governed by and interpreted under the laws of the State of New Jersey without regard to conflict of law principles. Any legal action arising from or relating to this Agreement or participation in any activity conducted by TTRC LLC shall be brought exclusively in a court of competent jurisdiction located within the State of New Jersey.</p>
+
+      <h4>Electronic Signature</h4>
+      <p>The undersigned agrees that checking the acknowledgment box and electronically signing this Agreement constitutes a legally binding electronic signature with the same force and effect as an original handwritten signature. The undersigned further acknowledges that he/she has had the opportunity to read this Agreement before signing and voluntarily agrees to be bound by all of its terms. This Agreement shall be binding upon the undersigned and his/her executors, administrators, personal representatives, heirs, successors, and assigns.</p>
+
+    <div class="scroll-hint" id="scrollHint">↓ scroll to read the full agreement ↓</div>
+
+    <div class="check-row">
+      <input type="checkbox" id="ackCheck">
+      <label for="ackCheck">I have read this Agreement in its entirety, understand that I am waiving substantial legal rights, and voluntarily agree to be bound by all of its terms.</label>
+    </div>
+    <div class="check-row">
+      <input type="checkbox" id="eligCheck">
+      <label for="eligCheck">I confirm I meet the eligibility requirements for this course.</label>
+    </div>
+
+    <div class="sig-field">
+      <label>Full Legal Name (typed) *</label>
+      <input type="text" id="sigName" placeholder="Type your full legal name">
+    </div>
+
+    <div class="sig-field">
+      <label>Signature *</label>
+      <div class="sig-pad-wrap">
+        <canvas id="sigCanvas"></canvas>
+      </div>
+      <div class="sig-controls">
+        <span class="sig-status" id="sigStatus">Draw your signature above</span>
+        <button class="clear-btn" id="clearSig" type="button">Clear</button>
+      </div>
+    </div>
+
+    <div class="record-note">On submission, the backend stores: signature image, typed full name, timestamp, IP address, and this waiver's version ID — tied permanently to this registration record.</div>
+  </div>
+
+  <div class="submit-bar">
+    <span class="gate-note" id="gateNote">Complete the waiver above to enable registration</span>
+    <button class="cta-btn" id="submitBtn" style="background:var(--coyote);padding:14px 32px;" disabled>Complete Registration →</button>
+    <div class="form-success" id="regSuccess">Registration recorded for this preview — a real submission will save to your registration backend once it's connected.</div>
+  </div>
+</div>
+
+<footer>
+  <div>© 2026 The Tactical Rabbi. All rights reserved.</div>
+  <div><a href="#" target="_blank" rel="noopener">YouTube</a><a href="#" target="_blank" rel="noopener">Instagram</a><a href="#" target="_blank" rel="noopener">Facebook</a></div>
+</footer>
+
+<script src="js/nav.js"></script>
+<script src="js/course-waiver.js"></script>
+</body>
+</html>
